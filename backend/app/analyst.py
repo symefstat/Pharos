@@ -65,7 +65,7 @@ def list_reports(limit: int = 25) -> dict:
                 .execute().data or [])
     except Exception as e:
         logger.warning("Analyst list unavailable (%s) — apply "
-                       "'SQL Tables/analyst_reports.sql'.", e)
+                       "'database/schema/analyst_reports.sql'.", e)
         rows = []
     return {"reports": rows}
 

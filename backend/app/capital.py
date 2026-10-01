@@ -34,7 +34,7 @@ def build_capital() -> dict:
     board = ma.capital_board(rows)
 
     # FX provenance for the exhibit source captions — written by financials_run
-    # once migrations/2026-07-03_fx_asof.sql is applied; None (undated caption)
+    # once database/migrations/2026-07-03_fx_asof.sql is applied; None (undated caption)
     # until then, since select("*") simply won't carry the columns.
     fx_latest = max((f for f in fins if f.get("fx_as_of")),
                     key=lambda f: str(f["fx_as_of"]), default=None)

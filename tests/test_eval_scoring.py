@@ -1,4 +1,4 @@
-"""Tests for the pure eval scoring functions (eval/scoring.py)."""
+"""Tests for the pure eval scoring functions (backend/eval/scoring.py)."""
 
 from eval.gold import label_from_dict
 from eval.scoring import (

@@ -1,4 +1,4 @@
-"""Tests for the gold-label schema/loader/validator (eval/gold.py) — pure."""
+"""Tests for the gold-label schema/loader/validator (backend/eval/gold.py) — pure."""
 
 import json
 from pathlib import Path
@@ -81,7 +81,7 @@ def test_load_gold_raises_on_bad_json_with_lineno(tmp_path):
 
 def test_example_gold_is_valid():
     # The shipped example must always pass validation (it documents the format).
-    path = Path(__file__).parent.parent / "eval" / "gold_labels.example.jsonl"
+    path = Path(__file__).parent.parent / "backend" / "eval" / "gold_labels.example.jsonl"
     labs = load_gold(path)
     assert len(labs) >= 3
     assert validate(labs) == []

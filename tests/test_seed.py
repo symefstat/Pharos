@@ -1,4 +1,4 @@
-"""Tests for the pure gold-seed helpers (eval/seed.py)."""
+"""Tests for the pure gold-seed helpers (backend/eval/seed.py)."""
 
 from eval.seed import build_seed_row, dedupe_by_url, stratified_sample
 

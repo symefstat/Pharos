@@ -22,7 +22,7 @@ every live path follows lens_ab.py's classify-in-memory pattern.
 
 Exit code: 0 = all selected checks green · 1 = at least one failure.
 Usage:
-  ./venv/bin/python Skills/lodestar-eval/scripts/run_eval.py            # tier 0
+  ./venv/bin/python Skills/lodestar-backend/eval/scripts/run_eval.py            # tier 0
   ./venv/bin/python ... --live-db --i-approve-live                     # + tier 1
   ./venv/bin/python ... --live-db --live-llm --i-approve-live          # everything
   ./venv/bin/python ... --json                                        # machine-readable
@@ -35,13 +35,13 @@ import subprocess
 import sys
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[3]  # repo root (Skills/lodestar-eval/scripts/..)
+ROOT = Path(__file__).resolve().parents[3]  # repo root (Skills/lodestar-backend/eval/scripts/..)
 PY = str(ROOT / "venv" / "bin" / "python")
 
 GOLD_CANDIDATES = [
-    "eval/gold_labels.jsonl",             # human-verified (the real one)
-    "eval/gold_labels.provisional.jsonl", # triage-corrected, human sign-off pending
-    "eval/gold_labels.seed.jsonl",        # raw lens guesses — circular, last resort
+    "backend/eval/gold_labels.jsonl",             # human-verified (the real one)
+    "backend/eval/gold_labels.provisional.jsonl", # triage-corrected, human sign-off pending
+    "backend/eval/gold_labels.seed.jsonl",        # raw lens guesses — circular, last resort
 ]
 
 
@@ -51,7 +51,7 @@ def pick_gold() -> tuple[str, str]:
             tier = ["human-verified", "PROVISIONAL (human sign-off pending)",
                     "SEED — circular, scores are not accuracy"][i]
             return rel, tier
-    sys.exit("no gold file found under eval/ — run gold_seed.py first")
+    sys.exit("no gold file found under backend/eval/ — run gold_seed.py first")
 
 
 def run(name: str, cmd: list[str], expect: int = 0, timeout: int = 3600) -> dict:
@@ -90,35 +90,35 @@ def main() -> int:
     # ── Tier 0 — offline ────────────────────────────────────────────────
     if not args.skip_tests:
         results.append(run("unit suite", [PY, "-m", "pytest", "-q"]))
-    results.append(run("gold validation", [PY, "eval_run.py", "--validate-gold", "--gold", gold]))
+    results.append(run("gold validation", [PY, "backend/eval_run.py", "--validate-gold", "--gold", gold]))
     results.append(run("harness smoke (fixture)",
-                       [PY, "eval_run.py", "--gold", "eval/gold_labels.example.jsonl",
-                        "--from-fixture", "eval/predictions.fixture.jsonl"]))
-    results.append(run("prompt schema-drift audit (L1 GATE)", [PY, "eval/judges/prompt_audit.py"]))
+                       [PY, "backend/eval_run.py", "--gold", "backend/eval/gold_labels.example.jsonl",
+                        "--from-fixture", "backend/eval/predictions.fixture.jsonl"]))
+    results.append(run("prompt schema-drift audit (L1 GATE)", [PY, "backend/eval/judges/prompt_audit.py"]))
     results.append(run("strategist judge self-test: clean brief passes",
-                       [PY, "eval/judges/strategist_eval.py", "--from-fixture",
-                        "eval/judges/fixtures/brief_clean.json"]))
+                       [PY, "backend/eval/judges/strategist_eval.py", "--from-fixture",
+                        "backend/eval/judges/fixtures/brief_clean.json"]))
     results.append(run("strategist judge self-test: seeded defects caught",
-                       [PY, "eval/judges/strategist_eval.py", "--from-fixture",
-                        "eval/judges/fixtures/brief_defective.json"], expect=1))
+                       [PY, "backend/eval/judges/strategist_eval.py", "--from-fixture",
+                        "backend/eval/judges/fixtures/brief_defective.json"], expect=1))
     results.append(run("ask judge self-test: seeded defects caught",
-                       [PY, "eval/judges/ask_eval.py", "--demo"], expect=1))
-    results.append(run("API↔UI parity check (L10)", [PY, "eval/app_parity_check.py"]))
+                       [PY, "backend/eval/judges/ask_eval.py", "--demo"], expect=1))
+    results.append(run("API↔UI parity check (L10)", [PY, "backend/eval/app_parity_check.py"]))
 
     # ── Tier 1 — live DB reads ($0 LLM) ─────────────────────────────────
     if args.live_db:
-        results.append(run("freshness check", [PY, "freshness_check.py"]))
+        results.append(run("freshness check", [PY, "backend/freshness_check.py"]))
         results.append(run(f"rollup integrity + lens scoring vs {gold}",
-                           [PY, "eval_run.py", "--from-supabase", "--gold", gold]))
+                           [PY, "backend/eval_run.py", "--from-supabase", "--gold", gold]))
 
     # ── Tier 2 — live LLM (Toqan cost) ──────────────────────────────────
     if args.live_llm:
         results.append(run(f"lens A/B vs {gold} (Toqan, non-destructive)",
-                           [PY, "lens_ab.py", "--gold", gold], timeout=5400))
+                           [PY, "backend/lens_ab.py", "--gold", gold], timeout=5400))
         results.append(run("strategist deterministic checks on live brief",
-                           [PY, "eval/judges/strategist_eval.py", "--from-supabase"]))
+                           [PY, "backend/eval/judges/strategist_eval.py", "--from-supabase"]))
         results.append(run("ask live retrieval eval",
-                           [PY, "eval/judges/ask_eval.py", "--live"], timeout=5400))
+                           [PY, "backend/eval/judges/ask_eval.py", "--live"], timeout=5400))
 
     # ── Summary ─────────────────────────────────────────────────────────
     fails = [r for r in results if not r["ok"]]

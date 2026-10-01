@@ -30,7 +30,7 @@ model or prompt change (e.g. a Fable 5 upgrade).
 ## Known gate states (update when they change)
 
 - `TOQAN_ASK` was **empty** in `.env` as of 2026-07-02 → ask answer-leg skips
-  (retrieval-only). Saved retrieval captures: `eval/reports/ask_live_capture_20260702.jsonl`.
+  (retrieval-only). Saved retrieval captures: `backend/eval/reports/ask_live_capture_20260702.jsonl`.
 - `TOQAN_JUDGE` not provisioned → strategist panel falls back to deterministic-only;
   the 2026-07-02 panel scores were produced by in-session judging (correlated-judge
   bias flagged) — re-run with real independent judges when the key exists.
@@ -42,7 +42,7 @@ model or prompt change (e.g. a Fable 5 upgrade).
 - **Rolling refresh:** add ~25 fresh hand-checked labels/month (`gold_seed.py`
   drafts them; a human corrects; append). Old URLs age out of the 1000-row read
   window (54/200 had aged out within weeks) and stale gold invites contamination.
-- After any human review: `eval_run.py --validate-gold` must be clean before scoring.
+- After any human review: `backend/eval_run.py --validate-gold` must be clean before scoring.
 
 ## Model/prompt-change protocol (the Fable 5 procedure)
 
@@ -57,12 +57,12 @@ Run **before** the change, then **after**, and diff:
    100% (after unit-normalization adjudication), theory fidelity **1.6/3**,
    falsifier **10.8/12**, overclaim **20%** deterministic.
 4. `ask_eval.py --live` — baseline: precision@5 **0.94**; answer-leg unmeasured.
-5. Write the delta into `eval/reports/` as `ab_<change>_<date>.md`. Newer ≠
+5. Write the delta into `backend/eval/reports/` as `ab_<change>_<date>.md`. Newer ≠
    better until this file says so.
 
 ## Acceptance targets
 
-Pre-committed in `eval/reports/00_baseline.md` §5 — do not renegotiate them after
+Pre-committed in `backend/eval/reports/00_baseline.md` §5 — do not renegotiate them after
 seeing results; if a target changes, change it *before* the run and note why.
 
 ## Standing findings a live run should re-check
@@ -70,4 +70,4 @@ seeing results; if a target changes, change it *before* the run and note why.
 The September 2026 headline cliff (L7 quarantine leak), the stale-FX class of
 error (L6), extraction fabrications (L2: 3/94 sampled), the n/a-boundary lens
 errors (L3: 44% of maturity misses), dead payload fields (L10). Fix list:
-`eval/reports/30_scorecard.md` §2.
+`backend/eval/reports/30_scorecard.md` §2.

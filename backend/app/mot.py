@@ -202,7 +202,7 @@ def stage_history(days: int = 365) -> dict:
 def _tech_points(plc: list[dict], MO: list[str], AO: list[str], regimed: dict) -> list[dict]:
     """Chart-ready technology points from (anchored) placements — pure.
 
-    World-truth additions (eval/reports/40_world_truth.md §4): `thin_signal`
+    World-truth additions (backend/eval/reports/40_world_truth.md §4): `thin_signal`
     (< 10 stage-classified articles → hollow dot), `anchored`/`news_*` (the
     curated floor and the preserved news-derived stage), and `lifecycle_fit`
     (taxonomy misfits are kept in the payload but taken OFF both curves — the
@@ -406,7 +406,7 @@ def mot(scope: str = "all") -> dict:
         # NOTE: no separate "adoption_interpret" — the analytics produce exactly one
         # diffusion read (interpret_diffusion); it ships once as `diffusion_interpret`
         # below and is rendered on the diffusion card. A byte-identical copy under a
-        # second name was dead payload (eval/reports/10_app_parity.md §2.1).
+        # second name was dead payload (backend/eval/reports/10_app_parity.md §2.1).
         "technologies": techs,
         # Evidence floor for curve placement — the UI badge quotes it, so the
         # number is never hardcoded client-side.
@@ -558,7 +558,7 @@ _TECH_RATE = rate_limit("mot_tech", limit=30, window=60)
 
 _TRACKED_MIGRATION_HINT = (
     "technology tracking is not set up — apply "
-    "'SQL Tables/tracked_technologies.sql' to enable it"
+    "'database/schema/tracked_technologies.sql' to enable it"
 )
 
 _SLUG_RE = re.compile(r"[^a-z0-9]+")

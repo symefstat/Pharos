@@ -22,7 +22,7 @@ router = APIRouter(prefix="/api/theses", tags=["theses"])
 
 _RATE = rate_limit("theses", limit=30, window=60)
 
-_MIGRATION_HINT = ("thesis tables are not set up — apply 'SQL Tables/theses.sql' "
+_MIGRATION_HINT = ("thesis tables are not set up — apply 'database/schema/theses.sql' "
                    "to activate thesis monitoring")
 
 

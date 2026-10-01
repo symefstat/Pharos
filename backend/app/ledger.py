@@ -2,7 +2,7 @@
 /api/ledger — the PUBLIC ledger: Lodestar's entire forecast history in one
 self-contained, outside-reader-shaped payload.
 
-This is the trust artifact (eval/reports/20_product_completeness.md §D — "the
+This is the trust artifact (backend/eval/reports/20_product_completeness.md §D — "the
 one artifact incumbents structurally cannot copy"): every forecast ever logged
 (open AND resolved, quarantined included but flagged), the headline and
 per-category stats WITH their naive-baseline comparisons, the calibration
@@ -18,7 +18,7 @@ the canonical JSON of the forecast rows (keys sorted, rows sorted by
 fingerprint) — exactly the `forecasts` array in the payload. Anyone who
 downloads the JSON can recompute it (see `DIGEST_RECIPE`); a different digest
 means a different history. `anchor_digest` additionally anchors each day's
-digest into the append-only `ledger_digests` table (SQL Tables/
+digest into the append-only `ledger_digests` table (database/schema/
 ledger_digests.sql), and the payload ships the recent chain as
 `digest_history` — so a rewrite of past rows is detectable after the fact,
 not just at download time.
@@ -124,7 +124,7 @@ def anchor_digest(sb, preds: list[dict] | None = None, as_of: str | None = None)
 def digest_history(limit: int = 30) -> list[dict]:
     """The most recent daily digest anchors, newest first — the verification
     chain shipped in the public payload. Best-effort: [] when the table isn't
-    set up yet (SQL Tables/ledger_digests.sql) or Supabase is unreachable."""
+    set up yet (database/schema/ledger_digests.sql) or Supabase is unreachable."""
     try:
         sb = data._supabase()
         return (sb.table(DIGESTS_TABLE).select("as_of,digest,row_count")

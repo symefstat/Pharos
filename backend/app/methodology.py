@@ -2,7 +2,7 @@
 /api/methodology/* — data behind the Methodology page's evidence sections.
 
 The backtest study (backtest_run.py) writes its per-technology results to
-backtest/results/*.json in the repo; this router serves them to the page. The
+backend/backtest/results/*.json in the repo; this router serves them to the page. The
 files ship with the deployment, so the endpoint is a plain read — no DB, no
 agents. An empty list means the study hasn't been run/committed yet and the
 page simply omits the section.
@@ -20,7 +20,7 @@ logger = logging.getLogger(__name__)
 
 router = APIRouter(prefix="/api/methodology", tags=["methodology"])
 
-_RESULTS_DIR = Path(__file__).resolve().parents[2] / "backtest" / "results"
+_RESULTS_DIR = Path(__file__).resolve().parents[1] / "backtest" / "results"
 
 
 @router.get("/backtest")

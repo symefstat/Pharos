@@ -1,4 +1,4 @@
-"""Tests for the L8 Strategist judge harness (eval/judges/strategist_eval.py).
+"""Tests for the L8 Strategist judge harness (backend/eval/judges/strategist_eval.py).
 
 Fully offline: fixture briefs only — no Supabase, no Toqan. Pins that the
 deterministic checks pass the clean synthetic brief and catch every seeded
@@ -19,7 +19,7 @@ from eval.judges.strategist_eval import (
     run_live_panel,
 )
 
-FIXTURES = Path(__file__).resolve().parents[1] / "eval" / "judges" / "fixtures"
+FIXTURES = Path(__file__).resolve().parents[1] / "backend" / "eval" / "judges" / "fixtures"
 
 
 def _load(name):

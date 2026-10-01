@@ -1,6 +1,6 @@
 """Tests for the Strategist's pure logic (no network — no agent/embed/DB calls).
 
-generate() and the retrieval/embedding paths are network-bound and not tested
+generate() and the retribackend/eval/embedding paths are network-bound and not tested
 here; the pack-building, query-construction, focus-filtering, and parsing are
 pure and are what these cover.
 """

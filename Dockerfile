@@ -14,7 +14,7 @@
 FROM python:3.11-slim
 
 # System packages pip cannot express — and the reason Docker is worth it here.
-# vectordb/extract.py shells out to `pdftotext` (poppler-utils) and `textutil`.
+# backend/vectordb/extract.py shells out to `pdftotext` (poppler-utils) and `textutil`.
 # textutil is macOS-only: on any Linux host it isn't found and extraction
 # silently yields "" rather than raising. Pinning the OS layer is how that class
 # of "works on my Mac" bug stops being possible; requirements.txt cannot reach it.
@@ -39,7 +39,7 @@ RUN pip install --no-cache-dir --upgrade pip \
 
 # Now the code. Everything the API imports transitively, and the *_run.py entry
 # points, so this same image can execute the scheduled jobs
-# (`docker compose run --rm api python forecast_run.py`). The build context is
+# (`docker compose run --rm api python backend/forecast_run.py`). The build context is
 # already narrowed by .dockerignore.
 COPY . .
 
@@ -49,12 +49,11 @@ RUN useradd --create-home --uid 10001 pharos \
     && chown -R pharos:pharos /app
 USER pharos
 
-# PYTHONPATH: conftest.py and the backend both assume the repo root is
-# importable, so `from config import Config` and `import analytics` resolve.
+# PYTHONPATH exposes backend source packages and repo-root runtime files.
 # PYTHONUNBUFFERED: without it Python block-buffers stdout when it is a pipe
 # rather than a TTY, so logs arrive minutes late (or never, on a crash) in
 # `docker logs` and in the platform log stream.
-ENV PYTHONPATH=/app \
+ENV PYTHONPATH=/app/backend:/app \
     PYTHONUNBUFFERED=1 \
     PYTHONDONTWRITEBYTECODE=1 \
     PIP_DISABLE_PIP_VERSION_CHECK=1

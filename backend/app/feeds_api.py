@@ -81,7 +81,7 @@ def ask(body: AskBody) -> dict:
             "configured": False,
             "answer": (
                 "Ask isn't configured. Set `TOQAN_ASK` in `.env` (create the agent from "
-                "`Agents_prompt/Ask_Lodestar_Agent.md`) to enable conversational answers "
+                "`backend/Agents_prompt/Ask_Lodestar_Agent.md`) to enable conversational answers "
                 "over the feeds + MOT theory."
             ),
             "stories": [],
@@ -121,7 +121,7 @@ def ask_stream(body: AskBody) -> StreamingResponse:
             yield _sse({
                 "type": "done", "configured": False,
                 "answer": ("Ask isn't configured. Set `TOQAN_ASK` in `.env` (create the agent "
-                           "from `Agents_prompt/Ask_Lodestar_Agent.md`) to enable answers."),
+                           "from `backend/Agents_prompt/Ask_Lodestar_Agent.md`) to enable answers."),
                 "thinking": "", "stories": [], "theory": [],
             })
             return

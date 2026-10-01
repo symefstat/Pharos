@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Start the Lodestar web UI: FastAPI backend (:8000) + Vite frontend (:5173).
+# Start the Pharos web UI: FastAPI backend (:8000) + Vite frontend (:5173).
 # Run it from anywhere — it cd's to its own directory (the project root).
 #
 #   ./start_web_ui.sh
@@ -11,6 +11,7 @@ set -euo pipefail
 # Resolve the project root = this script's directory, regardless of CWD.
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 cd "$ROOT"
+export PYTHONPATH="$ROOT/backend:$ROOT${PYTHONPATH:+:$PYTHONPATH}"
 
 # Make sure Homebrew node/npm are on PATH (Vite needs them).
 export PATH="/opt/homebrew/bin:$PATH"

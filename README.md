@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🧭 Lodestar
+# 🧭 Pharos
 
 ### Theory-grounded, cross-domain technology & market intelligence
 
@@ -20,7 +20,7 @@
 
 ## What is this?
 
-Most "market intelligence" tools do one of two things: summarize news without a theory of *why a development matters*, or emit black-box scores with no track record. **Lodestar takes a different stance:**
+Most "market intelligence" tools do one of two things: summarize news without a theory of *why a development matters*, or emit black-box scores with no track record. **Pharos takes a different stance:**
 
 - **Theory first.** Every story is classified against *named* Management-of-Technology (MOT) frameworks — S-curves, diffusion / crossing the chasm, standards battles, real options — not vibes or sentiment.
 - **Technology is the unit of analysis.** Articles roll up into *tracked technologies* with **dated lifecycle stage-transitions**, turning a news stream into leading indicators.
@@ -51,18 +51,18 @@ The result is a single product that produces a daily strategist briefing, a cons
 ## 🏗 Architecture
 
 ```
-Toqan LLM feed agents (1 per domain) ─► home_news/ (extractor → parser → writer)
+Toqan LLM feed agents (1 per domain) ─► backend/home_news/ (extractor → parser → writer)
         │                                            │
         ▼                                            ▼
   Supabase (Postgres + pgvector + Storage) ──  one table per feed
         │
-        ├─ analytics/lens.py        → MOT-lens classification columns
-        ├─ analytics/rollup.py      → never-pruned daily metrics
-        ├─ analytics/mot_analyst.py → technology S-curve + stage transitions
-        ├─ analytics/financials.py  → capital landscape (yfinance, free)
-        ├─ analytics/forecasts.py   → falsifiable, self-scoring forecast ledger
-        └─ analytics/strategist.py ─┐
-  vectordb/ (pgvector RAG over MOT corpus) ─┤
+        ├─ backend/analytics/lens.py        → MOT-lens classification columns
+        ├─ backend/analytics/rollup.py      → never-pruned daily metrics
+        ├─ backend/analytics/mot_analyst.py → technology S-curve + stage transitions
+        ├─ backend/analytics/financials.py  → capital landscape (yfinance, free)
+        ├─ backend/analytics/forecasts.py   → falsifiable, self-scoring forecast ledger
+        └─ backend/analytics/strategist.py ─┐
+  backend/vectordb/ (pgvector RAG over MOT corpus) ─┤
                                             ▼
                           Toqan Strategist agent → cached briefs
         │
@@ -94,7 +94,7 @@ Toqan LLM feed agents (1 per domain) ─► home_news/ (extractor → parser →
 
 ## 📐 The MOT theory backbone
 
-Lodestar operationalizes named frameworks into computable classifications — not decorative labels:
+Pharos operationalizes named frameworks into computable classifications — not decorative labels:
 
 - **S-curves & dominant design** — Schilling; Anderson–Tushman
 - **Diffusion & crossing the chasm** — Rogers; Moore
@@ -110,26 +110,43 @@ Lodestar operationalizes named frameworks into computable classifications — no
 > Full step-by-step setup (SQL migrations, agent creation, env keys) is in the collapsible section below.
 
 ```bash
-# 1. Python env
-python3.11 -m venv venv && source venv/bin/activate
-pip install -r requirements.txt
-cp .env.example .env          # then fill in SUPABASE_URL + SUPABASE_KEY (required)
+# macOS / Linux
+python3.11 -m venv venv
+source venv/bin/activate
+cp .env.example .env
+```
 
-# 2. Run the original Streamlit app
-streamlit run Home.py
+```powershell
+# Windows PowerShell
+py -3.11 -m venv venv
+.\venv\Scripts\Activate.ps1
+Copy-Item .env.example .env
+```
 
-# — or — the new FastAPI + React web UI:
-./start_web_ui.sh             # then open http://localhost:5173
+Then, on either platform, install the Python dependencies and set `SUPABASE_URL` and `SUPABASE_KEY` in `.env`:
+
+```bash
+python -m pip install -r requirements.txt -r backend/requirements.txt
+
+# Run the Streamlit app
+streamlit run backend/Home.py
+```
+
+For the FastAPI + React web UI, install the frontend dependencies and run the development script from macOS/Linux, WSL, or Git Bash:
+
+```bash
+cd frontend && npm ci && cd ..
+./start_web_ui.sh              # then open http://localhost:5173
 ```
 
 The refresh pipeline (also runnable from the app's **Refresh all** button, or on a schedule via GitHub Actions):
 
 ```bash
-python home_news_run.py   # fetch all feeds
-python lens_run.py        # MOT-lens classify new rows (idempotent)
-python analytics_run.py   # rebuild rollup + regenerate the Strategist read
-python financials_run.py  # enrich tracked tickers (free) → Capital tab
-python forecast_run.py    # generate + resolve forecasts → Forecasts tab
+python backend/home_news_run.py   # fetch all feeds
+python backend/lens_run.py        # MOT-lens classify new rows (idempotent)
+python backend/analytics_run.py   # rebuild rollup + regenerate the Strategist read
+python backend/financials_run.py  # enrich tracked tickers (free) → Capital tab
+python backend/forecast_run.py    # generate + resolve forecasts → Forecasts tab
 ```
 
 <details>
@@ -142,17 +159,17 @@ python forecast_run.py    # generate + resolve forecasts → Forecasts tab
 - **Toqan** agents (one per feed + MOT Lens + Strategist + Ask), each with an API key
 
 ### 1. Apply the SQL
-Run the files in `SQL Tables/` in order in the Supabase SQL editor — one table per feed, then `mot_lens_columns.sql`, the never-pruned `feed_daily_metrics` rollup, `strategist_briefs`, `technology_stage_history`, `watchlist`, `mot_knowledge_base` (RAG), `company_financials`, `stock_prices`, and `predictions` (the forecast ledger). The required-for-core ones are marked **★** in the file list.
+Run the SQL files in `database/schema/` in order in the Supabase SQL editor — one table per feed, then `mot_lens_columns.sql`, the never-pruned `feed_daily_metrics` rollup, `strategist_briefs`, `technology_stage_history`, `watchlist`, `mot_knowledge_base` (RAG), `company_financials`, `stock_prices`, and `predictions` (the forecast ledger). The required-for-core ones are marked **★** in the file list.
 
 ### 2. Create the Toqan agents
-Create each agent on the Toqan platform, paste the matching file from `Agents_prompt/` as its system prompt, then copy each agent's API key into `.env`. The feed registry (key → table → prompt → env key) is the single source of truth in [`feeds.py`](feeds.py) — adding a feed is one `Feed(...)` entry + a prompt + a key.
+Create each agent on the Toqan platform, paste the matching file from `backend/Agents_prompt/` as its system prompt, then copy each agent's API key into `.env`. The feed registry (key → table → prompt → env key) is the single source of truth in [`backend/feeds.py`](backend/feeds.py) — adding a feed is one `Feed(...)` entry + a prompt + a key.
 
 ### 3. `.env`
 Copy `.env.example` → `.env` and fill it in. Only `SUPABASE_URL` and `SUPABASE_KEY` are hard-required; a feed with no key shows an empty tab, and the Strategist degrades gracefully without `OPENAI_API_KEY` (reasoning from doctrine, skipping theory citations). **Never commit `.env`** — it's gitignored and a `pre-commit` secret scan guards against leaks (`pip install pre-commit && pre-commit install`).
 
 ### 4. Ingest the MOT corpus (one-time, for RAG)
 ```bash
-python ingest_mot.py          # needs OPENAI_API_KEY + the corpus folder; --reset for a clean reload
+python backend/ingest_mot.py  # needs OPENAI_API_KEY + the local MOT corpus; --reset for a clean reload
 ```
 
 </details>
@@ -162,19 +179,16 @@ python ingest_mot.py          # needs OPENAI_API_KEY + the corpus folder; --rese
 ## 🗂 Project structure
 
 ```
-analytics/        Pure analytics core — lens, rollup, mot_analyst, financials,
-                  forecasts, strategist, trends, entities, events, weights …
-backend/          FastAPI service — one router per surface over the analytics core
-frontend/         Vite + React + TypeScript SPA (typed API client, hooks, Recharts)
-home_news/        Feed ingestion (extractor → parser → writer)
-vectordb/         MOT-corpus RAG (chunker, embedder, pgvector store)
-finance/          yfinance client (financials + prices)
-eval/             Gold-label eval harness + scoring
-Agents_prompt/    Versioned system prompts for all 13 Toqan agents
-SQL Tables/        Supabase schema migrations
-tests/            Pure, no-network unit tests
-Home.py           Original Streamlit app (7 tabs)
-*_run.py          Pipeline entrypoints (home_news, lens, analytics, financials, forecast, alerts)
+backend/           FastAPI app, analytics, ingestion, integrations, CLI jobs,
+                   backtests, eval harness, and Toqan agent prompts
+frontend/          Vite + React + TypeScript SPA (typed API client, hooks, Recharts)
+database/          Supabase schema and versioned migrations
+docs/              Project guides, research notes, and planning documents
+tests/             Pure, no-network unit tests
+.github/workflows/ CI, scheduled refreshes, and demo workflows
+.do/               DigitalOcean App Platform specification
+Dockerfile*        API and CI container definitions
+requirements*.txt  Python runtime and development dependencies
 ```
 
 ---
@@ -186,13 +200,13 @@ pip install -r requirements-dev.txt
 python -m pytest
 ```
 
-Pure, no-network unit tests cover the parsing/normalization/reducer logic, the MOT analyst, financials, trends, the forecast resolver, and the Strategist's pure logic. An **eval harness** (`eval/`) scores MOT-lens output against gold labels. Edits are compile-checked with `python -m py_compile`, and a `pre-commit` hook scans for secrets.
+Pure, no-network unit tests cover the parsing/normalization/reducer logic, the MOT analyst, financials, trends, the forecast resolver, and the Strategist's pure logic. The **eval harness** (`backend/eval/`) scores MOT-lens output against gold labels. Run `python -m compileall -q backend tests` to compile-check the source; the configured `pre-commit` hooks include secret scanning.
 
 ---
 
 ## 🌐 The web UI (FastAPI + React)
 
-All 7 tabs are migrated end-to-end to a React/TypeScript SPA backed by FastAPI — see [`WEB_UI_README.md`](WEB_UI_README.md) for the architecture and the "repeatable recipe" used to migrate each tab. The Vite dev server proxies `/api/*` to the backend (no CORS), and `npm run build` emits a static SPA that any host (or FastAPI's `StaticFiles`) can serve behind the same gateway as the API.
+All 7 tabs are migrated end-to-end to a React/TypeScript SPA backed by FastAPI — see [`docs/WEB_UI_README.md`](docs/WEB_UI_README.md) for the architecture and the "repeatable recipe" used to migrate each tab. The Vite dev server proxies `/api/*` to the backend (no CORS), and `npm run build` emits a static SPA that any host (or FastAPI's `StaticFiles`) can serve behind the same gateway as the API.
 
 ---
 
@@ -205,4 +219,3 @@ News + free financials only (no paid deal data or order books); price-direction 
 <div align="center">
 <sub>Solo project · ~23k LOC Python · ~5k LOC TypeScript · 13 LLM agents · 10 domains · MSc Management of Technology</sub>
 </div>
-# LODESTAR

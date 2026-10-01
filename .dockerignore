@@ -4,9 +4,9 @@
 # difference between a build that takes seconds and one that takes minutes.
 #
 # Note this is a DENY list: anything not named here is sent. That direction is
-# deliberate — the backend reaches the top-level analytics/, db.py, feeds.py,
-# home_news/, technologies.py, toqan/ and vectordb/ modules transitively, and an
-# allow list would silently drop one the next time an import is added.
+# deliberate — the backend imports its source packages and entrypoints from
+# backend/, and an allow list would silently drop one the next time an import is
+# added.
 #
 # Comments must sit on their own line. Docker does not strip trailing comments,
 # so `venv/  # big` would be read as a pattern that matches nothing.
@@ -28,16 +28,16 @@ venv/
 # 46 MB of history the runtime never reads.
 .git/
 # 19 MB, including screenshot evidence.
-eval/
+backend/eval/
 # 7 MB of marketing media.
 linkedin-assets/
 # This is the deployment image, not the CI image — Dockerfile.ci covers tests.
 tests/
 logo/
 Skills/
-SQL Tables/
-Agents_prompt/
-Pharos improvements/
+database/
+backend/Agents_prompt/
+docs/
 
 # ── The frontend: built by its own image, from its own context ───────────────
 # frontend/Dockerfile does the npm build. Sending 174 MB of node_modules into

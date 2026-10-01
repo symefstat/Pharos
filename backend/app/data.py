@@ -20,11 +20,12 @@ from threading import Lock
 
 logger = logging.getLogger(__name__)
 
-# ── put the project root on sys.path so `analytics`, `config`, `db`, `tickers`
-#    import exactly as they do for the Streamlit app, regardless of CWD ──────────
+# ── expose backend packages and repo-root runtime files regardless of CWD ──────
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
-if str(PROJECT_ROOT) not in sys.path:
-    sys.path.insert(0, str(PROJECT_ROOT))
+BACKEND_ROOT = PROJECT_ROOT / "backend"
+for import_root in (PROJECT_ROOT, BACKEND_ROOT):
+    if str(import_root) not in sys.path:
+        sys.path.insert(0, str(import_root))
 
 # Load the project's .env explicitly (config.py also calls load_dotenv(), but being
 # explicit means the API works even when launched from a different CWD).

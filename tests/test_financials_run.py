@@ -1,6 +1,6 @@
 """financials_run — FX provenance stamping + pending-column degrade (no network/DB).
 
-migrations/2026-07-03_fx_asof.sql adds optional columns (fx_source, fx_as_of,
+database/migrations/2026-07-03_fx_asof.sql adds optional columns (fx_source, fx_as_of,
 rd_basis) to company_financials; until the user applies it, the upsert must strip
 them and retry — mirroring home_news/writer's provenance degrade — so a financials
 run never breaks on a pending migration.
@@ -65,7 +65,7 @@ def test_upsert_degrades_when_fx_columns_are_pending(monkeypatch, caplog):
     for col in fr._OPTIONAL_FIN_COLS:                          # optional cols stripped…
         assert all(col not in r for r in sb.written)
     assert sb.written[0]["entity"] == "Toyota"                 # …but the payload survives
-    assert "migrations/2026-07-03_fx_asof.sql" in caplog.text  # warning names the fix
+    assert "database/migrations/2026-07-03_fx_asof.sql" in caplog.text  # warning names the fix
 
 
 def test_upsert_does_not_mask_real_failures(monkeypatch):

@@ -39,12 +39,13 @@ jobs:
       #    errors, bad indentation and broken f-strings surface across ~42k
       #    lines in about two seconds. Best value-per-second in the file.
       - name: Compile (no dependencies needed)
-        run: python -m compileall -q analytics home_news toqan vectordb eval finance backend
+        run: python -m compileall -q backend tests
 
       # 4) Real tests from this repo, run with ONLY pytest installed. These
-      #    three modules under test (toqan/json_utils.py, vectordb/chunker.py,
-      #    analytics/weights.py) import nothing but the standard library, so
-      #    pandas/supabase/streamlit are never needed. Verified locally:
+      #    three modules under test (backend/toqan/json_utils.py,
+      #    backend/vectordb/chunker.py, backend/analytics/weights.py) import
+      #    nothing but the standard library, so pandas/supabase/streamlit are
+      #    never needed. Verified locally:
       #    32 passed in 0.03s in a venv containing pytest and nothing else.
       - name: Install pytest only
         run: pip install pytest
@@ -94,6 +95,8 @@ jobs:
             # Only explain the failure mode when there is actually one to
             # explain — a fixed caption that prints under an all-green table
             # reads as a warning about a problem that isn't there.
+      #    three modules under test (backend/toqan/json_utils.py,
+      #    backend/vectordb/chunker.py, backend/analytics/weights.py) import
             if [ "$missing" -eq 1 ]; then
               echo "A ❌ above is why a pipeline run dies at its first step with"
               echo "\`ValueError: Missing required configuration\` — an unset secret"

@@ -1,4 +1,4 @@
-"""World-truth fix tests (eval/reports/40_world_truth.md §4).
+"""World-truth fix tests (backend/eval/reports/40_world_truth.md §4).
 
 Pins the three estimator fixes layered over the news-derived placements:
 

@@ -15,7 +15,7 @@
 FROM python:3.11-slim
 
 # System packages pip cannot express. `pdftotext` (poppler-utils) is used by
-# vectordb/extract.py, which currently also shells out to `textutil` — a
+# backend/vectordb/extract.py, which currently also shells out to `textutil` — a
 # macOS-only binary that silently returns "" on any Linux machine, including
 # every GitHub runner and the production host. This apt line is precisely the
 # class of problem a Dockerfile can fix and requirements.txt never can.
@@ -44,9 +44,8 @@ RUN pip install --no-cache-dir --upgrade pip \
          -r requirements-dev.txt \
          -r backend/requirements.txt
 
-# Match conftest.py's assumption that the repo root is importable, so tests can
-# import the top-level packages (analytics, toqan, home_news, ...) once the
-# workspace is mounted over /app by the runner.
-ENV PYTHONPATH=/app \
+# Expose backend source packages and the repo root when the workspace is mounted
+# over /app by the runner.
+ENV PYTHONPATH=/app/backend:/app \
     PYTHONDONTWRITEBYTECODE=1 \
     PIP_DISABLE_PIP_VERSION_CHECK=1

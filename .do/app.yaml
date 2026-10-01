@@ -1,4 +1,4 @@
-# DigitalOcean App Platform spec for Lodestar.
+# DigitalOcean App Platform spec for Pharos.
 #
 # ★ THIS IS THE ONE PRODUCTION DEPLOY TARGET (decided 2026-07-08, H4). ★
 # A Render deployment existed as dashboard-only config; if it is still live,
@@ -23,19 +23,19 @@
 # Settings → the "api" component → Environment Variables). They are left
 # blank here so nothing sensitive is committed.
 
-name: lodestar
+name: pharos
 region: ams   # Amsterdam; change to nyc/sfo/etc. if you prefer
 
 services:
   - name: api
     github:
-      repo: symefstat/LODESTAR
+      repo: symefstat/Pharos
       branch: main
       deploy_on_push: true
     source_dir: /
     environment_slug: python
     build_command: pip install -r requirements.txt -r backend/requirements.txt
-    run_command: uvicorn backend.app.main:app --host 0.0.0.0 --port 8080
+    run_command: PYTHONPATH=backend:. uvicorn backend.app.main:app --host 0.0.0.0 --port 8080
     http_port: 8080
     instance_size_slug: basic-xs
     instance_count: 1
@@ -115,7 +115,7 @@ services:
 static_sites:
   - name: web
     github:
-      repo: symefstat/LODESTAR
+      repo: symefstat/Pharos
       branch: main
       deploy_on_push: true
     source_dir: frontend

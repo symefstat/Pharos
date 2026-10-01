@@ -68,16 +68,16 @@ jobs:
 
       # 1) Refresh every feed (each Feed in feeds.py with a key set above).
       - name: Refresh all feeds
-        run: python home_news_run.py
+        run: python backend/home_news_run.py
 
       # 2) Classify new rows with the MOT lens (idempotent; only NULL rows).
       #    Runs before analytics so the Strategist sees fresh classifications.
       - name: Classify with the MOT lens
-        run: python lens_run.py
+        run: python backend/lens_run.py
 
       # 3) Rebuild the never-pruned rollup + regenerate the Strategist read.
       - name: Rebuild analytics (rollup + Strategist)
-        run: python analytics_run.py
+        run: python backend/analytics_run.py
 
       # Financials + forecasts moved to their own daily workflow
       # (.github/workflows/financials_forecasts.yml) — they don't need 6h freshness,
@@ -85,17 +85,17 @@ jobs:
 
       # 4) Push watchlist alerts (no-op if the watchlist is empty / no webhook).
       - name: Push watchlist alerts
-        run: python alerts_run.py
+        run: python backend/alerts_run.py
 
       # 5) Falsifier watch — scan fresh news for candidate evidence that an open
       #    Strategist falsifier triggered; alert on NEW events. Detection only
       #    (never resolves a forecast). Non-fatal: a failure here logs visibly
       #    but must not block the freshness check.
       - name: Falsifier watch
-        run: python falsifier_run.py
+        run: python backend/falsifier_run.py
         continue-on-error: true
 
       # 6) Freshness check — alert (and fail the run) if any feed went stale or empty.
       #    Final step so it sees the result of this run.
       - name: Freshness check
-        run: python freshness_check.py
+        run: python backend/freshness_check.py

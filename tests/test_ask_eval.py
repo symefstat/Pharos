@@ -1,4 +1,4 @@
-"""Tests for the offline L9 Ask eval harness (eval/judges/ask_eval.py). Pure, no network."""
+"""Tests for the offline L9 Ask eval harness (backend/eval/judges/ask_eval.py). Pure, no network."""
 
 import json
 import sys
@@ -72,7 +72,7 @@ def test_demo_fixture_clean_and_dirty_rows():
 
 
 def test_questions_file_well_formed():
-    path = Path(__file__).parent.parent / "eval" / "judges" / "ask_questions.jsonl"
+    path = Path(__file__).parent.parent / "backend" / "eval" / "judges" / "ask_questions.jsonl"
     rows = [json.loads(l) for l in path.read_text().splitlines() if l.strip()]
     assert len(rows) >= 25
     types = {r["type"] for r in rows}

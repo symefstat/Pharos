@@ -4,12 +4,10 @@ name: Demo (Docker)
 # container image instead of installed at run time. Run this AFTER
 # "Demo (no Docker)" — the pair is meant to be compared.
 #
-# Why there is no `push:` to a registry here: symefstat/LODESTAR is a PRIVATE
-# repo, and private repos get 500 MB of free GHCR package storage. An image
-# carrying pandas + streamlit + yfinance + vl-convert-python would likely
-# exceed that, and with GitHub's default $0 spending limit the push would be
-# blocked rather than billed. So this builds the image and uses it locally on
-# the runner, which costs no storage and still demonstrates both payoffs:
+# This is an on-demand CI demonstration, not the production image pipeline, so
+# it builds the image and uses it locally on the runner instead of publishing a
+# second artifact to a registry. That demonstrates both payoffs without adding
+# registry maintenance:
 #
 #   • layer caching  — the second run's build is dramatically faster than the
 #                      first, because no requirements file changed
@@ -17,9 +15,8 @@ name: Demo (Docker)
 #                      install, where demo.yml can only afford three
 #                      stdlib-only test modules
 #
-# The real-world version pushes to a registry so OTHER workflows (e.g. the
-# 6-hour pipeline) can pull it. That is the setup worth adopting if this repo
-# ever goes public, or once the CI image is slimmed down.
+# A production pipeline can publish a separately sized runtime image when other
+# workflows need to consume it.
 
 on:
   workflow_dispatch:
@@ -65,7 +62,7 @@ jobs:
       - name: Compile (inside the container)
         run: |
           docker run --rm -v "$GITHUB_WORKSPACE:/app" -w /app pharos-ci:local \
-            python -m compileall -q analytics home_news toqan vectordb eval finance backend
+            python -m compileall -q backend tests
 
       - name: Mark test start
         run: echo "TEST_START=$(date +%s)" >> "$GITHUB_ENV"

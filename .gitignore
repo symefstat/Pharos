@@ -37,6 +37,7 @@ logs/
 
 # Local eval scratch (regenerable seed; the real gold_labels.jsonl can be committed)
 eval/gold_labels.seed.jsonl
+backend/eval/gold_labels.seed.jsonl
 
 # Node
 node_modules/
@@ -54,6 +55,8 @@ Skills/*
 # Eval screenshot evidence is kept local (16MB of PNGs; reports reference them)
 eval/reports/screenshots/
 eval/reports/screenshots_redesign/
+backend/eval/reports/screenshots/
+backend/eval/reports/screenshots_redesign/
 
 # LinkedIn/marketing media — local only, never shipped
 linkedin-assets/

@@ -3,7 +3,7 @@ name: CI
 # Quality gate on every push to main and every PR: byte-compile, run the test
 # suite, and smoke the eval harness against the example gold set. No secrets and
 # no live calls — the real eval-vs-gold (--from-supabase) is a local/manual step
-# that runs once eval/gold_labels.jsonl is labelled.
+# that runs once backend/eval/gold_labels.jsonl is labelled.
 
 on:
   push:
@@ -36,7 +36,7 @@ jobs:
 
       # 1) Byte-compile the tracked source (mirrors the local py_compile gate).
       - name: Compile
-        run: python -m compileall -q analytics home_news eval finance toqan vectordb tests *.py
+        run: python -m compileall -q backend tests
 
       # 2) Full test suite (pure logic + headless render checks).
       - name: Tests
@@ -46,5 +46,5 @@ jobs:
       #    Proves the harness imports and scores end-to-end without a DB.
       - name: Eval smoke
         run: |
-          python eval_run.py --gold eval/gold_labels.example.jsonl --validate-gold
-          python eval_run.py --gold eval/gold_labels.example.jsonl --from-fixture eval/predictions.fixture.jsonl
+          python backend/eval_run.py --gold backend/eval/gold_labels.example.jsonl --validate-gold
+          python backend/eval_run.py --gold backend/eval/gold_labels.example.jsonl --from-fixture backend/eval/predictions.fixture.jsonl

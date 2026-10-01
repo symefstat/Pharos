@@ -77,7 +77,7 @@ def build_forecasts() -> dict:
 
     # NOTE: no `headline`/`tagline`/`state` here — those duplicate the Briefing
     # calibration banner (`/api/briefing`); this page derives its scorecard from
-    # `track_record`/`calibration_verdict` directly (see eval/reports/10_app_parity.md §2.11).
+    # `track_record`/`calibration_verdict` directly (see backend/eval/reports/10_app_parity.md §2.11).
     # `track_record` / `categories` carry the naive-baseline fields (base_rate,
     # baseline_accuracy, baseline_brier, brier_skill, accuracy_edge_pp) — merged in
     # by analytics.forecasts.track_record and passed through here verbatim.

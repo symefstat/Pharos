@@ -57,22 +57,22 @@ jobs:
       #    No `|| true` — a real failure now surfaces (per-ticker + per-upsert it already
       #    degrades internally, so this only fails on a genuine, total failure).
       - name: Enrich company financials
-        run: python financials_run.py
+        run: python backend/financials_run.py
 
       # 2) Generate + resolve forecasts for 🔮 (reads the cached Strategist brief).
       - name: Generate & resolve forecasts
-        run: python forecast_run.py
+        run: python backend/forecast_run.py
 
       # 3) Stage-transition alerts — notify (email + webhook) the moment a
       #    lifecycle move confirms (2nd consecutive daily snapshot), deep-linked
       #    to the technology's dossier. Daily cadence = alerts exactly once.
       - name: Stage-transition alerts
-        run: python transition_alerts_run.py
+        run: python backend/transition_alerts_run.py
         continue-on-error: true
 
       # 4) Daily briefing digest — the strategist read, actions + falsifiers,
       #    fresh stage moves, and the honest trust line, delivered to
       #    DIGEST_EMAILS / ALERT_WEBHOOK. Dry-runs until channels are configured.
       - name: Briefing digest
-        run: python digest_run.py
+        run: python backend/digest_run.py
         continue-on-error: true

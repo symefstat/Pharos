@@ -1,4 +1,4 @@
-"""Tests for Ask Lodestar's pure retrieval/pack logic (no network)."""
+"""Tests for Ask Lodestar's pure retribackend/eval/pack logic (no network)."""
 
 from analytics.ask import (
     _merge_stories,

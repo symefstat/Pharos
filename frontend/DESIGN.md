@@ -1,4 +1,4 @@
-# Lodestar design foundation (Phase A)
+# Pharos design foundation (Phase A)
 
 The contract every Phase B tab agent builds against. Three artifacts:
 
@@ -193,7 +193,7 @@ All in `src/components/viz.tsx`. Plain SVG, no chart library, dumb/
 presentational (data via props), `cn()` for class merging. `charts.tsx`
 (recharts) keeps working as-is; Phase B migrates page-by-page onto these.
 
-| Primitive | The data's job | Lodestar examples |
+| Primitive | The data's job | Pharos examples |
 |---|---|---|
 | `StatTile` | a single current value (+ delta, + trend) | KPI rows on every tab: tracked cap, move counts, hit-rate, coverage |
 | `HBarList` | compare magnitude across named categories | momentum leaderboard (± from zero), share-of-voice (with drift `chip`s), intensity top-N, concentration, co-mentions, reactions |
