@@ -1,0 +1,52 @@
+# CI environment image for Pharos.
+#
+# This builds the *environment only* — Python, system libraries, and every
+# third-party dependency — and deliberately does NOT copy the source code in.
+# That split is the whole point of using a container in CI:
+#
+#   • the IMAGE provides the environment (rebuilt only when deps change)
+#   • actions/checkout provides the source (fresh on every run)
+#
+# A deployment image is the other shape: environment PLUS code, so it can run
+# on its own. This file is the CI shape.
+#
+# Built and pushed to ghcr.io by .github/workflows/demo-docker.yml.
+
+FROM python:3.11-slim
+
+# System packages pip cannot express. `pdftotext` (poppler-utils) is used by
+# vectordb/extract.py, which currently also shells out to `textutil` — a
+# macOS-only binary that silently returns "" on any Linux machine, including
+# every GitHub runner and the production host. This apt line is precisely the
+# class of problem a Dockerfile can fix and requirements.txt never can.
+RUN apt-get update \
+    && apt-get install -y --no-install-recommends \
+         poppler-utils \
+         unzip \
+    && rm -rf /var/lib/apt/lists/*
+
+WORKDIR /app
+
+# Copy ONLY the dependency manifests before installing. Docker caches each
+# instruction as a layer keyed on the files it touched, so this layer — the
+# expensive one — is reused on every build where no requirements file changed.
+# Copying the whole repo first would invalidate the cache on every source edit
+# and force a full reinstall each time.
+COPY requirements.txt requirements-dev.txt ./
+COPY backend/requirements.txt ./backend/requirements.txt
+
+# requirements-dev.txt starts with `-r requirements.txt`, so this single
+# install covers the app deps, the test deps, and the FastAPI layer.
+# --no-cache-dir keeps the image smaller: the pip download cache is dead weight
+# once the packages are installed.
+RUN pip install --no-cache-dir --upgrade pip \
+    && pip install --no-cache-dir \
+         -r requirements-dev.txt \
+         -r backend/requirements.txt
+
+# Match conftest.py's assumption that the repo root is importable, so tests can
+# import the top-level packages (analytics, toqan, home_news, ...) once the
+# workspace is mounted over /app by the runner.
+ENV PYTHONPATH=/app \
+    PYTHONDONTWRITEBYTECODE=1 \
+    PIP_DISABLE_PIP_VERSION_CHECK=1

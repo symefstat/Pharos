@@ -1,0 +1,548 @@
+{
+ "https://www.empr.com/home/news/investigational-zika-vaccine-gets-fast-track-status/": {
+  "maturity_stage": "research",
+  "adoption_stage": "n/a",
+  "strategic_move": "none",
+  "lens_rationale": "Fast track status for investigational vaccine \u2192 research; regulatory milestone, not yet commercial.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.news-medical.net/news/20190923/Advancing-towards-10025-effective-herpes-vaccine.aspx": {
+  "maturity_stage": "research",
+  "adoption_stage": "n/a",
+  "strategic_move": "none",
+  "lens_rationale": "Development progress toward vaccine \u2192 research; no buyable product yet.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.upi.com/Health_News/2019/09/27/Herpes-vaccine-shows-promise-in-mice/3061569558422/": {
+  "maturity_stage": "research",
+  "adoption_stage": "n/a",
+  "strategic_move": "none",
+  "lens_rationale": "Mouse study showing promise \u2192 research; preclinical lab result.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.forbes.com/sites/danadovey/2019/09/24/herpes-vaccine-candidate-moves-closer-to-human-trials/": {
+  "maturity_stage": "research",
+  "adoption_stage": "n/a",
+  "strategic_move": "none",
+  "lens_rationale": "Candidate approaching human trials \u2192 research; still pre-commercial.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.precisionvaccinations.com/university-pennsylvania-researchers-say-trivalent-nucleoside-modified-mrna-lnp-vaccine-promising": {
+  "maturity_stage": "research",
+  "adoption_stage": "n/a",
+  "strategic_move": "none",
+  "lens_rationale": "Animal experiment result \u2192 research; preclinical testing.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://immunology.sciencemag.org/content/4/39/eaaw7083.full": {
+  "maturity_stage": "research",
+  "adoption_stage": "n/a",
+  "strategic_move": "none",
+  "lens_rationale": "Technical research finding on mRNA mechanism \u2192 research; lab result.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.futurity.org/genital-herpes-vaccine-immune-systems-2166302/": {
+  "maturity_stage": "research",
+  "adoption_stage": "n/a",
+  "strategic_move": "none",
+  "lens_rationale": "Animal test result \u2192 research; preclinical study.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.medgadget.com/2019/09/mrna-vaccines-and-therapeutics-market-2019-top-key-players-are-moderna-translate-bio-argos-therapeutics-inc-nasdaq-args-sangamo-therapeutics-inc-cellart-and-forecast-to-2025.html": {
+  "maturity_stage": "n/a",
+  "adoption_stage": "n/a",
+  "strategic_move": "none",
+  "lens_rationale": "Market landscape report \u2192 n/a; industry analysis, not specific technology development.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.benzinga.com/general/biotech/19/09/14419351/the-daily-biotech-pulse-ardelyx-awaits-ruling-on-constipation-drug-double-dose-of-good-news-for-r": {
+  "maturity_stage": "n/a",
+  "adoption_stage": "n/a",
+  "strategic_move": "none",
+  "lens_rationale": "Market roundup covering multiple companies; no specific technology (Step 1) \u2192 all n/a/none.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.eurekalert.org/pub_releases/2019-09/uops-npv092019.php": {
+  "maturity_stage": "research",
+  "adoption_stage": "n/a",
+  "strategic_move": "none",
+  "lens_rationale": "Vaccine tested in animal models; no commercial product available (research boundary) \u2192 research.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.newscientist.com/article/2217255-herpes-vaccine-to-be-tested-in-humans-after-best-result-yet-in-animals/": {
+  "maturity_stage": "research",
+  "adoption_stage": "n/a",
+  "strategic_move": "none",
+  "lens_rationale": "Vaccine moving to human trials; still pre-commercial research (research stage) \u2192 research.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.pharmalive.com/curevac-and-yale-team-up-for-mrna-based-lung-therapies/": {
+  "maturity_stage": "research",
+  "adoption_stage": "n/a",
+  "strategic_move": "collaboration",
+  "lens_rationale": "Company-university R&D alliance for early mRNA therapies (collaboration); pre-commercial \u2192 research.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.nature.com/articles/d41586-019-03072-8": {
+  "maturity_stage": "n/a",
+  "adoption_stage": "n/a",
+  "strategic_move": "none",
+  "lens_rationale": "Educational feature on mRNA technology; no specific product action (Step 1) \u2192 n/a/none.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.bcm.edu/news/awards-honors-faculty-staff/cristina-poveda-cuevas-2019-stat-wunderkind": {
+  "maturity_stage": "n/a",
+  "adoption_stage": "n/a",
+  "strategic_move": "none",
+  "lens_rationale": "Individual award announcement; no technology or strategic action (Step 1) \u2192 n/a/none.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://finance.yahoo.com/news/moderna-present-data-two-prophylactic-110000656.html": {
+  "maturity_stage": "research",
+  "adoption_stage": "n/a",
+  "strategic_move": "none",
+  "lens_rationale": "Clinical trial data presentation at conference; pre-commercial stage (research) \u2192 research.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.pharmaceutical-business-review.com/news/moderna-propionic-acidemia/": {
+  "maturity_stage": "research",
+  "adoption_stage": "n/a",
+  "strategic_move": "none",
+  "lens_rationale": "FDA fast-track designation during development; regulatory milestone, no product (research) \u2192 research.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.fiercebiotech.com/research/watch-out-amgen-and-mirati-boehringer-s-pan-kras-inhibitor-enters-clinic": {
+  "maturity_stage": "research",
+  "adoption_stage": "n/a",
+  "strategic_move": "entry-timing",
+  "lens_rationale": "Clinical trial entry is pre-commercial \u2192 research; competitive positioning against Amgen/Mirati \u2192 entry-timing.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.fool.com/earnings/call-transcripts/2019/11/06/moderna-inc-mrna-q3-2019-earnings-call-transcript.aspx?source=iedfolrf0000001": {
+  "maturity_stage": "n/a",
+  "adoption_stage": "n/a",
+  "strategic_move": "none",
+  "lens_rationale": "Earnings call transcript with no specific technology \u2192 n/a; routine financial report \u2192 none.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://news.cgtn.com/news/2020-06-29/China-s-first-COVID-19-mRNA-vaccine-starts-phase-I-clinical-trial-RILRptOyLS/": {
+  "maturity_stage": "research",
+  "adoption_stage": "n/a",
+  "strategic_move": "entry-timing",
+  "lens_rationale": "Phase I trial is pre-commercial \u2192 research; China's first mRNA vaccine entry \u2192 entry-timing.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.nationalgeographic.com/science/2020/05/coronavirus-vaccine-passes-first-human-trial-but-is-it-frontrunner-cvd/": {
+  "maturity_stage": "research",
+  "adoption_stage": "n/a",
+  "strategic_move": "none",
+  "lens_rationale": "Phase 2 trial is pre-commercial \u2192 research; educational explainer on mechanism \u2192 none.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.msn.com/en-us/health/medical/mrna-vaccines-what-they-are-and-how-they-work/ar-BB14uSTc": {
+  "maturity_stage": "n/a",
+  "adoption_stage": "n/a",
+  "strategic_move": "none",
+  "lens_rationale": "General technology explainer, no specific product \u2192 n/a; educational content \u2192 none.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://whdh.com/news/medford-based-biotech-company-joins-research-race-for-coronavirus-vaccine/": {
+  "maturity_stage": "research",
+  "adoption_stage": "n/a",
+  "strategic_move": "entry-timing",
+  "lens_rationale": "Joining research race is pre-commercial \u2192 research; competitive market entry \u2192 entry-timing.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.investegate.co.uk/biontech-se/gnw/biontech-to-hold-webcast-to-present-early-positive-data-from-ongoing-phase-1-2-study-of-mrna-based-vaccine-candidate-against-sars-cov-2/20200701142827H3749/": {
+  "maturity_stage": "research",
+  "adoption_stage": "n/a",
+  "strategic_move": "none",
+  "lens_rationale": "Phase 1/2 trial ongoing is pre-commercial \u2192 research; data presentation announcement \u2192 none.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://gulfnews.com/world/covid-19-mrna-vaccine-will-it-save-the-world-heres-what-you-need-to-know-1.1590913609247": {
+  "maturity_stage": "n/a",
+  "adoption_stage": "n/a",
+  "strategic_move": "none",
+  "lens_rationale": "General explainer/speculation, no specific product \u2192 n/a; educational piece \u2192 none.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.msn.com/en-us/health/medical/a-covid-19-vaccine-has-passed-its-first-human-trial-but-is-it-the-frontrunner/ar-BB14MbfD": {
+  "maturity_stage": "research",
+  "adoption_stage": "n/a",
+  "strategic_move": "none",
+  "lens_rationale": "First human trial = pre-commercial research stage; no product available yet.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.finanznachrichten.de/nachrichten-2020-07/50066459-biontech-se-biontech-to-hold-webcast-to-present-early-positive-data-from-ongoing-phase-1-2-study-of-mrna-based-vaccine-candidate-against-sars-cov-2-399.htm": {
+  "maturity_stage": "research",
+  "adoption_stage": "n/a",
+  "strategic_move": "none",
+  "lens_rationale": "Phase 1/2 clinical trial data = pre-commercial research; presenting data, no strategic move.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.finanznachrichten.de/nachrichten-2020-04/49347117-biontech-discloses-addl-details-of-pfizer-collaboration-on-covid-19-vaccine-020.htm": {
+  "maturity_stage": "research",
+  "adoption_stage": "n/a",
+  "strategic_move": "collaboration",
+  "lens_rationale": "Pfizer-BioNTech partnership for vaccine development = collaboration; pre-commercial research phase.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.pharmaceutical-technology.com/news/daiichi-sankyo-plans-covid-vaccine/": {
+  "maturity_stage": "research",
+  "adoption_stage": "n/a",
+  "strategic_move": "none",
+  "lens_rationale": "Vaccine candidate in development = research stage; announcement only, no strategic move.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.europeanpharmaceuticalreview.com/news/119464/fda-grants-fast-track-designation-to-modernas-covid-19-vaccine/": {
+  "maturity_stage": "research",
+  "adoption_stage": "n/a",
+  "strategic_move": "none",
+  "lens_rationale": "FDA Fast Track in development = research; regulatory designation, not strategic move.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://defence.pk/pdf/threads/moderna-starts-dosing-patients-in-mid-stage-coronavirus-vaccine-trial.668788/": {
+  "maturity_stage": "research",
+  "adoption_stage": "n/a",
+  "strategic_move": "none",
+  "lens_rationale": "Phase 2 trial dosing = pre-commercial research; trial progress, no strategic move.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://timesofindia.indiatimes.com/india/coronabytes/msid-77101182.cms": {
+  "maturity_stage": "n/a",
+  "adoption_stage": "n/a",
+  "strategic_move": "none",
+  "lens_rationale": "Newsletter/briefing, not specific technology = n/a; no strategic content.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.timesnownews.com/health/article/pfizer-biontech-sign-2bn-coronavirus-vaccine-with-us-govt-what-you-need-to-know-about-covid-19-mrna-vaccine/625785": {
+  "maturity_stage": "research",
+  "adoption_stage": "n/a",
+  "strategic_move": "appropriability",
+  "lens_rationale": "$2bn government contract secures distribution = appropriability; pre-approval research stage.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.cnbctv18.com/healthcare/moderna-completes-enrollment-of-phase-2-study-of-its-mrna-covid-19-vaccine-6290441.htm": {
+  "maturity_stage": "research",
+  "adoption_stage": "n/a",
+  "strategic_move": "none",
+  "lens_rationale": "Phase 2 trial enrollment, no buyable product \u2192 research; no market yet \u2192 n/a.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.financialexpress.com/lifestyle/health/covid-19-department-of-biotechnology-provides-seed-funding-for-vaccine-candidate/2034225/": {
+  "maturity_stage": "research",
+  "adoption_stage": "n/a",
+  "strategic_move": "none",
+  "lens_rationale": "Seed funding for vaccine candidate, pre-commercial \u2192 research; no market \u2192 n/a.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.latestly.com/lifestyle/health-wellness/chinese-covid-19-vaccine-candidate-produces-immune-response-in-animals-study-1914616.html": {
+  "maturity_stage": "research",
+  "adoption_stage": "n/a",
+  "strategic_move": "none",
+  "lens_rationale": "Animal study results, lab trial \u2192 research; no commercial product \u2192 n/a.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.prokerala.com/news/articles/a1058599.html": {
+  "maturity_stage": "research",
+  "adoption_stage": "n/a",
+  "strategic_move": "collaboration",
+  "lens_rationale": "Tesla (automotive) entering RNA manufacturing for COVID \u2192 collaboration; vaccine in trials \u2192 research.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://news.yahoo.com/don-t-breathe-sigh-relief-091945095.html": {
+  "maturity_stage": "n/a",
+  "adoption_stage": "n/a",
+  "strategic_move": "none",
+  "lens_rationale": "Opinion commentary, not about specific technology \u2192 n/a; no strategic action \u2192 none.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.business-standard.com/article/current-affairs/tesla-building-rna-microfactories-to-help-fight-coronavirus-elon-musk-120070300294_1.html": {
+  "maturity_stage": "research",
+  "adoption_stage": "n/a",
+  "strategic_move": "collaboration",
+  "lens_rationale": "Tesla (automotive) entering RNA manufacturing for COVID \u2192 collaboration; vaccine in trials \u2192 research.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.investors.com/news/technology/cvac-stock-latest-to-gain-in-coronavirus-vaccine-race/": {
+  "maturity_stage": "research",
+  "adoption_stage": "n/a",
+  "strategic_move": "appropriability",
+  "lens_rationale": "EC supply contract to secure market access \u2192 appropriability; vaccine candidate pre-commercial \u2192 research.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.dnaindia.com/health/report-pune-based-firm-plans-clinical-trial-of-covid-19-vaccine-by-year-end-gets-seed-funding-from-centre-2833856": {
+  "maturity_stage": "research",
+  "adoption_stage": "n/a",
+  "strategic_move": "none",
+  "lens_rationale": "Seed funding, planning clinical trials \u2192 research; no commercial product \u2192 n/a.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://theconversation.com/eyeing-local-development-a-look-at-the-3-australian-covid-vaccine-candidates-to-receive-a-government-boost-146567": {
+  "maturity_stage": "research",
+  "adoption_stage": "n/a",
+  "strategic_move": "collaboration",
+  "lens_rationale": "Vaccine candidates receiving government boost \u2192 research; government partnership \u2192 collaboration.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.gizmodo.com.au/2020/09/a-look-at-the-3-australian-covid-vaccine-candidates-to-receive-a-government-boost/": {
+  "maturity_stage": "research",
+  "adoption_stage": "n/a",
+  "strategic_move": "collaboration",
+  "lens_rationale": "Vaccine candidates receiving government boost \u2192 research; government partnership \u2192 collaboration.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "http://www.globenewswire.com/news-release/2021/02/22/2179264/0/en/Global-mRNA-Vaccine-And-Therapeutics-Market-2021-Analysis-By-Advanced-Technology-Size-Share-Industry-Dynamic-Drivers-Trends-Challenges-Restraints-Market-Contribution-Top-Companies-.html": {
+  "maturity_stage": "n/a",
+  "adoption_stage": "n/a",
+  "strategic_move": "none",
+  "lens_rationale": "Market analysis report, not about specific technology \u2192 n/a.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.bmj.com/content/372/bmj.n308/rr-0": {
+  "maturity_stage": "n/a",
+  "adoption_stage": "n/a",
+  "strategic_move": "none",
+  "lens_rationale": "Generic title with no specific development \u2192 n/a.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.thepeninsulaqatar.com/article/12/03/2021/QU-holds-seminar-on-COVID-vaccine-development": {
+  "maturity_stage": "n/a",
+  "adoption_stage": "n/a",
+  "strategic_move": "none",
+  "lens_rationale": "Educational seminar, not about specific technology \u2192 n/a.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.chinadaily.com.cn/a/202103/08/WS60456e3aa31024ad0baad72c_3.html": {
+  "maturity_stage": "n/a",
+  "adoption_stage": "n/a",
+  "strategic_move": "none",
+  "lens_rationale": "Geopolitical story about keeping promises, not technology \u2192 n/a.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "http://www.xinhuanet.com/english/asiapacific/2021-02/19/c_139752395.htm": {
+  "maturity_stage": "research",
+  "adoption_stage": "n/a",
+  "strategic_move": "appropriability",
+  "lens_rationale": "Starting clinical trials \u2192 research; building domestic capability \u2192 appropriability.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "http://english.sina.com/world/as/2021-02-19/detail-ikftssap7111783.shtml": {
+  "maturity_stage": "research",
+  "adoption_stage": "n/a",
+  "strategic_move": "appropriability",
+  "lens_rationale": "Starting clinical trials \u2192 research; building domestic capability \u2192 appropriability.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.prokerala.com/news/articles/a1132517.html": {
+  "maturity_stage": "research",
+  "adoption_stage": "n/a",
+  "strategic_move": "appropriability",
+  "lens_rationale": "Clinical trials are pre-commercial; domestic vaccine development for capability/IP control.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "http://www.ecns.cn/news/2021-02-19/detail-ihahvyux8632187.shtml": {
+  "maturity_stage": "research",
+  "adoption_stage": "n/a",
+  "strategic_move": "appropriability",
+  "lens_rationale": "Clinical trials are pre-commercial; domestic vaccine development for capability/IP control.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.thestar.com.my/news/nation/2021/02/07/what-and-how-does-the-comirnaty-vaccine-work": {
+  "maturity_stage": "growth",
+  "adoption_stage": "early-majority",
+  "strategic_move": "none",
+  "lens_rationale": "Explainer about mass-produced vaccine during rapid scaling with mainstream deployment.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.benzinga.com/general/biotech/21/03/20281905/daiichi-takes-mrna-covid-19-vaccine-into-human-trials": {
+  "maturity_stage": "research",
+  "adoption_stage": "n/a",
+  "strategic_move": "entry-timing",
+  "lens_rationale": "Human trials are pre-commercial; Daiichi's entry into COVID vaccine market.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.medpagetoday.com/infectiousdisease/covid19/91446": {
+  "maturity_stage": "n/a",
+  "adoption_stage": "n/a",
+  "strategic_move": "none",
+  "lens_rationale": "Regulatory guidance with no specific technology development or strategic action.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://medicalxpress.com/news/2021-02-nationwide-bnt162b2-mrna-vaccine-effective.html": {
+  "maturity_stage": "growth",
+  "adoption_stage": "early-majority",
+  "strategic_move": "none",
+  "lens_rationale": "Nationwide study of mass-deployed vaccine during rapid scaling phase.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.news-medical.net/news/20211107/Rapid-antibody-response-induced-by-mRNA-COVID-vaccines-in-mice.aspx": {
+  "maturity_stage": "research",
+  "adoption_stage": "n/a",
+  "strategic_move": "none",
+  "lens_rationale": "Preclinical mouse study with no commercial product yet.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.bmj.com/content/375/bmj.n2744/rr": {
+  "maturity_stage": "growth",
+  "adoption_stage": "early-majority",
+  "strategic_move": "none",
+  "lens_rationale": "Commentary on mass-deployed vaccines during scaling phase, no strategic action.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.sondakika.com/haber/haber-booster-shots-for-mrna-vaccine-starts-in-ankara-14523615/": {
+  "maturity_stage": "dominant-design",
+  "adoption_stage": "early-majority",
+  "strategic_move": "none",
+  "lens_rationale": "Booster rollout to 18+ population shows standardized, mass-produced platform \u2192 dominant-design; mainstream pragmatist adoption \u2192 early-majority.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.bmj.com/content/375/bmj.n2635/rr-17": {
+  "maturity_stage": "dominant-design",
+  "adoption_stage": "early-majority",
+  "strategic_move": "none",
+  "lens_rationale": "Data review of mass-produced Pfizer vaccine \u2192 dominant-design; broadly deployed, mainstream use \u2192 early-majority; no strategic move.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.taiwannews.com.tw/en/news/4345932": {
+  "maturity_stage": "dominant-design",
+  "adoption_stage": "early-majority",
+  "strategic_move": "none",
+  "lens_rationale": "Universal access policy for established mRNA platform \u2192 dominant-design; broad mainstream coverage plan \u2192 early-majority; policy, no strategy.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.webmd.com/vaccines/covid-19-vaccine/news/20211110/whistleblowers-key-role-enforcing-vaccine-mandate": {
+  "maturity_stage": "n/a",
+  "adoption_stage": "n/a",
+  "strategic_move": "none",
+  "lens_rationale": "Enforcement mechanism for mandate, no technology development or product adoption \u2192 n/a stages; no strategic move evident.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.yahoo.com/now/genscript-probio-abogen-biosciences-walvax-023900738.html": {
+  "maturity_stage": "growth",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "collaboration",
+  "lens_rationale": "Three-party collaboration for commercial manufacturing \u2192 collaboration strategy; scaling for market \u2192 growth; awaiting regulatory approval \u2192 early-adopters.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.straitstimes.com/life/should-you-mix-and-match-covid-19-vaccines-for-your-booster-shot": {
+  "maturity_stage": "dominant-design",
+  "adoption_stage": "early-majority",
+  "strategic_move": "none",
+  "lens_rationale": "Advisory on established vaccine mix strategies \u2192 dominant-design; mainstream booster programs \u2192 early-majority; informational, no strategic move.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.europeanpharmaceuticalreview.com/podcast/164250/epr-podcast-episode-4-uv-vis-in-mrna-vaccine-qc-with-dr-hans-joachim-muhr-mettler-toledo/": {
+  "maturity_stage": "mature",
+  "adoption_stage": "early-majority",
+  "strategic_move": "none",
+  "lens_rationale": "Podcast on mature UV/Vis QC technique in standard mRNA manufacturing \u2192 mature; routine production use \u2192 early-majority.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.sify.com/movies/experimental-mrna-hiv-vaccine-safe-shows-promise-in-animals-news-bollywood-vmklPthbajdbf.html": {
+  "maturity_stage": "research",
+  "adoption_stage": "innovators",
+  "strategic_move": "none",
+  "lens_rationale": "Animal trials of experimental HIV vaccine \u2192 research stage; preclinical testing \u2192 innovators; research report, no strategic move.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://freerepublic.com/focus/f-chat/4021550/posts": {
+  "maturity_stage": "n/a",
+  "adoption_stage": "n/a",
+  "strategic_move": "none",
+  "lens_rationale": "Speculation about vaccines; no specific technology development or strategic action reported.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/gennova-to-finish-phase-2-3-trials-of-its-mrna-jab-by-january-2022/articleshow/88238968.cms": {
+  "maturity_stage": "research",
+  "adoption_stage": "n/a",
+  "strategic_move": "none",
+  "lens_rationale": "Phase 2/3 trials, no buyable product \u2192 research; no commercial adoption possible \u2192 n/a; routine milestone.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.texasguardian.com/news/266884213/mrna-vaccine-market-2020-global-growth-opportunities-consumption-revenue-and-forecast-to-2026": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "none",
+  "lens_rationale": "2020 mRNA vaccines just commercialized, no dominant design \u2192 emerging; early rollout \u2192 early-adopters; market report.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.msn.com/en-gb/news/world/covid-vaccines-scott-morrison-announces-two-new-deals-but-australia-at-end-of-long-queue/ar-BB1aHHXK?MSCC=1604329978": {
+  "maturity_stage": "n/a",
+  "adoption_stage": "n/a",
+  "strategic_move": "none",
+  "lens_rationale": "Procurement/policy story with no specific technology \u2192 n/a per S-curve/Rogers frameworks.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.benzinga.com/general/biotech/20/11/18128283/4-biotech-companies-working-on-rna-therapies": {
+  "maturity_stage": "n/a",
+  "adoption_stage": "n/a",
+  "strategic_move": "none",
+  "lens_rationale": "Industry overview without specific product/stage information \u2192 n/a stages.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.biospace.com/article/releases/precision-nanosystems-receives-18-2-million-from-the-government-of-canada-to-develop-an-rna-vaccine-for-covid-19/": {
+  "maturity_stage": "research",
+  "adoption_stage": "innovators",
+  "strategic_move": "collaboration",
+  "lens_rationale": "Development funding, no commercial product yet \u2192 research; trial phase \u2192 innovators; government partnership \u2192 collaboration.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.herald.co.zw/coronavirus-vaccines-from-astrazeneca-moderna-and-pfizer-what-is-the-difference/": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "standards-battle",
+  "lens_rationale": "Three competing vaccine platforms deployed \u2192 emerging (no dominant design); early rollout \u2192 early-adopters; competing standards.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.investegate.co.uk/rentschler-biopharma-se/eqs/joining-forces-against-sars-cov-2--rentschler-biopharma-contributes-to-manufacturing-of-covid-19-mrna-vaccine/20201008080012EYLFS/": {
+  "maturity_stage": "growth",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "collaboration",
+  "lens_rationale": "Manufacturing partnership to scale production \u2192 growth (rapid scaling); early rollout \u2192 early-adopters; partnership \u2192 collaboration.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "http://www.newsonair.com/News?title=India%E2%80%99s-first-indigenous-mRNA-vaccine-candidate-receives-approval-to-initiate-Phase-1-and-2-human-clinical-trials&id=405933": {
+  "maturity_stage": "research",
+  "adoption_stage": "innovators",
+  "strategic_move": "entry-timing",
+  "lens_rationale": "Phase 1/2 trial approval, pre-commercial \u2192 research; trials \u2192 innovators; India's first indigenous vaccine \u2192 entry-timing.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "http://www.xinhuanet.com/english/2020-11/23/c_139538056.htm": {
+  "maturity_stage": "research",
+  "adoption_stage": "innovators",
+  "strategic_move": "entry-timing",
+  "lens_rationale": "Human trial stage, pre-commercial \u2192 research; trials \u2192 innovators; Thailand entering vaccine market \u2192 entry-timing.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://theconversation.com/australia-may-miss-out-on-several-covid-vaccines-if-it-cant-make-mrna-ones-locally-148996": {
+  "maturity_stage": "growth",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "none",
+  "lens_rationale": "Global mass production and rapid scaling \u2192 growth; competitive allocation, not yet universal \u2192 early-adopters; policy discussion \u2192 none.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.thestar.com.my/aseanplus/aseanplus-news/2020/11/24/two-thai-covid-19-vaccines-getting-to-human-trial-stage": {
+  "maturity_stage": "research",
+  "adoption_stage": "n/a",
+  "strategic_move": "none",
+  "lens_rationale": "Human trials, no commercial product yet \u2192 research; no product to adopt \u2192 n/a; development milestone \u2192 none.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://i.stuff.co.nz/world/australia/300147101/covid19-australia-records-zero-community-cases-on-track-for-internal-borders-to-open-by-christmas": {
+  "maturity_stage": "n/a",
+  "adoption_stage": "n/a",
+  "strategic_move": "none",
+  "lens_rationale": "Public health outcome and border policy; no specific technology \u2192 maturity/adoption n/a, strategy none.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.indiatvnews.com/news/india/mrna-vaccine-gennova-human-trials-covid-19-vaccine-india-latest-update-670774": {
+  "maturity_stage": "research",
+  "adoption_stage": "n/a",
+  "strategic_move": "none",
+  "lens_rationale": "News item without commercialization signal \u2192 research (tie-breaker); no adoption evidence \u2192 n/a; report \u2192 none.",
+  "lens_prompt_version": "mot-lens-v3"
+ }
+}

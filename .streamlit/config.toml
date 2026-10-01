@@ -1,0 +1,9 @@
+# App-wide theme — light, professional, corporate-blue accent.
+# Streamlit auto-applies this to widgets and (via theme="streamlit") to charts.
+[theme]
+base = "light"
+primaryColor = "#4f86c6"            # corporate blue — buttons, links, accents
+backgroundColor = "#ffffff"
+secondaryBackgroundColor = "#f4f6fa"  # cards, sidebar, metric tiles
+textColor = "#1f2733"
+font = "sans serif"

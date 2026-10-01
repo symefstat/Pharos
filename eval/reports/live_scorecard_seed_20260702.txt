@@ -1,0 +1,64 @@
+================================================================
+Lodestar eval scorecard
+================================================================
+gold labels: 200   predictions: 146   joined on url: 146
+
+Per-field accuracy (vs gold):
+  maturity_stage    58.2%  (n=146, correct=85)  (54 gold rows had no prediction)
+      dominant-design → emerging×1, growth×2, n/a×7
+      emerging → growth×2, n/a×3, research×10
+      growth → dominant-design×1, emerging×11, n/a×6
+      mature → dominant-design×3, emerging×3, growth×2, n/a×5
+      n/a → emerging×2, mature×1
+      research → n/a×2
+  adoption_stage    67.1%  (n=146, correct=98)  (54 gold rows had no prediction)
+      early-adopters → early-majority×1, innovators×4, n/a×3
+      early-majority → early-adopters×18, innovators×1, late-majority×1, n/a×6
+      innovators → early-adopters×2, n/a×1
+      late-majority → early-majority×1, n/a×1
+      n/a → early-majority×5, innovators×4
+  business_impact   95.9%  (n=146, correct=140)  (54 gold rows had no prediction)
+      contextual → material×1, none×1
+      material → contextual×4
+  scope             95.2%  (n=146, correct=139)  (54 gold rows had no prediction)
+      deal → regulatory×1, single-company×4
+      single-company → comparison×1, regulatory×1
+
+Extraction completeness (share of scored predictions with a value):
+  maturity_stage   100.0%  (146/146)
+  adoption_stage   100.0%  (146/146)
+  business_impact  100.0%  (146/146)
+  scope            100.0%  (146/146)
+
+Extraction provenance (how each field was obtained):
+  business_impact  agent×107
+  companies        agent×81, missing×26
+  country          agent×107
+  published_at     agent×107
+  scope            agent×107
+  sentiment        agent×107
+  source_name      agent×107
+  summary          agent×107
+  title            agent×107
+  url              agent×107
+
+Rollup integrity [ev]: CLEAN  (14 days checked)
+
+Rollup integrity [ai-energy]: CLEAN  (27 days checked)
+
+Rollup integrity [disruption]: CLEAN  (29 days checked)
+
+Rollup integrity [chips]: CLEAN  (20 days checked)
+
+Rollup integrity [geopolitics]: CLEAN  (21 days checked)
+
+Rollup integrity [climate]: CLEAN  (27 days checked)
+
+Rollup integrity [biotech]: CLEAN  (27 days checked)
+
+Rollup integrity [software]: CLEAN  (19 days checked)
+
+Rollup integrity [fintech]: CLEAN  (20 days checked)
+
+Rollup integrity [defense]: CLEAN  (28 days checked)
+================================================================

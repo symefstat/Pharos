@@ -1,0 +1,18 @@
+# Secret-scan + hygiene hooks, so a real key (e.g. the Supabase service-role key)
+# can't be committed again. Install once per clone:
+#   pip install pre-commit && pre-commit install
+# Run against the whole repo on demand:  pre-commit run --all-files
+repos:
+  - repo: https://github.com/gitleaks/gitleaks
+    rev: v8.18.4
+    hooks:
+      - id: gitleaks          # scans staged changes for secrets (keys, tokens, .env values)
+
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.6.0
+    hooks:
+      - id: detect-private-key   # blocks committing private keys
+      - id: check-added-large-files
+        args: ["--maxkb=1024"]
+      - id: end-of-file-fixer
+      - id: trailing-whitespace

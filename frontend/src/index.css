@@ -1,0 +1,196 @@
+@import "tailwindcss";
+
+/* ── Design tokens — clean & minimal, light (Linear / Stripe register) ──────── */
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI",
+    Roboto, sans-serif;
+
+  /* cool, neutral greys — high-contrast ink, deliberate muted levels */
+  --color-canvas: #fbfbfc;
+  --color-surface: #ffffff;
+  --color-ink: #16181d;
+  --color-ink-soft: #3a3f4b;
+  --color-muted: #5f636c;
+  --color-faint: #9499a3;
+  --color-line: #ededf0;
+  --color-line-strong: #e2e3e8;
+
+  /* one restrained accent, used sparingly */
+  --color-brand: #3a5cd0;
+  --color-brand-ink: #2942a6;
+  --color-brand-soft: #eef1fc;
+
+  /* semantic — meaningful colour only */
+  --color-up: #18895a;
+  --color-up-soft: #e8f4ed;
+  --color-down: #d23f3f;
+  --color-down-soft: #fbecec;
+  --color-flat: #9499a3;
+  --color-commit: #d35f5b;
+  --color-option: #4f7ad4;
+  --color-warn: #a9791f;
+  --color-warn-soft: #faf2df;
+
+  /* sidebar — same light family, set off by a hairline */
+  --color-sidebar: #f7f8fa;
+
+  /* ── Data-viz tokens (Phase A design foundation — see frontend/DESIGN.md) ──
+     Categorical: FIXED order, assigned in sequence, never cycled, never
+     repainted on refilter. Validated (dataviz six checks) on #ffffff:
+     adjacent CVD ΔE 24.2, all-pairs 12.9 — PASS. */
+  --color-cat-1: #3a5cd0; /* blue (brand) */
+  --color-cat-2: #1baf7a; /* teal */
+  --color-cat-3: #eda100; /* amber */
+  --color-cat-4: #008300; /* green */
+  --color-cat-5: #9a7ee0; /* violet */
+  --color-cat-6: #e34948; /* red */
+  --color-cat-7: #e87ba4; /* magenta */
+  --color-cat-8: #f2814a; /* orange */
+  --color-cat-other: #9499a3; /* 9th+ series folds into "Other" — never a new hue */
+
+  /* Sequential ramp — one hue (brand), light→dark, OKLCH-monotone.
+     Ordinal use (discrete ordered marks): start at seq-300 (light end ≥ 2:1). */
+  --color-seq-100: #d1defd;
+  --color-seq-200: #b5cafd;
+  --color-seq-300: #98b2f5;
+  --color-seq-400: #7c9bec;
+  --color-seq-500: #5f80dd;
+  --color-seq-600: #4767c8;
+  --color-seq-650: #334faa;
+  --color-seq-700: #233a89;
+
+  /* Diverging — two opposing hues + neutral gray midpoint (never a hue). */
+  --color-div-pos: #3a5cd0;
+  --color-div-pos-soft: #b5cafd;
+  --color-div-neg: #d23f3f;
+  --color-div-neg-soft: #f3b3b3;
+  --color-div-mid: #eef0f3;
+
+  /* Status — reserved meaning (good→critical), distinct from categorical,
+     always paired with icon + label, never used as "series N". */
+  --color-status-good: #18895a;
+  --color-status-good-soft: #e8f4ed;
+  --color-status-warning: #a9791f;
+  --color-status-warning-soft: #faf2df;
+  --color-status-serious: #c2410c;
+  --color-status-serious-soft: #fbeee6;
+  --color-status-critical: #b42328;
+  --color-status-critical-soft: #fbecec;
+
+  /* Chart chrome — text wears these, never a series color. */
+  --color-chart-ink: #16181d;
+  --color-chart-ink-2: #5f636c;
+  --color-chart-label: #9499a3;
+  --color-chart-grid: #f1f2f5;
+  --color-chart-axis: #e2e3e8;
+}
+
+/* ── Dark scheme scaffold — same slots, re-stepped for the dark surface
+   (#171a21), NOT an automatic flip. Categorical: adjacent-pair CVD passes
+   (worst ΔE 14.7), but the earlier "PASS" claim did not cover all pairs —
+   cat-5 was re-stepped from #9085e9 to #cc5cbc because the old violet sat
+   ΔE 3.1 (protanopia) from cat-1 #6383e6. Re-validated 2026-07-08: full
+   palette passes lightness/chroma/contrast, cat-5↔cat-1 protan ΔE 15.1;
+   re-run the all-pairs validation after any further palette change.
+   Activated by data-theme="dark" on <html>, stamped before first paint by
+   lib/theme-toggle.ts (toggle in the sidebar footer; "system" mode resolves
+   prefers-color-scheme in JS so this block is never duplicated in a @media).
+   Utilities read the vars at runtime, so overrides apply. */
+:root[data-theme="dark"] {
+  color-scheme: dark;
+
+  --color-canvas: #101218;
+  --color-surface: #171a21;
+  --color-ink: #e8eaf0;
+  --color-ink-soft: #c6cad4;
+  --color-muted: #9aa0ac;
+  --color-faint: #6f7683;
+  --color-line: #262a33;
+  --color-line-strong: #303543;
+  --color-sidebar: #131620;
+
+  --color-brand: #6383e6;
+  --color-brand-ink: #9db1f0;
+  --color-brand-soft: #1e2740;
+
+  --color-up: #34c383;
+  --color-up-soft: #12291f;
+  --color-down: #e25b5b;
+  --color-down-soft: #331b1b;
+  --color-flat: #6f7683;
+  --color-commit: #e07f7b;
+  --color-option: #7c9bec;
+  --color-warn: #d9a13c;
+  --color-warn-soft: #2e2412;
+
+  --color-cat-1: #6383e6;
+  --color-cat-2: #1baf7a;
+  --color-cat-3: #c98500;
+  --color-cat-4: #00993d;
+  --color-cat-5: #cc5cbc; /* magenta-violet — re-stepped off cat-1's protan confusion line */
+  --color-cat-6: #e66767;
+  --color-cat-7: #d55181;
+  --color-cat-8: #e06a36;
+  --color-cat-other: #6f7683;
+
+  /* Dark sequential: anchor flips — the light end recedes toward the dark
+     surface. Ordinal use in dark: seq-400 / seq-600 / seq-700. */
+  --color-seq-100: #202c4c;
+  --color-seq-200: #283a6c;
+  --color-seq-300: #324889;
+  --color-seq-400: #3d58a6;
+  --color-seq-500: #4968c2;
+  --color-seq-600: #5b7ddc;
+  --color-seq-650: #7294ee;
+  --color-seq-700: #8cabfa;
+
+  --color-div-pos: #6383e6;
+  --color-div-pos-soft: #283a6c;
+  --color-div-neg: #e25b5b;
+  --color-div-neg-soft: #542626;
+  --color-div-mid: #262a33;
+
+  --color-status-good: #34c383;
+  --color-status-good-soft: #12291f;
+  --color-status-warning: #d9a13c;
+  --color-status-warning-soft: #2e2412;
+  --color-status-serious: #e8703d;
+  --color-status-serious-soft: #33200f;
+  --color-status-critical: #e25b5b;
+  --color-status-critical-soft: #331b1b;
+
+  --color-chart-ink: #e8eaf0;
+  --color-chart-ink-2: #b3b9c6;
+  --color-chart-label: #7e8694;
+  --color-chart-grid: #232733;
+  --color-chart-axis: #2e3342;
+}
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+  body {
+    margin: 0;
+    background: var(--color-canvas);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-feature-settings: "cv11", "ss01";
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  .num {
+    font-variant-numeric: tabular-nums;
+    letter-spacing: -0.01em;
+  }
+  ::selection {
+    background: var(--color-brand-soft);
+  }
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-line-strong) transparent;
+}

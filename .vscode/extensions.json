@@ -1,0 +1,23 @@
+{
+  // VS Code shows these as "Workspace Recommendations" in the Extensions panel
+  // (filter: @recommended), so anyone opening this repo is offered the same set.
+  "recommendations": [
+    // Container Tools — Microsoft's container extension, formerly called simply
+    // "Docker". THE one to install: adds the Containers panel for images,
+    // containers and volumes, right-click Compose Up/Down on
+    // docker-compose.yml, attach-shell and log tailing on a running container.
+    "ms-azuretools.vscode-containers",
+
+    // Docker DX — from Docker themselves. Complements the above rather than
+    // duplicating it: linting and hover docs inside Dockerfiles and Compose
+    // files, plus vulnerability hints on base images. It is what would have
+    // flagged the trailing-comment mistake in .dockerignore.
+    "docker.docker",
+
+    // Dev Containers — optional, and a bigger commitment: it reopens the whole
+    // editor *inside* a container so Python, Node and the extensions all come
+    // from the image instead of your Mac. Worth it the day the macOS/Linux gap
+    // bites (see the textutil note in the Dockerfile); ignore it until then.
+    "ms-vscode-remote.remote-containers"
+  ]
+}

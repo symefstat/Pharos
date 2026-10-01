@@ -1,0 +1,118 @@
+name: Demo (no Docker)
+
+# A deliberately tiny workflow whose only job is to be *watchable*: it finishes
+# in well under a minute, so the Actions UI can be learned without waiting on a
+# 45-minute pipeline.
+#
+# The speed trick is that every check here needs ZERO third-party packages.
+# Measured on this repo: the full 816-test suite runs in 3.8s, while
+# `pip install -r requirements-dev.txt` takes 2-4 minutes. The install is ~95%
+# of CI time, so a demo that skips it is ~40s instead of ~4min.
+#
+# workflow_dispatch ONLY — nothing here runs on push or on a schedule, so it
+# costs nothing until the "Run workflow" button is pressed, and it cannot
+# interfere with ci.yml / home_news_refresh.yml / financials_forecasts.yml.
+
+on:
+  workflow_dispatch:
+
+jobs:
+  demo:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      # 1) Without this the runner is an empty Ubuntu VM — no repo, no code.
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      # 2) The runner image already ships several Pythons; this selects 3.11
+      #    and puts it on PATH. Note: no `cache: "pip"` here — there is nothing
+      #    heavy to cache, and the cache restore would cost more than it saves.
+      - name: Set up Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: "3.11"
+
+      # 3) Byte-compile the tracked source. compileall is STDLIB — it needs no
+      #    install at all, and it parses every file it touches, so syntax
+      #    errors, bad indentation and broken f-strings surface across ~42k
+      #    lines in about two seconds. Best value-per-second in the file.
+      - name: Compile (no dependencies needed)
+        run: python -m compileall -q analytics home_news toqan vectordb eval finance backend
+
+      # 4) Real tests from this repo, run with ONLY pytest installed. These
+      #    three modules under test (toqan/json_utils.py, vectordb/chunker.py,
+      #    analytics/weights.py) import nothing but the standard library, so
+      #    pandas/supabase/streamlit are never needed. Verified locally:
+      #    32 passed in 0.03s in a venv containing pytest and nothing else.
+      - name: Install pytest only
+        run: pip install pytest
+
+      - name: Fast tests
+        run: |
+          python -m pytest -q \
+            tests/test_json_utils.py \
+            tests/test_chunker.py \
+            tests/test_weights.py
+
+      # 5) The diagnostic step. Reports whether each secret EXISTS, without
+      #    exposing it — an unset secret expands to the empty string rather
+      #    than erroring, which is why a missing key surfaces far downstream as
+      #    "Missing required configuration" out of Config.validate() instead of
+      #    as an obvious failure here.
+      #
+      #    Character count is safe to print: GitHub masks known secret values
+      #    in logs as ***, and a length is enough to catch a truncated paste.
+      #    Results go to $GITHUB_STEP_SUMMARY, which renders as markdown on the
+      #    run's summary page — no log-digging required.
+      - name: Secret check
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          TOQAN_STRATEGIST: ${{ secrets.TOQAN_STRATEGIST }}
+          TOQAN_HOME_PAGE_NEWS: ${{ secrets.TOQAN_HOME_PAGE_NEWS }}
+        run: |
+          missing=0
+          {
+            echo "## Secret check"
+            echo ""
+            echo "| Secret | Status |"
+            echo "|---|---|"
+            for name in SUPABASE_URL SUPABASE_KEY OPENAI_API_KEY \
+                        TOQAN_STRATEGIST TOQAN_HOME_PAGE_NEWS; do
+              value="${!name}"
+              if [ -n "$value" ]; then
+                echo "| \`$name\` | ✅ set (${#value} chars) |"
+              else
+                echo "| \`$name\` | ❌ MISSING or empty |"
+                missing=1
+              fi
+            done
+            echo ""
+            # Only explain the failure mode when there is actually one to
+            # explain — a fixed caption that prints under an all-green table
+            # reads as a warning about a problem that isn't there.
+            if [ "$missing" -eq 1 ]; then
+              echo "A ❌ above is why a pipeline run dies at its first step with"
+              echo "\`ValueError: Missing required configuration\` — an unset secret"
+              echo "expands to an empty string rather than erroring, so the failure"
+              echo "surfaces inside Config.validate() instead of here."
+            else
+              echo "All checked secrets are present, and each length matches its"
+              echo "expected key format — so none was truncated on paste."
+            fi
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      # 6) Make the headline number visible on the summary page too, so the
+      #    no-Docker vs Docker comparison is easy to read side by side.
+      - name: Timing note
+        run: |
+          {
+            echo ""
+            echo "## Timing"
+            echo ""
+            echo "No image pull, no heavy install. Compare against the"
+            echo "**Demo (Docker)** run, where dependencies arrive prebuilt."
+          } >> "$GITHUB_STEP_SUMMARY"

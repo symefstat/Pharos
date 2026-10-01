@@ -1,0 +1,828 @@
+{
+ "https://cointelegraph.com/press-releases/nftnyc-the-leading-non-fungible-token-event": {
+  "maturity_stage": "n/a",
+  "adoption_stage": "n/a",
+  "strategic_move": "none",
+  "lens_rationale": "Event announcement with no specific technology deployment \u2192 n/a; no strategic move.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.prweb.com/releases/crypto_is_forever_first_luxury_crypto_collectibles_brand_to_debut_at_ces_expo_in_las_vegas/prweb16806986.htm": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "entry-timing",
+  "lens_rationale": "First luxury NFT brand debuting \u2192 emerging (commercial, no dominant design); expo targeting visionaries \u2192 early-adopters; first-mover claim \u2192 entry-timing.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.prweb.com/releases/after_ces_success_watch_skins_ceo_to_appear_at_the_blockchain_economic_forum_in_davos_switzerland/prweb16841287.htm": {
+  "maturity_stage": "n/a",
+  "adoption_stage": "n/a",
+  "strategic_move": "none",
+  "lens_rationale": "CEO forum appearance with no technology deployment \u2192 n/a; no strategic move.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.gamasutra.com/view/pressreleases/359444/F1_Delta_Time_puts_Australia_Edition_2020_race_car_NFT_up_for_charity_auction_to_support_Australia_bushfire_recovery_efforts.php": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "none",
+  "lens_rationale": "F1 gaming NFT charity auction \u2192 emerging (operational platform, no standard); collectors \u2192 early-adopters; charity event \u2192 none.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.techcentral.ie/rai-takes-lid-off-blockchain-powered-voucher-platform/": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "platform",
+  "lens_rationale": "Blockchain voucher platform unveiling \u2192 emerging (commercial, no dominant design); first customers \u2192 early-adopters; ecosystem play \u2192 platform.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.gamasutra.com/view/pressreleases/356931/F1_Delta_Time_auction_for_China_Edition_2019_Azure_Dragon_race_car_NFT_celebrates_Chinese_New_Year.php": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "none",
+  "lens_rationale": "F1 gaming NFT auction \u2192 emerging (operational platform, no standard); enthusiast collectors \u2192 early-adopters; auction event \u2192 none.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.coindesk.com/bitcoin-firms-report-uptick-in-demand-for-inheritance-services": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "none",
+  "lens_rationale": "Bitcoin estate planning service demand \u2192 emerging (niche service, multiple approaches); Bitcoin holders seeking service \u2192 early-adopters; trend report \u2192 none.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://livenews.co.nz/2020/02/04/f1-delta-time-auction-for-china-edition-2019-azure-dragon-race-car-nft-celebrates-chinese-new-year/": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "none",
+  "lens_rationale": "F1 gaming NFT auction \u2192 emerging (operational platform, no standard); enthusiast collectors \u2192 early-adopters; auction event \u2192 none.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.coindesk.com/fake-horses-real-bets-unikrn-is-putting-racetrack-nfts-on-ethereum": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "platform",
+  "lens_rationale": "NFT betting game on Ethereum, early commercial use \u2192 emerging; gaming use-case pilots \u2192 early-adopters; building on platform.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.coindesk.com/the-coronavirus-api-delivers-vital-statistics-unmediated-by-government-hands": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "appropriability",
+  "lens_rationale": "COVID API newly launched \u2192 emerging; early developer/public use \u2192 early-adopters; alternative data access \u2192 appropriability.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.prweb.com/releases/now_watch_this_new_crypto_collectible_watch_faces_to_debut_at_ces_expo_in_las_vegas/prweb16807029.htm": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "innovators",
+  "strategic_move": "entry-timing",
+  "lens_rationale": "Crypto-collectible watch faces debuting at CES \u2192 emerging; expo launch, tech enthusiasts \u2192 innovators; new market entry.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://insights.tradestation.com/2020/02/14/monex-crypto-market-weekly-february-14/": {
+  "maturity_stage": "n/a",
+  "adoption_stage": "n/a",
+  "strategic_move": "none",
+  "lens_rationale": "Market insights report, no specific technology or strategic move \u2192 n/a and none.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.crowdfundinsider.com/tag/trc-721-token-standard/": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "standards-battle",
+  "lens_rationale": "TRC-721 token standard, competing approaches \u2192 emerging; early commercial use \u2192 early-adopters; competing with ERC-721 standard.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.crowdfundinsider.com/tag/tron-foundation/": {
+  "maturity_stage": "n/a",
+  "adoption_stage": "n/a",
+  "strategic_move": "none",
+  "lens_rationale": "Organization index page, no specific technology or strategic move \u2192 n/a and none.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.coindesk.com/nft-art-sales-reached-all-time-high-of-8-2m-in-december": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "none",
+  "lens_rationale": "Record NFT sales but no dominant standard \u2192 emerging; visionary collectors, not mainstream \u2192 early-adopters.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.coindesk.com/musician-sells-nft-token-bringing-royalty-rights-for-26k-in-crypto": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "appropriability",
+  "lens_rationale": "Music rights NFT, early commercial use \u2192 emerging; single artist transaction \u2192 early-adopters; monetizing IP rights.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.fxstreet.com/cryptocurrencies/news/indian-cryptocurrency-exchange-zebpay-launches-nft-marketplace-as-fomo-gathers-pace-202011111209": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "entry-timing",
+  "lens_rationale": "NFT marketplace launch with competing platforms, no dominant design \u2192 emerging; FOMO-driven enthusiasm \u2192 early-adopters; market entry \u2192 entry-timing.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.crowdfundinsider.com/tag/superrare/": {
+  "maturity_stage": "n/a",
+  "adoption_stage": "n/a",
+  "strategic_move": "none",
+  "lens_rationale": "Tag/category page, no specific technology story \u2192 n/a across frameworks.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.crowdfundinsider.com/tag/axie-infinity/": {
+  "maturity_stage": "n/a",
+  "adoption_stage": "n/a",
+  "strategic_move": "none",
+  "lens_rationale": "Tag/category page, no specific technology story \u2192 n/a across frameworks.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.crowdfundinsider.com/tag/sorare/": {
+  "maturity_stage": "n/a",
+  "adoption_stage": "n/a",
+  "strategic_move": "none",
+  "lens_rationale": "Tag/category page, no specific technology story \u2192 n/a across frameworks.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.crowdfundinsider.com/tag/collectibles/": {
+  "maturity_stage": "n/a",
+  "adoption_stage": "n/a",
+  "strategic_move": "none",
+  "lens_rationale": "Tag/category page, no specific technology story \u2192 n/a across frameworks.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.openpr.com/news/2219779/uply-media-inc-shows-how-to-profit-from-cryptocurrency-domains": {
+  "maturity_stage": "n/a",
+  "adoption_stage": "n/a",
+  "strategic_move": "none",
+  "lens_rationale": "How-to guide on crypto domains, not a technology development story \u2192 n/a.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.tmcnet.com/usubmit/2020/12/29/9281920.htm": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "platform",
+  "lens_rationale": "Phase 1 NFT DAO launch, multiple approaches \u2192 emerging; targets creators/collectors (enthusiasts) \u2192 early-adopters; DAO ecosystem \u2192 platform.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://mondovisione.com/media-and-resources/news/zebpay-to-launch-indias-first-non-fungible-crypto-token-and-marketplace/": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "entry-timing",
+  "lens_rationale": "NFT marketplace launch, competing platforms \u2192 emerging; early Indian market \u2192 early-adopters; 'India First' first-mover claim \u2192 entry-timing.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.coinspeaker.com/nft-market-growth-2020/": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "none",
+  "lens_rationale": "Market growth but competing platforms, no standard \u2192 emerging; growth among enthusiasts \u2192 early-adopters.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://sputniknews.com/science/202103041082247978-rock-band-kings-of-leon-will-be-among-first-to-release-album-as-non-fungible-token--reports-/": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "entry-timing",
+  "lens_rationale": "'Among first' to release album as NFT \u2192 emerging; visionary early move \u2192 early-adopters; first-mover positioning \u2192 entry-timing.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.coinspeaker.com/nft-trading-volume-february/": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "none",
+  "lens_rationale": "High trading volume but no standard \u2192 emerging; speculative trading, not mainstream \u2192 early-adopters.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.benzinga.com/topic/nfts": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "none",
+  "lens_rationale": "General NFT coverage during early boom \u2192 emerging; early adopter activity \u2192 early-adopters.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://cointelegraph.com/news/japanese-exchange-coincheck-to-list-fan-tokens-by-chiliz-and-socios": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "platform",
+  "lens_rationale": "Exchange listing fan tokens \u2192 emerging; infrastructure for early users \u2192 early-adopters; exchange building ecosystem \u2192 platform.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.theverge.com/2021/3/5/22316320/jack-dorsey-original-tweet-nft-cent-valuables": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "appropriability",
+  "lens_rationale": "High-profile tweet NFT experiment \u2192 emerging; visionary publicity move \u2192 early-adopters; monetizing owned asset \u2192 appropriability.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.complex.com/pop-culture/what-is-nft-bobby-hundreds-and-thankyoux-on-the-future-of-cryptomedia": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "none",
+  "lens_rationale": "Explainer content for unfamiliar audience \u2192 emerging; educating early interest \u2192 early-adopters.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "http://www.proactiveinvestors.co.uk/companies/news/938994/coinsilium-highlights-increased-value-of-crypto-treasury-938994.html": {
+  "maturity_stage": "n/a",
+  "adoption_stage": "n/a",
+  "strategic_move": "none",
+  "lens_rationale": "Corporate treasury value highlight with no specific technology \u2192 n/a; pure financial report \u2192 none.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.gulftoday.ae/business/2021/01/18/ibc-group-backed-caneth-staking-services-donates-nft-to-artcryption": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "none",
+  "lens_rationale": "NFT donation; competing platforms, no dominant standard \u2192 emerging; visionary use case \u2192 early-adopters.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://cointelegraph.com/news/russian-opposition-leader-navalny-immortalized-in-nft-artwork": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "none",
+  "lens_rationale": "Political NFT artwork; multiple competing NFT platforms \u2192 emerging; visionary/symbolic use \u2192 early-adopters.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.businessinsider.co.za/crypto-art-just-set-a-r1-billion-record-sas-first-gallery-auction-starts-this-week-2021-3": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "none",
+  "lens_rationale": "Crypto art auction record; NFT platforms competing, no standard \u2192 emerging; lighthouse auction \u2192 early-adopters.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.techtimes.com/articles/272927/20220312/checking-nft-value-here-factors-check-non-fungible-token-worth.htm": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "none",
+  "lens_rationale": "NFT buyer guide; multiple platforms, no dominant design \u2192 emerging; educational for early buyers \u2192 early-adopters.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "http://www.comunicati.net/comunicati/aziende/tecnologia/751685.html": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "innovators",
+  "strategic_move": "none",
+  "lens_rationale": "NFT market analysis 2020; competing platforms, no standard \u2192 emerging; very early market formation \u2192 innovators.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.coinspeaker.com/magic-eden-27m-series-a/": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "platform",
+  "lens_rationale": "NFT marketplace Series A; competing marketplaces \u2192 emerging; early commercial pilots \u2192 early-adopters; building ecosystem \u2192 platform.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.malaysiakini.com/news/613237": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "none",
+  "lens_rationale": "Charity NFT collection; multiple NFT platforms \u2192 emerging; celebrity fundraiser, visionary use \u2192 early-adopters.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.finsmes.com/2022/03/upshot-raises-22m-in-series-a2-funding.html": {
+  "maturity_stage": "n/a",
+  "adoption_stage": "n/a",
+  "strategic_move": "none",
+  "lens_rationale": "Funding only, no tech/product detail \u2192 n/a stages, no move (Schilling lifecycle/strategy, Rogers).",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.hitc.com/en-gb/2022/01/19/who-is-nft-artist-itzel-yard-and-how-did-she-make-her-3m-fortune/": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "none",
+  "lens_rationale": "NFT art success during platform competition \u2192 emerging (Schilling); early-adopter wins, pre-chasm (Rogers); profile not strategy.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.coinspeaker.com/coinbase-nft-marketplace-launch-soon/": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "innovators",
+  "strategic_move": "entry-timing",
+  "lens_rationale": "Marketplace pre-launch in competitive NFT landscape \u2192 emerging (Schilling); innovators phase (Rogers); exchange entering market (entry-timing).",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.techtimes.com/articles/273527/20220325/ukraine-mdts-nft-museum-helps-military-selling-non-fungible-token.htm": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "none",
+  "lens_rationale": "NFT fundraising use case, platforms competing \u2192 emerging (Schilling); innovative application, early-adopters (Rogers); cause not strategy.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.euronews.com/culture/2022/02/14/gustav-klimt-s-the-kiss-selling-as-10-000-nfts-for-valentine-s-day": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "none",
+  "lens_rationale": "Art brand NFT drop, no dominant design \u2192 emerging (Schilling); brand testing, early-adopters (Rogers); marketing not strategy.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.techtimes.com/articles/271102/20220127/lamborghini-nft-release-scheduled-next-month-heres-what-know.htm": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "none",
+  "lens_rationale": "Luxury brand NFT experiment, platform competition \u2192 emerging (Schilling); brand trial, early-adopters (Rogers); marketing campaign.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://hiphopdx.com/news/id.66869/title.unreleased-dmx-songs-being-auctioned-as-nfts": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "none",
+  "lens_rationale": "Music NFT auction, multiple platforms \u2192 emerging (Schilling); industry experimentation, early-adopters (Rogers); content release.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.finsmes.com/2022/03/yuga-labs-acquires-cryptopunks-and-meebits-from-larva-labs.html": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "appropriability",
+  "lens_rationale": "NFT IP consolidation amid platform competition \u2192 emerging (Schilling); collectible brands, early-adopters (Rogers); IP acquisition (appropriability).",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.globenewswire.com/news-release/2022/05/27/2451899/0/en/Non-fungible-Token-NFT-Global-Market-Growth-Forecasts-A-211-Billion-Market-by-2030-with-CAGR-of-33-During-2022-2030.html": {
+  "maturity_stage": "n/a",
+  "adoption_stage": "n/a",
+  "strategic_move": "none",
+  "lens_rationale": "Market forecast with no specific technology \u2192 n/a; no strategic action \u2192 none.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.digitaljournal.com/pr/non-fungible-token-nft-market-in-depth-analysis-with-leading-key-players-yellowheart-cloudflare-inc": {
+  "maturity_stage": "n/a",
+  "adoption_stage": "n/a",
+  "strategic_move": "none",
+  "lens_rationale": "Market analysis with no specific technology \u2192 n/a; no strategic action \u2192 none.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.finanznachrichten.de/nachrichten-2022-06/56362068-non-fungible-tokens-nft-market-to-reach-usd-5093-3-million-by-2028-with-a-cagr-17-9-valuates-reports-008.htm": {
+  "maturity_stage": "n/a",
+  "adoption_stage": "n/a",
+  "strategic_move": "none",
+  "lens_rationale": "Market projection with no specific product \u2192 n/a; no strategic action \u2192 none.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.thehindubusinessline.com/info-tech/blockchain-tech-firm-trst01-launches-carbon-offset-nft/article65353815.ece": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "none",
+  "lens_rationale": "Carbon offset NFT launch in commercialized but fragmented market \u2192 emerging; targets visionaries \u2192 early-adopters; routine launch \u2192 none.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.digitaljournal.com/pr/non-fungible-token-nfts-market-high-growth-new-development-launches-business-platforms-and-forecast-to-2028": {
+  "maturity_stage": "n/a",
+  "adoption_stage": "n/a",
+  "strategic_move": "none",
+  "lens_rationale": "Market forecast with no specific technology \u2192 n/a; no strategic action \u2192 none.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.prnewswire.com:443/news-releases/non-fungible-token-market-size-worth-211-72-billion-by-2030-grand-view-research-inc-301539331.html": {
+  "maturity_stage": "n/a",
+  "adoption_stage": "n/a",
+  "strategic_move": "none",
+  "lens_rationale": "Market forecast with no specific product \u2192 n/a; no strategic action \u2192 none.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://marketbusinessnews.com/getting-started-with-nfts-steps-to-mint-your-first-nft/297545/": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "innovators",
+  "strategic_move": "none",
+  "lens_rationale": "Tutorial indicates commercialized NFT technology \u2192 emerging; targets first-time users/enthusiasts \u2192 innovators; educational content \u2192 none.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.9news.com.au/technology/nft-man-who-spent-almost-4-million-on-first-ever-tweet-fails-to-attract-high-bids/fcf1b2f5-ea8c-42f5-8423-fa2e55d5f053": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "none",
+  "lens_rationale": "High-value NFT trading indicates commercialized market \u2192 emerging; speculative $4M bet \u2192 early-adopters; transaction story \u2192 none.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://sputniknews.com/20220418/hyundai-motor-enters-nft-market-introduces-metamobility-universe-1094861159.html": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "platform",
+  "lens_rationale": "Hyundai launching NFT platform; commercialized but no dominant standard \u2192 emerging; brand experimentation \u2192 early-adopters; ecosystem building \u2192 platform.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://article.wn.com/view/2022/04/04/NFTs_are_the_next_frontier_for_the_African_digital_and_arts_/": {
+  "maturity_stage": "n/a",
+  "adoption_stage": "n/a",
+  "strategic_move": "none",
+  "lens_rationale": "Opinion piece on NFT potential, no specific technology deployment \u2192 n/a stages, none.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.daily-sun.com/post/618888/Bangladeshi-artist-Preema-Nazia-conducts-NFT-creation-workshop-in--Thailand": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "innovators",
+  "strategic_move": "none",
+  "lens_rationale": "NFT workshop; technology commercially available, teaching basics \u2192 emerging; artists learning tech \u2192 innovators; educational event \u2192 none.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.straitstimes.com/asia/se-asia/nfts-crypto-boom-bring-tighter-regulation": {
+  "maturity_stage": "n/a",
+  "adoption_stage": "n/a",
+  "strategic_move": "none",
+  "lens_rationale": "Regulatory response to NFT/crypto activity, no specific technology deployment \u2192 n/a stages, none.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.prnewswire.com:443/news-releases/the-global-non-fungible-token-nft-market-is-expected-to-grow-by-113-933-5-mn-during-2023-2027--accelerating-at-a-cagr-of-35-02-during-the-forecast-period-301694426.html": {
+  "maturity_stage": "n/a",
+  "adoption_stage": "n/a",
+  "strategic_move": "none",
+  "lens_rationale": "Market forecast report, no specific technology deployment \u2192 n/a stages, none.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.prnewswire.com/news-releases/non-fungible-token-nft-market-2023-2027-a-descriptive-analysis-of-parent-market-five-forces-model-market-dynamics-and-segmentation---technavio-301697221.html": {
+  "maturity_stage": "n/a",
+  "adoption_stage": "n/a",
+  "strategic_move": "none",
+  "lens_rationale": "Market analysis report, no specific technology deployment \u2192 n/a stages, none.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://markets.financialcontent.com/stocks/article/bizwire-2022-10-28-global-non-fungible-token-market-forecast-report-2022-2027-future-of-nfts-in-web-30-and-the-metaverse-and-convergence-of-nfts-and-ai-researchandmarketscom": {
+  "maturity_stage": "n/a",
+  "adoption_stage": "n/a",
+  "strategic_move": "none",
+  "lens_rationale": "Page title only, no technology content \u2192 n/a stages, none.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "http://www.koreatimes.co.kr/www/tech/2022/12/133_342137.html": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "innovators",
+  "strategic_move": "none",
+  "lens_rationale": "CES showcase of NFT shoes; commercially available but experimental \u2192 emerging; demo phase \u2192 innovators; showcase only \u2192 none.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.dealstreetasia.com/stories/nft-infrastructure-startup-gomu-raises-5m-and-other-se-asia-deals-311659": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "platform",
+  "lens_rationale": "Infrastructure startup $5m raise for competing NFT platforms indicates emerging tech; early-stage funding suggests early-adopters; platform ecosystem building.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.npr.org/2022/10/12/1128292149/artist-damien-hirst-burned-1000-paintings-nft-non-fungible-tokens": {
+  "maturity_stage": "n/a",
+  "adoption_stage": "n/a",
+  "strategic_move": "none",
+  "lens_rationale": "Art performance story with no specific technology development or strategic move (n/a frameworks).",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.business2community.com/nft-news": {
+  "maturity_stage": "n/a",
+  "adoption_stage": "n/a",
+  "strategic_move": "none",
+  "lens_rationale": "Archive page with no specific technology development or strategic move (n/a frameworks).",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "http://www.econotimes.com/NFT-Renault-Korea-launches-Create-Your-Epic-Car-NFT-campaign-for-customers-1642750": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "none",
+  "lens_rationale": "Major brand NFT campaign on non-standardized tech (emerging S-curve); marketing pilot (early-adopters Rogers); routine campaign (none).",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "http://www.econotimes.com/NFT-CNN-abandons-its-NFT-venture-shuts-down-marketplace-1643239": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "none",
+  "lens_rationale": "Marketplace shutdown shows NFT market shakeout (emerging S-curve); failed mainstream adoption (early-adopters Rogers); exit not strategic move.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.thestreet.com/crypto/news/south-koreas-aespa-collaborates-with-nft-artist-on-digital-collectibles": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "collaboration",
+  "lens_rationale": "K-pop artist NFT collaboration on non-standard tech (emerging S-curve); fan engagement trial (early-adopters Rogers); partnership (collaboration).",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://gisuser.com/2022/12/the-amazing-procedure-of-buying-the-nfts/": {
+  "maturity_stage": "n/a",
+  "adoption_stage": "n/a",
+  "strategic_move": "none",
+  "lens_rationale": "Educational content with no specific technology development or strategic move (n/a frameworks).",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.globaltimes.cn/page/202211/1279949.shtml": {
+  "maturity_stage": "n/a",
+  "adoption_stage": "n/a",
+  "strategic_move": "none",
+  "lens_rationale": "Law enforcement case with no specific technology development or strategic move (n/a frameworks).",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.finanznachrichten.de/nachrichten-2020-04/49314843-lks-foundation-no-fungible-token-nft-against-fake-news-200.htm": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "none",
+  "lens_rationale": "Commercial NFT app, no dominant design \u2192 emerging (S-curve); foundation pilot \u2192 early-adopters (Rogers); announcement \u2192 none.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.livebitcoinnews.com/one-token-to-rule-them-all-lkscoin-nft-token/": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "innovators",
+  "strategic_move": "standards-battle",
+  "lens_rationale": "Token launch, 'rule them all' claim \u2192 emerging (S-curve); crypto enthusiasts \u2192 innovators (Rogers); standardization goal \u2192 standards-battle (van de Kaa).",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://cointelegraph.com/news/italian-firm-claims-its-non-fungible-tokens-can-tackle-fake-news": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "none",
+  "lens_rationale": "Italian firm's NFT claim, no standard \u2192 emerging (S-curve); company pilot \u2192 early-adopters (Rogers); announcement \u2192 none.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "http://hardware.itbusinessnet.com/2020/04/lks-foundation-no-fungible-token-nft-against-fake-news/": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "none",
+  "lens_rationale": "Commercial NFT app, no dominant design \u2192 emerging (S-curve); foundation pilot \u2192 early-adopters (Rogers); announcement \u2192 none.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://cointelegraph.com/news/blockstream-launches-ventures-initiative-to-grow-liquids-ecosystem": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "platform",
+  "lens_rationale": "Ventures to grow Liquid ecosystem \u2192 emerging (S-curve); ecosystem building \u2192 early-adopters (Rogers); platform expansion \u2192 platform (Gawer).",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.securingindustry.com/cosmetics-and-personal-care/blockchain-firm-real-items-protects-kn95-face-masks/s106/a11601/": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "appropriability",
+  "lens_rationale": "Blockchain mask authentication, no standard \u2192 emerging (S-curve); specific use case \u2192 early-adopters (Rogers); authenticity control \u2192 appropriability (Teece).",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://cointelegraph.com/news/cryptokitties-creators-launch-token-powered-nba-topshot-in-beta": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "platform",
+  "lens_rationale": "NBA TopShot beta, NFT collectibles \u2192 emerging (S-curve); beta launch \u2192 early-adopters (Rogers); marketplace ecosystem \u2192 platform (Gawer).",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://cointelegraph.com/news/hm-targets-ethical-consumers-with-blockchain-traceability": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "appropriability",
+  "lens_rationale": "H&M blockchain traceability, no standard \u2192 emerging (S-curve); pilot for ethical consumers \u2192 early-adopters (Rogers); brand value \u2192 appropriability (Teece).",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.coindesk.com/dada-art-collective-blockchain-protest-police-brutality": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "none",
+  "lens_rationale": "Art collective using existing blockchain; multiple competing platforms \u2192 emerging; visionary activism use case \u2192 early-adopters.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://investingnews.com/news/gold-investing/rokmaster-closes-final-tranche-of-private-placement/": {
+  "maturity_stage": "n/a",
+  "adoption_stage": "n/a",
+  "strategic_move": "none",
+  "lens_rationale": "Private placement financing with no specific technology product \u2192 n/a; pure finance \u2192 none.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://finance.yahoo.com/news/c2c-blockchain-nft-exchange-launched-130000427.html": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "innovators",
+  "strategic_move": "platform",
+  "lens_rationale": "NFT marketplace launch; competing platforms, no dominant design \u2192 emerging; first users \u2192 innovators; exchange model \u2192 platform.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "http://koreabizwire.com/william-shatner-beams-his-memorabilia-to-the-wax-blockchain/162978": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "none",
+  "lens_rationale": "Celebrity NFTs on WAX; multiple blockchain platforms \u2192 emerging; celebrity lighthouse user \u2192 early-adopters; use case not strategy \u2192 none.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.fxstreet.com/cryptocurrencies/news/visa-joins-nft-craze-spending-150-000-on-rare-cryptopunk-202108231539": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "none",
+  "lens_rationale": "Visa buying CryptoPunk; commercial NFTs with competing standards \u2192 emerging; major corp experimenting \u2192 early-adopters; exploratory purchase \u2192 none.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.prnewswire.com:443/news-releases/singapore-based-weifeng-technology-plans-to-launch-jeritex-in-august-leveraging-nft-technology-with-the-aim-to-revolutionalize-e-commerce-301340187.html": {
+  "maturity_stage": "research",
+  "adoption_stage": "innovators",
+  "strategic_move": "disruption",
+  "lens_rationale": "Plans to launch in August, not yet available \u2192 research; pre-launch, first users ahead \u2192 innovators; aims to revolutionize e-commerce \u2192 disruption.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.globenewswire.com/news-release/2021/07/26/2268276/0/en/Olympic-Token-brings-excitement-of-Olympic-Games-to-Uniswap.html": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "innovators",
+  "strategic_move": "none",
+  "lens_rationale": "Olympic token launch; one of many competing tokens \u2192 emerging; first enthusiast users \u2192 innovators; no clear strategy \u2192 none.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.fxstreet.com/cryptocurrencies/news/solana-hits-new-all-time-high-of-145-posting-300-gains-in-a-month-202109031318": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "none",
+  "lens_rationale": "Price surge is market hype; competing smart contract platforms, no dominant design \u2192 emerging; developers using, pre-mainstream \u2192 early-adopters.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.businessinsider.com/nft-meaning": {
+  "maturity_stage": "n/a",
+  "adoption_stage": "n/a",
+  "strategic_move": "none",
+  "lens_rationale": "Educational explainer on NFTs; no specific technology deployment or strategic move described.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.fxstreet.com/cryptocurrencies/news/ftx-opens-cross-chain-nft-trading-between-ethereum-and-solana-boosting-sol-price-rally-202109060648": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "platform",
+  "lens_rationale": "Cross-chain NFT trading launched; crypto enthusiasts adopting; FTX extending its trading platform ecosystem.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.dailymail.co.uk/news/article-9760601/Cryptocurrency-start-Nonce-Finance-mocked-Twitter-alarmed-Britons.html": {
+  "maturity_stage": "n/a",
+  "adoption_stage": "n/a",
+  "strategic_move": "none",
+  "lens_rationale": "Social media reaction story; no technology deployment or strategic action described.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.indiantelevision.com/television/tv-channels/gecs/zee-studios-partners-with-nftically-to-launch-nft-drop-210903": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "collaboration",
+  "lens_rationale": "Partnership to launch NFT drop; entertainment industry experimenting; alliance between Zee and NFTically.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.globaltimes.cn/page/202109/1234525.shtml": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "innovators",
+  "strategic_move": "entry-timing",
+  "lens_rationale": "First official NFT in China for sporting event; demonstration phase; first-mover positioning.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "http://www.proactiveinvestors.com/companies/news/956504/coinsilium-update-investors-on-development-of-non-fungible-token-nft--progressing-very-well--956504.html": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "innovators",
+  "strategic_move": "none",
+  "lens_rationale": "Development progress update on NFT product; pre-launch development; routine investor update.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.gobankingrates.com/investing/crypto/visa-buys-a-cryptopunk-nft-for-150000-what-does-it-mean-for-the-future-of-payments/": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "platform",
+  "lens_rationale": "Visa buys NFT to explore payment integration; major company experimenting; potential platform extension.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.openpr.com/news/archive/240738/Jellyfish-Official.html": {
+  "maturity_stage": "n/a",
+  "adoption_stage": "n/a",
+  "strategic_move": "none",
+  "lens_rationale": "No technology or product described \u2192 n/a stages; no action \u2192 none.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.kob.com/business-news/collins-dictionary-picks-nft-as-word-of-the-year-2021/6312342/?cat=606": {
+  "maturity_stage": "n/a",
+  "adoption_stage": "n/a",
+  "strategic_move": "none",
+  "lens_rationale": "Linguistic recognition, not technology deployment \u2192 n/a stages; no strategic action \u2192 none.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.prnewswire.com/news-releases/rise-of-non-fungible-token-market-nft-market-says-brandessence-market-research-301422149.html": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "none",
+  "lens_rationale": "Multiple NFT platforms, no dominant standard \u2192 emerging; enthusiast buyers, not mainstream \u2192 early-adopters.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.finanznachrichten.de/nachrichten-2021-11/54464241-brandessence-market-research-and-consulting-private-limited-rise-of-non-fungible-token-market-nft-market-says-brandessence-market-research-008.htm": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "none",
+  "lens_rationale": "Multiple NFT platforms, no dominant standard \u2192 emerging; enthusiast buyers, not mainstream \u2192 early-adopters.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "http://www.econotimes.com/NFT-Ray-Ban-unveils-first-NFT-Aviator-glasses-in-history-1620291": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "entry-timing",
+  "lens_rationale": "First NFT product from Ray-Ban, fragmented platforms \u2192 emerging; brand pilot \u2192 early-adopters; first-mover positioning \u2192 entry-timing.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "http://www.koreatimes.co.kr/www/world/2021/11/501_319450.html": {
+  "maturity_stage": "n/a",
+  "adoption_stage": "n/a",
+  "strategic_move": "none",
+  "lens_rationale": "Cultural recognition, not technology deployment \u2192 n/a stages; no strategic action \u2192 none.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.dailymail.co.uk/news/article-10314571/Wikipedia-creators-computer-NFT-auctioned-1-mn.html": {
+  "maturity_stage": "n/a",
+  "adoption_stage": "n/a",
+  "strategic_move": "none",
+  "lens_rationale": "Collectible sale event, not technology deployment \u2192 n/a stages; auction, not strategy \u2192 none.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.pcmag.com/news/collins-dictionary-hails-nft-as-the-word-of-the-year": {
+  "maturity_stage": "n/a",
+  "adoption_stage": "n/a",
+  "strategic_move": "none",
+  "lens_rationale": "Linguistic recognition, not technology deployment \u2192 n/a stages; no strategic action \u2192 none.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.neowin.net/news/collins-dictionary-chooses-nft-as-its-word-of-the-year-for-2021/": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "none",
+  "lens_rationale": "Dictionary word-of-year recognition; multiple competing platforms, no standard \u2192 emerging; buzz but visionary adoption only \u2192 early-adopters; recognition not strategic.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://exclaim.ca/music/article/our_lady_peaces_spiritual_machines_2_will_be_released_as_an_nft": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "appropriability",
+  "lens_rationale": "Album as NFT; multiple platforms, no standard \u2192 emerging; artist experiment \u2192 early-adopters; new value-capture format \u2192 appropriability.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.businessinsider.in/cryptocurrency/news/superrare-nft-sells-for-more-than-2-million-a-20000-fold-increase-in-value-over-three-years/articleshow/88144376.cms": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "none",
+  "lens_rationale": "High-value NFT sale; multiple platforms, no standard \u2192 emerging; speculative collector activity \u2192 early-adopters; transaction report, no move.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.businessinsider.in/cryptocurrency/news/most-expensive-bored-ape-nft-sells-for-2-7-million/articleshow/87162740.cms": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "none",
+  "lens_rationale": "Record collectible sale; multi-platform, no standard \u2192 emerging; speculator activity \u2192 early-adopters; transaction report only.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://finance.yahoo.com/news/nft-market-2026-increasing-demand-200000416.html": {
+  "maturity_stage": "n/a",
+  "adoption_stage": "n/a",
+  "strategic_move": "none",
+  "lens_rationale": "Market forecast report; no specific technology/product \u2192 n/a; analysis only, no strategic move.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.openpr.com/news/2733455/traffic-management-market-technology-type-and-application": {
+  "maturity_stage": "n/a",
+  "adoption_stage": "n/a",
+  "strategic_move": "none",
+  "lens_rationale": "Generic market report; no specific technology/product \u2192 n/a; report title, no move.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://article.wn.com/view/2022/09/07/Sony_Music_Becomes_Latest_to_File_NFT_Trademarks/": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "appropriability",
+  "lens_rationale": "Sony Music NFT trademarks; multiple platforms, no standard \u2192 emerging; major label entering \u2192 early-adopters; IP filing \u2192 appropriability.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.archdaily.com/tag/real-estate": {
+  "maturity_stage": "n/a",
+  "adoption_stage": "n/a",
+  "strategic_move": "none",
+  "lens_rationale": "Website category tag; not about technology/product \u2192 n/a; no news content, no move.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://arynews.tv/wow-grape-viral-meme-to-be-auctioned-flood-victims/": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "appropriability",
+  "lens_rationale": "Meme auctioned as NFT; commercialized platforms, no dominant standard \u2192 emerging; speculative interest, not pragmatist \u2192 early-adopters; value capture \u2192 appropriability.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.castanet.net/news/Canada/382737/Canadian-National-Exhibitions-pulls-from-the-archives-to-launch-crypto-collectible": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "appropriability",
+  "lens_rationale": "CNE launches NFT collectibles; commercialized tech, competing platforms \u2192 emerging; institutional debut, not mass-market \u2192 early-adopters; value capture \u2192 appropriability.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://techcrunch.com/2022/08/01/what-will-it-take-to-reignite-the-nft-market/": {
+  "maturity_stage": "n/a",
+  "adoption_stage": "n/a",
+  "strategic_move": "none",
+  "lens_rationale": "TechCrunch analysis on NFT market revival; no specific technology development or strategic move \u2192 n/a/none.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.prnewswire.com:443/news-releases/non-fungible-token-nft-market-to-unlock-opportunities-worth-211-72-billion-by-2030-grand-view-research-inc-301590965.html": {
+  "maturity_stage": "n/a",
+  "adoption_stage": "n/a",
+  "strategic_move": "none",
+  "lens_rationale": "Market forecast report; no specific technology development or strategic move \u2192 n/a/none.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.finanznachrichten.de/nachrichten-2022-09/57101042-international-nft-day-inaugural-nft-day-brings-together-web3-global-industry-leaders-to-commemorate-the-invention-of-the-non-fungible-token-008.htm": {
+  "maturity_stage": "n/a",
+  "adoption_stage": "n/a",
+  "strategic_move": "none",
+  "lens_rationale": "Industry event commemorating NFTs; no technology development or strategic action \u2192 n/a/none.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://economictimes.indiatimes.com/wealth/tax/definition-of-non-fungible-tokens-as-per-cbdt-heres-what-is-not-taxed-as-nfts/articleshow/92715774.cms": {
+  "maturity_stage": "n/a",
+  "adoption_stage": "n/a",
+  "strategic_move": "none",
+  "lens_rationale": "Tax regulation article; pure policy story with no technology or strategic move \u2192 n/a/none.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://news.priyo.com/e/4210844-Tencent-Stops-Sales-On-Its-NFT-Non-Fungible-Token-Platform-A-Year-After": {
+  "maturity_stage": "n/a",
+  "adoption_stage": "n/a",
+  "strategic_move": "none",
+  "lens_rationale": "Vague headline with no identifiable technology, product, or strategic action \u2192 n/a/none.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.latestly.com/quickly/technology/lg-electronics-rolls-out-nft-platform-that-lets-users-buy-amp-sell-digital-artwork-4166298.html": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "platform",
+  "lens_rationale": "LG launches NFT marketplace; commercialized tech, competing platforms \u2192 emerging; digital art niche, not mainstream \u2192 early-adopters; ecosystem play \u2192 platform.",
+  "lens_prompt_version": "mot-lens-v3"
+ }
+}

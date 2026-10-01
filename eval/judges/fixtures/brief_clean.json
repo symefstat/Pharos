@@ -1,0 +1,161 @@
+{
+  "_fixture_note": "SYNTHETIC clean brief for the L8 judge harness. Mirrors the strategist_briefs row shape (strategic_read + slimmed stories/theory). Every numeric claim traces to a cited source (including normalization cases: '€3.2 billion' vs '3.2bn', '90%' vs '90 percent'); all S#/T# resolve; every falsifier is dated with a threshold; no overclaims.",
+  "as_of": "2026-07-01",
+  "focus": "daily",
+  "window_days": 14,
+  "generated_at": "2026-07-01T06:00:00+00:00",
+  "strategic_read": {
+    "format": "structured",
+    "bottom_line": "Leading-edge compute supply, not model quality, now governs AI value capture [S1].",
+    "confidence": "medium",
+    "signals": [
+      {
+        "title": "TSMC 2nm ramp entrenches foundry concentration",
+        "lens": "Appropriability",
+        "implication": "TSMC expanding 2nm capacity to 60,000 wafers per month [S1] while Apple and Nvidia pre-book 90% of that output [S2] evidences the Teece pattern [T1]: the scarce co-specialized asset is leading-edge fabrication, not chip design.",
+        "action": "defend",
+        "action_rationale": "portfolio exposure to a single leading-edge supplier concentrates risk",
+        "impact": "high",
+        "horizon": "mid",
+        "value_capture": "The complementary-asset owner (TSMC) captures value over designers; appropriability upstream is weak.",
+        "falsifier": "Samsung or Intel wins more than 20% of 2nm-class orders by Q2 2027",
+        "sources": ["S1", "S2"],
+        "confidence": "high"
+      },
+      {
+        "title": "EU battery subsidy targets a scale externality",
+        "lens": "Market-failure regulation",
+        "implication": "The €3.2 billion EU battery manufacturing fund [S3] is industrial policy aimed at a positive externality (domestic cell scale), not antitrust; it lowers the cost side of the chasm for European pragmatist buyers.",
+        "action": "partner",
+        "action_rationale": "co-invest alongside subsidized capacity rather than compete with it",
+        "impact": "medium",
+        "horizon": "long",
+        "value_capture": "",
+        "falsifier": "Fewer than 2 subsidized gigafactories reach volume production by end of 2028",
+        "sources": ["S3"],
+        "confidence": "medium"
+      },
+      {
+        "title": "Staged robotics bet is an option, not a commitment",
+        "lens": "Real option vs commitment",
+        "implication": "The $500 million humanoid-robotics round [S4] is tranche-staged against deployment milestones — a real option buying information under uncertainty [T2], not a conviction bet on near-term diffusion.",
+        "action": "wait",
+        "action_rationale": "let the option holders pay for the information; enter on milestone evidence",
+        "impact": "medium",
+        "horizon": "mid",
+        "value_capture": "",
+        "falsifier": "Follow-on tranche is cancelled or cut below $200 million by Q1 2027",
+        "sources": ["S4"],
+        "confidence": "medium"
+      }
+    ],
+    "convergence": [
+      {
+        "theme": "Compute supply as the binding constraint",
+        "implication": "Chips capacity and AI demand stories point at the same bottleneck.",
+        "feeds": ["Chips", "AI & Energy"]
+      }
+    ],
+    "scenarios": {
+      "base": "Foundry concentration persists; value accrues to fab and energy asset owners through 2027.",
+      "bull": "Subsidized EU capacity lands on time, easing cell supply and accelerating EV diffusion.",
+      "bear": "A capacity glut or export-control shock strands leading-edge capex."
+    },
+    "watch": [
+      {
+        "item": "Intel 18A external-customer volume announcements",
+        "why": "would falsify the single-supplier concentration read",
+        "horizon": "near"
+      },
+      {
+        "item": "EU fund first disbursement list",
+        "why": "confirms whether the subsidy reaches cell makers or diffuses into R&D grants",
+        "horizon": "mid"
+      }
+    ]
+  },
+  "stories": [
+    {
+      "label": "S1",
+      "title": "TSMC to expand 2nm capacity",
+      "url": "https://example.com/tsmc-2nm",
+      "source_name": "Example Wire",
+      "published_at": "2026-06-28",
+      "summary": "TSMC said it will expand 2nm capacity to 60,000 wafers per month by late 2026 across its Hsinchu and Kaohsiung fabs, citing sustained AI accelerator demand.",
+      "companies": ["TSMC"],
+      "sentiment": "positive",
+      "business_impact": "material",
+      "scope": "industry",
+      "feed_label": "Chips",
+      "maturity_stage": "growth",
+      "adoption_stage": "early majority",
+      "strategic_move": null,
+      "lens_rationale": "capacity scaling on a locked process node"
+    },
+    {
+      "label": "S2",
+      "title": "Apple and Nvidia pre-book most of TSMC's 2nm output",
+      "url": "https://example.com/2nm-prebook",
+      "source_name": "Example Times",
+      "published_at": "2026-06-29",
+      "summary": "Supply-chain checks indicate Apple and Nvidia have pre-booked 90 percent of TSMC's initial 2nm output, leaving little capacity for other designers.",
+      "companies": ["Apple", "Nvidia", "TSMC"],
+      "sentiment": "neutral",
+      "business_impact": "material",
+      "scope": "industry",
+      "feed_label": "Chips",
+      "maturity_stage": "growth",
+      "adoption_stage": "early majority",
+      "strategic_move": "capacity pre-commitment",
+      "lens_rationale": "complementary-asset scarcity"
+    },
+    {
+      "label": "S3",
+      "title": "EU approves battery manufacturing fund",
+      "url": "https://example.com/eu-battery-fund",
+      "source_name": "Example EU Desk",
+      "published_at": "2026-06-25",
+      "summary": "The European Commission approved a 3.2bn euro fund to subsidize domestic battery cell manufacturing, aiming at gigafactory scale-up through 2028.",
+      "companies": ["Northvolt", "ACC"],
+      "sentiment": "positive",
+      "business_impact": "material",
+      "scope": "region",
+      "feed_label": "Climate & Energy",
+      "maturity_stage": "growth",
+      "adoption_stage": "early adopters",
+      "strategic_move": "industrial policy",
+      "lens_rationale": "externality-targeting subsidy"
+    },
+    {
+      "label": "S4",
+      "title": "Humanoid robotics startup raises staged round",
+      "url": "https://example.com/robotics-round",
+      "source_name": "Example VC Wire",
+      "published_at": "2026-06-30",
+      "summary": "A humanoid robotics startup raised a $500 million round released in tranches tied to factory-deployment milestones, with the first tranche at $150 million.",
+      "companies": ["ExampleBotics"],
+      "sentiment": "positive",
+      "business_impact": "material",
+      "scope": "company",
+      "feed_label": "Disruptive Tech",
+      "maturity_stage": "emerging",
+      "adoption_stage": "innovators",
+      "strategic_move": "staged investment",
+      "lens_rationale": "milestone-tranched financing"
+    }
+  ],
+  "theory": [
+    {
+      "label": "T1",
+      "source_file": "Teece_Profiting_from_Innovation.pdf",
+      "similarity": 0.82,
+      "chunk_text": "When imitation is easy (weak appropriability), profits flow to the owners of scarce co-specialized complementary assets — manufacturing, distribution — rather than to the innovator."
+    },
+    {
+      "label": "T2",
+      "source_file": "Berk_DeMarzo_Real_Options.pdf",
+      "similarity": 0.74,
+      "chunk_text": "Staged investment under uncertainty is best valued as a real option: each tranche buys information and the right, not the obligation, to continue."
+    }
+  ]
+}

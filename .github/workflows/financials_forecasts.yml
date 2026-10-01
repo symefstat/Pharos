@@ -1,0 +1,78 @@
+name: Financials + forecasts (daily)
+
+# Enrich company financials (free yfinance) and generate/resolve forecasts — once a
+# day. Split out of the 6h feed job because neither needs 6h freshness, and so their
+# failures SURFACE here (a red run / the freshness webhook) instead of being swallowed
+# by the old `|| true`. Reads only Supabase + yfinance (no agent calls — forecasts read
+# the cached Strategist brief). Add these repository secrets before enabling:
+#   SUPABASE_URL, SUPABASE_KEY (service-role) · Optional: ALERT_WEBHOOK
+# Delivery (digest + transition alerts) also runs here — daily cadence matches the
+# snapshot cycle, so a confirmation alerts exactly once. Optional secrets:
+#   RESEND_API_KEY (or SMTP_HOST/SMTP_PORT/SMTP_USER/SMTP_PASS), EMAIL_FROM,
+#   DIGEST_EMAILS, APP_BASE_URL — all channels dry-run (logged-not-sent) until set.
+
+on:
+  schedule:
+    - cron: "0 6 * * *"     # 06:00 UTC daily
+  workflow_dispatch:         # manual "Run workflow" button
+
+# Don't let a manual dispatch overlap the scheduled run — overlapping forecast
+# generation would race the open-claim dedupe in select_new().
+concurrency:
+  group: financials-forecasts
+  cancel-in-progress: false
+
+jobs:
+  enrich:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    env:
+      SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+      SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+      ALERT_WEBHOOK: ${{ secrets.ALERT_WEBHOOK }}
+      # Transition Explainer agent — the "why" line on transition alerts; fail-open.
+      TOQAN_TRANSITION_WHY: ${{ secrets.TOQAN_TRANSITION_WHY }}
+      RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+      EMAIL_FROM: ${{ secrets.EMAIL_FROM }}
+      DIGEST_EMAILS: ${{ secrets.DIGEST_EMAILS }}
+      APP_BASE_URL: ${{ secrets.APP_BASE_URL }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      # 1) Enrich tracked tickers with free financial data (no API key) for 💰 Capital.
+      #    No `|| true` — a real failure now surfaces (per-ticker + per-upsert it already
+      #    degrades internally, so this only fails on a genuine, total failure).
+      - name: Enrich company financials
+        run: python financials_run.py
+
+      # 2) Generate + resolve forecasts for 🔮 (reads the cached Strategist brief).
+      - name: Generate & resolve forecasts
+        run: python forecast_run.py
+
+      # 3) Stage-transition alerts — notify (email + webhook) the moment a
+      #    lifecycle move confirms (2nd consecutive daily snapshot), deep-linked
+      #    to the technology's dossier. Daily cadence = alerts exactly once.
+      - name: Stage-transition alerts
+        run: python transition_alerts_run.py
+        continue-on-error: true
+
+      # 4) Daily briefing digest — the strategist read, actions + falsifiers,
+      #    fresh stage moves, and the honest trust line, delivered to
+      #    DIGEST_EMAILS / ALERT_WEBHOOK. Dry-runs until channels are configured.
+      - name: Briefing digest
+        run: python digest_run.py
+        continue-on-error: true

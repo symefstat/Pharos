@@ -1,0 +1,128 @@
+{
+ "key": "mrna-vaccines",
+ "label": "mRNA vaccines",
+ "window": [
+  "2019Q3",
+  "2021Q4"
+ ],
+ "query": "\"mRNA vaccine\"",
+ "n_items": 78,
+ "n_classified": 59,
+ "quarters": [
+  {
+   "quarter": "2019Q3",
+   "n": 10,
+   "stage": "research",
+   "modal_share": 1.0,
+   "counts": {
+    "research": 10
+   }
+  },
+  {
+   "quarter": "2019Q4",
+   "n": 3,
+   "stage": null,
+   "modal_share": 1.0,
+   "counts": {
+    "research": 3
+   }
+  },
+  {
+   "quarter": "2020Q2",
+   "n": 8,
+   "stage": "research",
+   "modal_share": 1.0,
+   "counts": {
+    "research": 8
+   }
+  },
+  {
+   "quarter": "2020Q3",
+   "n": 12,
+   "stage": "research",
+   "modal_share": 1.0,
+   "counts": {
+    "research": 12
+   }
+  },
+  {
+   "quarter": "2020Q4",
+   "n": 9,
+   "stage": "research",
+   "modal_share": 0.56,
+   "counts": {
+    "emerging": 2,
+    "research": 5,
+    "growth": 2
+   }
+  },
+  {
+   "quarter": "2021Q1",
+   "n": 7,
+   "stage": "research",
+   "modal_share": 0.71,
+   "counts": {
+    "research": 5,
+    "growth": 2
+   }
+  },
+  {
+   "quarter": "2021Q4",
+   "n": 10,
+   "stage": "dominant-design",
+   "modal_share": 0.4,
+   "counts": {
+    "research": 3,
+    "growth": 2,
+    "dominant-design": 4,
+    "mature": 1
+   }
+  }
+ ],
+ "calls": [
+  {
+   "stage": "research",
+   "quarter": "2020Q3",
+   "evidence_n": 12,
+   "modal_share": 1.0
+  }
+ ],
+ "comparison": [
+  {
+   "stage": "emerging",
+   "quarter": "2020Q1",
+   "event": "First mRNA COVID-19 vaccine enters human trials (Moderna mRNA-1273, 16 Mar 2020)",
+   "source": "https://www.nih.gov/news-events/news-releases/nih-clinical-trial-investigational-vaccine-covid-19-begins",
+   "called_quarter": null,
+   "lag_quarters": null,
+   "hit": false
+  },
+  {
+   "stage": "growth",
+   "quarter": "2020Q3",
+   "event": "Pivotal Phase 3 trials begin alongside mass-manufacturing commitments (27 Jul 2020)",
+   "source": "https://www.nih.gov/news-events/news-releases/phase-3-clinical-trial-investigational-vaccine-covid-19-begins",
+   "called_quarter": null,
+   "lag_quarters": null,
+   "hit": false
+  },
+  {
+   "stage": "dominant-design",
+   "quarter": "2020Q4",
+   "event": "FDA emergency use authorizations for the Pfizer-BioNTech and Moderna mRNA vaccines (Dec 2020)",
+   "source": "https://www.fda.gov/news-events/press-announcements/fda-takes-key-action-fight-against-covid-19-issuing-emergency-use-authorization-first-covid-19",
+   "called_quarter": null,
+   "lag_quarters": null,
+   "hit": false
+  }
+ ],
+ "false_calls": [
+  {
+   "stage": "research",
+   "quarter": "2020Q3",
+   "evidence_n": 12,
+   "modal_share": 1.0
+  }
+ ],
+ "notes": null
+}

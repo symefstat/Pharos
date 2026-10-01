@@ -1,0 +1,60 @@
+# Everything listed here is withheld from the Docker build context — the tarball
+# the CLI ships to the daemon before a single instruction runs. The repo root is
+# ~2.8 GB on disk and the API image needs maybe 2 MB of it, so this file is the
+# difference between a build that takes seconds and one that takes minutes.
+#
+# Note this is a DENY list: anything not named here is sent. That direction is
+# deliberate — the backend reaches the top-level analytics/, db.py, feeds.py,
+# home_news/, technologies.py, toqan/ and vectordb/ modules transitively, and an
+# allow list would silently drop one the next time an import is added.
+#
+# Comments must sit on their own line. Docker does not strip trailing comments,
+# so `venv/  # big` would be read as a pattern that matches nothing.
+
+# ── Secrets: never bake these into a layer ───────────────────────────────────
+# Layers are cached, shipped and trivially unpacked (`docker history`), so a
+# baked .env leaks to anyone who pulls the image. Compose injects it at RUN time
+# instead, via `env_file` — see docker-compose.yml.
+.env
+.env.*
+!.env.example
+
+# ── Heavy and irrelevant (the 2.8 GB) ────────────────────────────────────────
+# 1.8 GB of private source material.
+MOT project/
+# 767 MB of macOS-built wheels; Linux rebuilds them from requirements.txt anyway.
+venv/
+.venv/
+# 46 MB of history the runtime never reads.
+.git/
+# 19 MB, including screenshot evidence.
+eval/
+# 7 MB of marketing media.
+linkedin-assets/
+# This is the deployment image, not the CI image — Dockerfile.ci covers tests.
+tests/
+logo/
+Skills/
+SQL Tables/
+Agents_prompt/
+Pharos improvements/
+
+# ── The frontend: built by its own image, from its own context ───────────────
+# frontend/Dockerfile does the npm build. Sending 174 MB of node_modules into
+# the API build would be pure waste.
+frontend/
+node_modules/
+
+# ── Build/run detritus ───────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.DS_Store
+logs/
+*.log
+
+# ── Docker's own files ───────────────────────────────────────────────────────
+Dockerfile*
+.dockerignore
+docker-compose*.yml

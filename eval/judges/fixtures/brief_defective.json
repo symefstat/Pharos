@@ -1,0 +1,144 @@
+{
+  "_fixture_note": "SYNTHETIC defective brief for the L8 judge harness. Seeded defects the deterministic checks must catch: (1) signal 1 claims '$4.5 billion' but its cited source S1 says '$2.1 billion' and no source contains 4.5 -> HALLUCINATED NUMBER; (2) signal 2 cites phantom 'S9' -> INVALID S# REF; (3) signal 2 asserts 'confirms ... wins' on medium confidence with 1 valid source -> OVERCLAIM; (4) signal 3's falsifier has no date and no threshold -> UNDATED/UNMEASURABLE FALSIFIER; (5) signal 3 cites S3 but its '80,000' figure only appears in S4 -> MISATTRIBUTED (warn).",
+  "as_of": "2026-07-01",
+  "focus": "daily",
+  "window_days": 14,
+  "generated_at": "2026-07-01T06:00:00+00:00",
+  "strategic_read": {
+    "format": "structured",
+    "bottom_line": "AI inference spend is consolidating around one supplier.",
+    "confidence": "high",
+    "signals": [
+      {
+        "title": "Anthropic-scale inference round resets capital bar",
+        "lens": "Real option vs commitment",
+        "implication": "The $4.5 billion inference-infrastructure round [S1] is a full commitment, not a staged option — the size forecloses the wait-and-see path for rivals.",
+        "action": "enter",
+        "action_rationale": "capital bar is now the moat; late entry gets pricier",
+        "impact": "high",
+        "horizon": "near",
+        "value_capture": "",
+        "falsifier": "Round is downsized below $1 billion or shelved by Q4 2026",
+        "sources": ["S1"],
+        "confidence": "medium"
+      },
+      {
+        "title": "Nvidia takes the inference market",
+        "lens": "Dominant design locking in",
+        "implication": "A 30% quarter-on-quarter jump in inference-chip shipments [S2] confirms Nvidia wins the inference market outright; rivals are reduced to niche roles.",
+        "action": "scale",
+        "action_rationale": "back the winner while the design locks",
+        "impact": "high",
+        "horizon": "near",
+        "value_capture": "Innovator captures value; CUDA lock-in is the complementary asset.",
+        "falsifier": "AMD or a hyperscaler ASIC takes more than 15% of inference shipments by Q2 2027",
+        "sources": ["S2", "S9"],
+        "confidence": "medium"
+      },
+      {
+        "title": "Humanoid pilots hint at early diffusion",
+        "lens": "Early-niche traction",
+        "implication": "Factory pilots totalling 80,000 deployed units [S3] suggest early-adopter traction beyond the visionary segment.",
+        "action": "wait",
+        "action_rationale": "traction is real but pre-chasm",
+        "impact": "medium",
+        "horizon": "mid",
+        "value_capture": "",
+        "falsifier": "Enterprise adoption may slow if interest fades",
+        "sources": ["S3"],
+        "confidence": "low"
+      }
+    ],
+    "convergence": [],
+    "scenarios": {
+      "base": "Inference capex keeps concentrating; robotics stays pre-chasm through 2027.",
+      "bull": "A second at-scale supplier emerges, easing the capital bar.",
+      "bear": "Capex digestion stalls the round pipeline for two quarters."
+    },
+    "watch": [
+      {
+        "item": "Next quarter's inference shipment split",
+        "why": "tests the winner-take-all read",
+        "horizon": "near"
+      }
+    ]
+  },
+  "stories": [
+    {
+      "label": "S1",
+      "title": "Inference infrastructure startup raises mega-round",
+      "url": "https://example.com/inference-round",
+      "source_name": "Example VC Wire",
+      "published_at": "2026-06-29",
+      "summary": "The company closed a $2.1 billion round to build dedicated inference capacity, one of the largest infrastructure raises this year.",
+      "companies": ["ExampleInfer"],
+      "sentiment": "positive",
+      "business_impact": "material",
+      "scope": "company",
+      "feed_label": "AI & Energy",
+      "maturity_stage": "growth",
+      "adoption_stage": "early adopters",
+      "strategic_move": "capacity build",
+      "lens_rationale": "large committed capex"
+    },
+    {
+      "label": "S2",
+      "title": "Inference chip shipments jump",
+      "url": "https://example.com/inference-shipments",
+      "source_name": "Example Research",
+      "published_at": "2026-06-27",
+      "summary": "Industry trackers report a 30% quarter-on-quarter rise in inference-chip shipments, led by Nvidia, with AMD holding share in specific niches.",
+      "companies": ["Nvidia", "AMD"],
+      "sentiment": "positive",
+      "business_impact": "material",
+      "scope": "industry",
+      "feed_label": "Chips",
+      "maturity_stage": "growth",
+      "adoption_stage": "early majority",
+      "strategic_move": null,
+      "lens_rationale": "volume growth on an established design"
+    },
+    {
+      "label": "S3",
+      "title": "Automaker expands humanoid factory pilot",
+      "url": "https://example.com/humanoid-pilot",
+      "source_name": "Example Industry Desk",
+      "published_at": "2026-06-26",
+      "summary": "A major automaker expanded its humanoid robot pilot to a second plant, calling early results promising but declining to share deployment figures.",
+      "companies": ["ExampleMotor"],
+      "sentiment": "neutral",
+      "business_impact": "contextual",
+      "scope": "company",
+      "feed_label": "Disruptive Tech",
+      "maturity_stage": "emerging",
+      "adoption_stage": "innovators",
+      "strategic_move": "pilot expansion",
+      "lens_rationale": "pre-chasm pilot"
+    },
+    {
+      "label": "S4",
+      "title": "Robotics tracker tallies deployed units",
+      "url": "https://example.com/robotics-tracker",
+      "source_name": "Example Tracker",
+      "published_at": "2026-06-24",
+      "summary": "A robotics market tracker estimates 80,000 humanoid units deployed across factory pilots worldwide, up from 55,000 a year earlier.",
+      "companies": [],
+      "sentiment": "neutral",
+      "business_impact": "contextual",
+      "scope": "industry",
+      "feed_label": "Disruptive Tech",
+      "maturity_stage": "emerging",
+      "adoption_stage": "innovators",
+      "strategic_move": null,
+      "lens_rationale": "diffusion telemetry"
+    }
+  ],
+  "theory": [
+    {
+      "label": "T1",
+      "source_file": "Utterback_Abernathy_Dominant_Design.pdf",
+      "similarity": 0.79,
+      "chunk_text": "A dominant design emerges after a period of ferment; declaring one requires entrant shakeout and competition shifting from performance to cost and scale."
+    }
+  ]
+}

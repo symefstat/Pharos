@@ -1,0 +1,6 @@
+# Dev/test dependencies (not needed to run the app).
+#   pip install -r requirements-dev.txt
+#   python -m pytest
+-r requirements.txt
+pytest>=8.0
+vl-convert-python>=1.6   # headless render of Altair charts to PNG/SVG for verification

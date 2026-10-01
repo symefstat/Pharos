@@ -1,0 +1,4 @@
+# API layer for the React frontend. Installs ON TOP of the project's
+# requirements.txt (which already provides supabase, pandas, yfinance, etc.).
+fastapi==0.115.6
+uvicorn[standard]==0.34.0

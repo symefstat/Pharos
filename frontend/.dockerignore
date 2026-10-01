@@ -1,0 +1,21 @@
+# Build context excludes for the SPA image.
+
+# 174 MB, and the wrong platform's binaries. `npm ci` inside the Linux build
+# stage installs the correct ones; copying the host's macOS tree over them is
+# both slow and a source of "invalid ELF header" failures on native modules.
+node_modules/
+
+# Stale local build output — stage 1 regenerates dist/ from source.
+dist/
+
+# Never bake secrets into a layer. Note Vite inlines any VITE_* var into the
+# client bundle at build time, where it is readable by anyone who opens
+# devtools, so nothing genuinely secret belongs in one regardless.
+.env
+.env.*
+!.env.example
+
+.DS_Store
+*.log
+Dockerfile
+.dockerignore

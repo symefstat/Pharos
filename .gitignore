@@ -1,0 +1,59 @@
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+venv/
+.venv/
+*.egg-info/
+.pytest_cache/
+
+# OS
+.DS_Store
+
+# Backend ingestion folders (not needed for chatbot UI)
+handlers/
+google_drive/
+
+# Pipeline / ETL scripts (not needed for chatbot UI)
+gig_news/
+gignews_run_extraction.py
+run_pipeline.py
+sync_gdrive.py
+ai_enhancement_table_final.py
+vectordb_table.py
+
+# Large / private / local-only — never commit
+MOT project/
+Skills/
+
+# Logs
+logs/
+*.log
+
+# Local eval scratch (regenerable seed; the real gold_labels.jsonl can be committed)
+eval/gold_labels.seed.jsonl
+
+# Node
+node_modules/
+
+# Claude Code local settings (machine-specific; full of absolute paths)
+.claude/settings.local.json
+
+# Personal CV-prep material (kept local, not part of the project)
+LODESTAR_PROJECT_DESCRIPTION.md
+
+# Local tooling stays ignored, but the eval runner skill is part of the repo:
+!Skills/
+Skills/*
+!Skills/lodestar-eval/
+# Eval screenshot evidence is kept local (16MB of PNGs; reports reference them)
+eval/reports/screenshots/
+eval/reports/screenshots_redesign/
+
+# LinkedIn/marketing media — local only, never shipped
+linkedin-assets/

@@ -1,0 +1,14 @@
+gold labels: 199   present in DB: 146   carry a v1 label: 146
+v2 absolute (all 146 present): maturity_stage=63.0% (n=146), adoption_stage=63.7% (n=146)
+
+================================================================
+Lens A/B — v1 (stored) vs v2 (fresh)
+================================================================
+v1 (stored): 146 joined   v2 (fresh): 146 joined
+
+field            v1 (stored) v2 (fresh)     Δ (pp)       n
+maturity_stage        68.5%      63.0%       -5.5     146
+adoption_stage        70.5%      63.7%       -6.8     146
+================================================================
+
+Keep the winner: if v2 wins it's already deployed; if v1 wins, revert MOT_Lens_Agent.md + LENS_PROMPT_VERSION to v1 and re-paste.

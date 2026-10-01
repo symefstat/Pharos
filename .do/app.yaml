@@ -1,0 +1,126 @@
+# DigitalOcean App Platform spec for Lodestar.
+#
+# ★ THIS IS THE ONE PRODUCTION DEPLOY TARGET (decided 2026-07-08, H4). ★
+# A Render deployment existed as dashboard-only config; if it is still live,
+# disable its auto-deploy in the Render dashboard — otherwise one push to main
+# deploys two prods. Everything about THIS deployment is versioned here.
+#
+# Two components behind one domain:
+#   • web service "api"  — FastAPI (backend.app.main:app), serves /api/*
+#   • static site "web"  — Vite React SPA, serves everything else (/)
+#
+# The frontend calls relative /api paths, so App Platform's HTTP router
+# dispatches /api/* to the service and the rest to the static site — same
+# origin, no CORS needed in prod. If the SPA is ever hosted on a DIFFERENT
+# origin instead, two env vars become mandatory or the app is dead on arrival:
+#   • CORS_ALLOW_ORIGINS on the api service (the SPA's origin)
+#   • VITE_API_URL at the SPA build (the api's origin)
+#
+# Import this in the DO console: Apps → Create → "Import from App Spec",
+# or:  doctl apps create --spec .do/app.yaml
+#
+# SECRETS: fill in the env values marked below in the console (App →
+# Settings → the "api" component → Environment Variables). They are left
+# blank here so nothing sensitive is committed.
+
+name: lodestar
+region: ams   # Amsterdam; change to nyc/sfo/etc. if you prefer
+
+services:
+  - name: api
+    github:
+      repo: symefstat/LODESTAR
+      branch: main
+      deploy_on_push: true
+    source_dir: /
+    environment_slug: python
+    build_command: pip install -r requirements.txt -r backend/requirements.txt
+    run_command: uvicorn backend.app.main:app --host 0.0.0.0 --port 8080
+    http_port: 8080
+    instance_size_slug: basic-xs
+    instance_count: 1
+    routes:
+      - path: /api
+        preserve_path_prefix: true   # forward /api/health as /api/health
+    health_check:
+      http_path: /api/health
+    envs:
+      # ── Required: fill these in the console (type SECRET) ──
+      - key: SUPABASE_URL
+        scope: RUN_TIME
+        type: SECRET
+      - key: SUPABASE_KEY
+        scope: RUN_TIME
+        type: SECRET
+      - key: OPENAI_API_KEY
+        scope: RUN_TIME
+        type: SECRET
+      # ── Admin auth (gates Prosus + agent actions; fill all three as SECRET) ──
+      - key: ADMIN_USERNAME
+        scope: RUN_TIME
+        type: SECRET
+      - key: ADMIN_PASSWORD
+        scope: RUN_TIME
+        type: SECRET
+      - key: AUTH_SECRET
+        scope: RUN_TIME
+        type: SECRET
+      # ── Optional: Toqan agent endpoints (Ask/news/etc.) ──
+      - key: TOQAN_API_URL
+        scope: RUN_TIME
+        type: SECRET
+      - key: TOQAN_ASK
+        scope: RUN_TIME
+        type: SECRET
+      - key: TOQAN_HOME_PAGE_NEWS
+        scope: RUN_TIME
+        type: SECRET
+      - key: TOQAN_AI_ENERGY_NEWS
+        scope: RUN_TIME
+        type: SECRET
+      - key: TOQAN_DISRUPTIVE_TECH
+        scope: RUN_TIME
+        type: SECRET
+      - key: TOQAN_CHIPS_NEWS
+        scope: RUN_TIME
+        type: SECRET
+      - key: TOQAN_GEOPOLITICS_NEWS
+        scope: RUN_TIME
+        type: SECRET
+      - key: TOQAN_CLIMATE_NEWS
+        scope: RUN_TIME
+        type: SECRET
+      - key: TOQAN_BIOTECH_NEWS
+        scope: RUN_TIME
+        type: SECRET
+      - key: TOQAN_SOFTWARE_NEWS
+        scope: RUN_TIME
+        type: SECRET
+      - key: TOQAN_FINTECH_NEWS
+        scope: RUN_TIME
+        type: SECRET
+      - key: TOQAN_DEFENSE_NEWS
+        scope: RUN_TIME
+        type: SECRET
+      - key: TOQAN_MOT_LENS
+        scope: RUN_TIME
+        type: SECRET
+      - key: TOQAN_STRATEGIST
+        scope: RUN_TIME
+        type: SECRET
+      - key: ALERT_WEBHOOK
+        scope: RUN_TIME
+        type: SECRET
+
+static_sites:
+  - name: web
+    github:
+      repo: symefstat/LODESTAR
+      branch: main
+      deploy_on_push: true
+    source_dir: frontend
+    build_command: npm ci && npm run build
+    output_dir: dist
+    catchall_document: index.html   # SPA fallback for client-side routing
+    routes:
+      - path: /

@@ -1,0 +1,69 @@
+# Runs the whole Pharos stack locally in containers:
+#
+#     docker compose up --build      start (rebuild if a Dockerfile changed)
+#     docker compose logs -f api     follow the API logs
+#     docker compose down            stop and remove
+#
+# Then open http://localhost:8080 — the SPA, with /api proxied to the backend on
+# the same origin, which is the shape prod runs in.
+#
+# This mirrors .do/app.yaml's two components (api service + web static site) so
+# what you see locally matches what App Platform serves. It does NOT replace the
+# deploy: .do/app.yaml still builds prod from buildpacks, untouched.
+#
+# Not a replacement for ./start_web_ui.sh either. That stays the faster loop for
+# frontend work, because Vite's hot reload is instant. Reach for Compose when you
+# need Linux parity — the poppler/pdftotext paths, a dependency that behaves
+# differently off macOS, or confidence that a clean machine can run this at all.
+
+services:
+  # ── FastAPI backend ──────────────────────────────────────────────────────
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: pharos-api:local
+
+    # Secrets and config from the existing .env — read at RUN time, never baked
+    # into an image layer (.dockerignore excludes the file from the build
+    # context). Same variables .do/app.yaml declares as SECRET in the console.
+    env_file:
+      - .env
+
+    environment:
+      # The SPA reaches the API through nginx on the same origin, so CORS is not
+      # needed for normal use. This covers hitting the API directly on :8000
+      # from a browser page served elsewhere during debugging.
+      CORS_ALLOW_ORIGINS: "http://localhost:8080,http://127.0.0.1:8080"
+      LOG_LEVEL: "INFO"
+
+    # Published so you can reach FastAPI's docs directly at
+    # http://localhost:8000/docs, bypassing nginx. Host 8000 keeps the habit
+    # from start_web_ui.sh; the container listens on 8080 as in prod.
+    ports:
+      - "8000:8080"
+
+    restart: unless-stopped
+
+  # ── SPA behind nginx ─────────────────────────────────────────────────────
+  web:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    image: pharos-web:local
+
+    ports:
+      - "8080:80"
+
+    # Wait for the API's HEALTHCHECK to pass, not merely for its container to
+    # exist. Without `condition: service_healthy` nginx can start first, fail to
+    # resolve "api", and cache that failure — the app then 502s until reload.
+    depends_on:
+      api:
+        condition: service_healthy
+
+    restart: unless-stopped
+
+# Compose creates a default network for these two services and registers each
+# under its service name, which is what makes `proxy_pass http://api:8080` in
+# frontend/nginx.conf resolve. No explicit network block needed.

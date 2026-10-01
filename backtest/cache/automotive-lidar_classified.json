@@ -1,0 +1,1178 @@
+{
+ "https://www.marketwatch.com/press-release/automotive-lidar-market-size-2019-global-industry-trends-forecast-emerging-trends-growth-dynamics-to-2024-2019-05-06": {
+  "maturity_stage": "growth",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "none",
+  "lens_rationale": "Market forecast with growth dynamics indicates scaling automotive LiDAR industry \u2192 growth; autonomous vehicle pilots \u2192 early-adopters.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.efe.com/efe/usa/comunicados/coast-autonomous-optimizes-self-driving-vehicle-safety-with-leddartech-s-cocoon-lidar/50000209-3991990": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "none",
+  "lens_rationale": "Commercial LiDAR deployment in autonomous vehicle, no dominant design \u2192 emerging; pilot integration \u2192 early-adopters.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.finanznachrichten.de/nachrichten-2019-06/46867539-leddartech-inc-coast-autonomous-optimizes-self-driving-vehicle-safety-with-leddartech-s-cocoon-lidar-399.htm": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "none",
+  "lens_rationale": "Commercial LiDAR deployment in autonomous vehicle, no dominant design \u2192 emerging; pilot integration \u2192 early-adopters.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.prnewswire.com:443/news-releases/4-34-bn-automotive-lidar-market-to-2027---global-analysis-and-forecasts-by-type-component-and-application-300830763.html": {
+  "maturity_stage": "growth",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "none",
+  "lens_rationale": "$4.34Bn market forecast shows scaling automotive LiDAR with multiple competing approaches \u2192 growth; early deployments \u2192 early-adopters.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.businesswire.com/news/home/20190412005221/en/Insights-Worldwide-Automotive-LiDAR-Market-2019-2027--": {
+  "maturity_stage": "growth",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "none",
+  "lens_rationale": "Soaring demand indicates rapid scaling of automotive LiDAR \u2192 growth; autonomous vehicles still in early deployment \u2192 early-adopters.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.marketwatch.com/press-release/automotive-lidar-market-size-in-asia-pacific-region-is-anticipated-to-grow-at-a-cagr-of-60-during-the-projected-timeline-2019-04-26": {
+  "maturity_stage": "growth",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "none",
+  "lens_rationale": "60% CAGR shows rapid scaling of automotive LiDAR \u2192 growth; still early in autonomous vehicle adoption \u2192 early-adopters.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "http://www.globenewswire.com/news-release/2019/06/04/1863675/0/en/COAST-Autonomous-Optimizes-Self-Driving-Vehicle-Safety-with-LeddarTech-s-Cocoon-LiDAR.html": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "none",
+  "lens_rationale": "Commercial LiDAR deployment in autonomous vehicle, no dominant design \u2192 emerging; pilot integration \u2192 early-adopters.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.ecnmag.com/news/2019/04/students-battle-it-out-autonomous-vehicle-ai-algorithm-competition": {
+  "maturity_stage": "research",
+  "adoption_stage": "innovators",
+  "strategic_move": "none",
+  "lens_rationale": "Student algorithm competition indicates experimental/research phase \u2192 research; competitive demos and trials \u2192 innovators.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.pr-inside.com/coast-autonomous-optimizes-self-driving-vehicle-sa-r4763611.htm": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "none",
+  "lens_rationale": "Commercial LiDAR with competing designs \u2192 emerging; AV pilot for competitive edge \u2192 early-adopters.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.businesswire.com/news/home/20190402005285/en/Velodyne-Lidar%E2%80%99s-Sponsorship-Japan-Automotive-AI-Challenge": {
+  "maturity_stage": "n/a",
+  "adoption_stage": "n/a",
+  "strategic_move": "none",
+  "lens_rationale": "Sponsorship event, not technology deployment \u2192 n/a; marketing activity \u2192 none.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.bakersfield.com/ap/national/coast-autonomous-optimizes-self-driving-vehicle-safety-with-leddartech-s/article_498d0319-e17b-5c23-a3eb-fd382f993881.html": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "none",
+  "lens_rationale": "Commercial LiDAR with competing designs \u2192 emerging; AV pilot for competitive edge \u2192 early-adopters.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.prnewswire.com:443/news-releases/the-global-automotive-lidar-market-accounted-for-us-415-1-mn-in-2018-and-is-expected-to-grow-at-a-cagr-of-30-4-over-the-forecast-period-2019-2027--to-account-for-us-4-348-09-mn-in-2027--300843225.html": {
+  "maturity_stage": "n/a",
+  "adoption_stage": "n/a",
+  "strategic_move": "none",
+  "lens_rationale": "Market forecast report \u2192 n/a; no strategic move \u2192 none.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.openpr.com/news/1880888/leddartech-to-demonstrate-automotive-lidar-detection": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "innovators",
+  "strategic_move": "none",
+  "lens_rationale": "Commercial LiDAR demonstration with competing designs \u2192 emerging; trade show demo \u2192 innovators.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.forbes.com/sites/lanceeliot/2019/10/08/lidar-put-into-a-teslaand-the-world-doesnt-come-to-an-end/": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "innovators",
+  "strategic_move": "none",
+  "lens_rationale": "Experimental LiDAR retrofit with competing designs \u2192 emerging; enthusiast experiment \u2192 innovators.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.azosensors.com/news.aspx?newsID=13527": {
+  "maturity_stage": "n/a",
+  "adoption_stage": "n/a",
+  "strategic_move": "none",
+  "lens_rationale": "Innovation award, not deployment \u2192 n/a; recognition, no strategic move \u2192 none.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.marketwatch.com/press-release/north-america-self-driving-car-market-2018-2023overview-and-scope-industry-trends-share-size-2019-10-22": {
+  "maturity_stage": "n/a",
+  "adoption_stage": "n/a",
+  "strategic_move": "none",
+  "lens_rationale": "Market report, not technology deployment \u2192 n/a; no strategic move \u2192 none.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.prweb.com/releases/draper_unveils_lidar_with_mems_beamsteering_technology_for_autonomous_vehicles/prweb16783950.htm": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "innovators",
+  "strategic_move": "standards-battle",
+  "lens_rationale": "MEMS LiDAR unveiled, competing designs exist \u2192 emerging; demo phase \u2192 innovators; beamsteering architecture competition \u2192 standards-battle.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "http://www.koreaherald.com/view.php?ud=20191219000174": {
+  "maturity_stage": "research",
+  "adoption_stage": "innovators",
+  "strategic_move": "none",
+  "lens_rationale": "Concept vehicle at CES \u2192 research; trade show demo \u2192 innovators; no strategic action \u2192 none.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://optics.org/news/10/12/21": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "standards-battle",
+  "lens_rationale": "MEMS LiDAR launched commercially, competing approaches \u2192 emerging; first commercial sales \u2192 early-adopters; design competition \u2192 standards-battle.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.marketwatch.com/press-release/latin-america-self-driving-car-market-size-competition-status-and-forecast-market-2019-2024-2019-12-05": {
+  "maturity_stage": "n/a",
+  "adoption_stage": "n/a",
+  "strategic_move": "none",
+  "lens_rationale": "Market forecast report \u2192 n/a for technology/adoption stages; no strategic move \u2192 none.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://eandt.theiet.org/content/articles/2019/12/solid-state-lidar-chips-could-mean-dramatic-price-drop-for-autonomous-cars/": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "disruption",
+  "lens_rationale": "Solid-state chips with cost advantage \u2192 emerging; price-limited adoption \u2192 early-adopters; lower-cost threat to incumbents \u2192 disruption.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.etftrends.com/innovative-etfs-channel/industry-expert-hundreds-of-self-driving-cars-will-hit-the-road-in-5-years/": {
+  "maturity_stage": "n/a",
+  "adoption_stage": "n/a",
+  "strategic_move": "none",
+  "lens_rationale": "Expert prediction about future \u2192 n/a for current tech/adoption; commentary only \u2192 none.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://business.financialpost.com/pmn/press-releases-pmn/business-wire-news-releases-pmn/velodyne-lidar-debuts-alpha-prime-the-most-advanced-lidar-sensor-on-the-market": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "none",
+  "lens_rationale": "New LiDAR sensor variant in fragmented market \u2192 emerging; product debut \u2192 early-adopters; routine launch \u2192 none.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "http://www.koreatimes.co.kr/www/tech/2019/10/419_277590.html": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "collaboration",
+  "lens_rationale": "Mobis invests in Velodyne for LiDAR \u2192 emerging tech; autonomous sensor market early \u2192 early-adopters; partnership \u2192 collaboration.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.finanznachrichten.de/nachrichten-2020-02/48950955-global-automotive-lidar-sensors-market-2020-2024-rapid-developments-in-autonomous-vehicle-technology-to-boost-market-growth-technavio-004.htm": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "none",
+  "lens_rationale": "Automotive LiDAR market with rapid developments \u2192 emerging (S-curve: no dominant design); early trials \u2192 early-adopters (diffusion).",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.dealerscope.com/article/sense-photonics-introduces-osprey-first-modular-flash-lidar-for-autonomous-vehicles/": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "entry-timing",
+  "lens_rationale": "First commercial modular FLASH LiDAR \u2192 emerging (competing approaches); AV testing \u2192 early-adopters; 'first' \u2192 entry-timing (Schilling).",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://news.yahoo.com/sense-photonics-introduces-osprey-first-120800279.html": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "entry-timing",
+  "lens_rationale": "First commercial modular FLASH LiDAR \u2192 emerging (competing approaches); AV testing \u2192 early-adopters; 'first' \u2192 entry-timing (Schilling).",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.zdnet.com/article/scrappy-company-leapfrogs-the-pack-to-robot-taxis/": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "entry-timing",
+  "lens_rationale": "Functioning robot taxi deployment \u2192 emerging (no dominant design); limited commercial service \u2192 early-adopters; 'leapfrogs' \u2192 entry-timing (Schilling).",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.marketwatch.com/press-release/north-america-self-driving-car-market-overview-and-scope-market-size-future-outlook-of-the-market-2018-2023-2020-04-01": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "none",
+  "lens_rationale": "Self-driving car market report 2018-2023 \u2192 emerging (competing approaches); pilot phase \u2192 early-adopters (diffusion); market report only.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "http://www.semiconductor-today.com/news_items/2020/jan/onsemi-soslab-160120.shtml": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "innovators",
+  "strategic_move": "collaboration",
+  "lens_rationale": "Semiconductor-lab LiDAR collaboration MOU \u2192 emerging (development phase); pre-commercial development \u2192 innovators; MOU \u2192 collaboration (Schilling).",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.marketwatch.com/press-release/north-america-self-driving-car-market-size-future-outlook-2018-2023-2020-01-28": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "none",
+  "lens_rationale": "Self-driving car market report 2018-2023 \u2192 emerging (competing approaches); pilot phase \u2192 early-adopters (diffusion); market report only.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.newelectronics.co.uk/electronics-news/maxim-release-smallest-lidar-ics/224579/": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "none",
+  "lens_rationale": "Smallest LiDAR IC release \u2192 emerging (multiple IC approaches); commercial component to LiDAR builders \u2192 early-adopters (diffusion).",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.cnet.com/roadshow/news/bosch-lidar-self-driving-cars/": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "innovators",
+  "strategic_move": "standards-battle",
+  "lens_rationale": "New system, no dominant design \u2192 emerging; announcement, no deployment \u2192 innovators; positioned as breakthrough standard.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.tmcnet.com/usubmit/2020/01/09/9079292.htm": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "innovators",
+  "strategic_move": "collaboration",
+  "lens_rationale": "MOU for development and commercialization \u2192 emerging; pre-market partnership \u2192 innovators; collaboration to develop technology.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.dailymail.co.uk/money/cars/article-7844511/Germanys-Bosch-offer-lower-cost-sensors-self-driving-cars.html": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "innovators",
+  "strategic_move": "none",
+  "lens_rationale": "Lower-cost offering, no dominant design \u2192 emerging; future product, no customers \u2192 innovators; routine announcement.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.electropages.com/blog/2020/03/new-lidar-technologies-boosting-autonomous-driving": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "innovators",
+  "strategic_move": "none",
+  "lens_rationale": "Multiple new technologies, no dominant design \u2192 emerging; general article, no deployment \u2192 innovators; no strategic move.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.marketwatch.com/press-release/new-report-at-304-cagr-automotive-lidar-market-size-growth-and-share-to-accumulate-over-434809-mn-by-2027-2020-07-24": {
+  "maturity_stage": "growth",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "none",
+  "lens_rationale": "30.4% CAGR indicates rapid scaling \u2192 growth; high-growth market with visionaries \u2192 early-adopters; market report.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.finanznachrichten.de/nachrichten-2020-07/50281325-leddartech-inc-coast-autonomous-coast-autonomous-selects-leddartech-s-solid-state-lidar-technology-as-the-most-reliable-solution-to-achieve-maximum-399.htm": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "standards-battle",
+  "lens_rationale": "Customer selects solid-state LiDAR, competing designs \u2192 emerging; autonomous vehicle pilot customer \u2192 early-adopters; competing for adoption.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://news.yahoo.com/coast-autonomous-selects-leddartech-solid-041100332.html": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "standards-battle",
+  "lens_rationale": "Customer selects solid-state LiDAR, competing designs \u2192 emerging; autonomous vehicle pilot customer \u2192 early-adopters; competing for adoption.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://europe.autonews.com/automotive-news-europe-congress-conversations/hear-leading-lidar-maker-about-next-steps-autonomous": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "none",
+  "lens_rationale": "Leading maker, next steps discussion \u2192 emerging; established presence, evolving technology \u2192 early-adopters; interview content.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "http://www.digitaljournal.com/pr/4731529": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "entry-timing",
+  "lens_rationale": "Product unveiling in competitive LiDAR market \u2192 emerging; press release stage \u2192 early-adopters; market entry \u2192 entry-timing.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.benzinga.com/topic/lidar": {
+  "maturity_stage": "n/a",
+  "adoption_stage": "n/a",
+  "strategic_move": "none",
+  "lens_rationale": "No substantive content beyond term 'lidar' \u2192 n/a, n/a, none.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://europe.autonews.com/suppliers/volvo-lidar-maker-luminar-adds-influx-auto-veterans": {
+  "maturity_stage": "n/a",
+  "adoption_stage": "n/a",
+  "strategic_move": "none",
+  "lens_rationale": "Hiring announcement, not technology story \u2192 n/a, n/a, none.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.azosensors.com/article.aspx?ArticleID=2013": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "none",
+  "lens_rationale": "Commercial FMCW amid competing LiDAR approaches \u2192 emerging; commercial pilots \u2192 early-adopters; tech report \u2192 none.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.marketwatch.com/press-release/automotive-lidar-market-size-share-predicted-to-reach-us-41352-mn-by-2026---industry-news-2020-09-04": {
+  "maturity_stage": "n/a",
+  "adoption_stage": "n/a",
+  "strategic_move": "none",
+  "lens_rationale": "Market forecast, not specific technology \u2192 n/a, n/a, none.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.wsj.com/articles/lidar-startup-taps-investment-banker-as-new-cfo-11595628904": {
+  "maturity_stage": "n/a",
+  "adoption_stage": "n/a",
+  "strategic_move": "none",
+  "lens_rationale": "CFO appointment, organizational update \u2192 n/a, n/a, none.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.reuters.com/article/us-aeva-zf-friedrich/aeva-partners-with-auto-supplier-zf-to-produce-key-self-driving-sensors-idUSKBN25Z2LO": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "collaboration",
+  "lens_rationale": "Partnership to produce sensors, pre-scaling stage \u2192 emerging; strategic partnership \u2192 early-adopters; explicit partnership \u2192 collaboration.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.androidheadlines.com/2020/08/huawei-to-soon-launch-low-cost-lidar-products-for-autonomous-cars.html": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "disruption",
+  "lens_rationale": "Low-cost launch in competitive market \u2192 emerging; pre-launch stage \u2192 early-adopters; price-based entry \u2192 disruption.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.fool.com/investing/2020/12/15/why-velodyne-lidar-stock-is-higher-today/?source=iedfolrf0000001": {
+  "maturity_stage": "n/a",
+  "adoption_stage": "n/a",
+  "strategic_move": "none",
+  "lens_rationale": "Stock price movement with no technology specifics \u2192 n/a stages; market news \u2192 none.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.fool.com/investing/2020/12/16/why-luminar-technologies-stock-jumped-this-morning/?source=iedfolrf0000001": {
+  "maturity_stage": "n/a",
+  "adoption_stage": "n/a",
+  "strategic_move": "none",
+  "lens_rationale": "Stock movement lacking technology development detail \u2192 n/a stages; financial news \u2192 none.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://unitedwithisrael.org/israeli-self-driving-unicorn-pulls-in-1-4-billion-in-out-of-the-box-ipo/": {
+  "maturity_stage": "n/a",
+  "adoption_stage": "n/a",
+  "strategic_move": "none",
+  "lens_rationale": "IPO fundraising with no specific technology described \u2192 n/a stages; financing event \u2192 none.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.msn.com/en-us/money/other/with-robotaxis-still-a-distant-dream-lidar-makes-itself-useful/ar-BB1ap0ix": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "none",
+  "lens_rationale": "Lidar commercial, multiple vendors, no dominant design \u2192 emerging; niche applications beyond pilots \u2192 early-adopters.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.fool.com/investing/2020/12/12/luminar-is-overhyped-these-self-driving-car-stocks/?source=iedfolrf0000001": {
+  "maturity_stage": "n/a",
+  "adoption_stage": "n/a",
+  "strategic_move": "none",
+  "lens_rationale": "Investment recommendation without technology development \u2192 n/a stages; financial opinion \u2192 none.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.forbes.com/sites/lianeyvkoff/2020/10/06/this-startup-has-a-plan-to-build-the-missing-link-for-self-driving-cars/": {
+  "maturity_stage": "research",
+  "adoption_stage": "innovators",
+  "strategic_move": "none",
+  "lens_rationale": "Startup plan, not yet built \u2192 research; no buyable product \u2192 innovators; announcement only \u2192 none.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.efe.com/efe/usa/comunicados/dspace-and-leddartech-join-forces-to-drive-development-of-lidar-innovations-for-self-driving-cars/50000209-4414305": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "collaboration",
+  "lens_rationale": "Partnership to develop lidar technology \u2192 collaboration; commercial but competing approaches \u2192 emerging.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.businesstimes.com.sg/garage/self-driving-startup-ouster-nears-us19b-deal-to-go-public-sources": {
+  "maturity_stage": "n/a",
+  "adoption_stage": "n/a",
+  "strategic_move": "none",
+  "lens_rationale": "SPAC transaction with no technology specifics \u2192 n/a stages; financing event \u2192 none.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.investegate.co.uk/leddartech-inc-/gnw/dspace-and-leddartech-join-forces-to-drive-development-of-lidar-innovations-for-self-driving-cars/20201209051500H7029/": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "collaboration",
+  "lens_rationale": "Partnership to develop lidar innovations \u2192 collaboration; competing designs, no standard \u2192 emerging.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.fool.com/investing/2020/12/24/why-velodyne-lidar-stock-sank-10-today/?source=iedfolrf0000001": {
+  "maturity_stage": "n/a",
+  "adoption_stage": "n/a",
+  "strategic_move": "none",
+  "lens_rationale": "Stock price movement without tech/strategy detail \u2192 none; pure market story.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.reuters.com/article/us-ouster-m-a-colonnade-acqsn-exclusive-idUSKBN28W00B": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "none",
+  "lens_rationale": "SPAC/IPO is financing event, not tech strategy \u2192 none; competing lidar designs \u2192 emerging.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.benzinga.com/analyst-ratings/analyst-color/20/10/17785171/6-lidar-stocks-for-the-autonomous-vehicle-revolution": {
+  "maturity_stage": "n/a",
+  "adoption_stage": "n/a",
+  "strategic_move": "none",
+  "lens_rationale": "Investment listicle without specific tech/strategy content \u2192 none; no technology detail.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.marketwatch.com/articles/luminar-lays-out-a-new-vision-for-self-driving-cars-51623770402": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "standards-battle",
+  "lens_rationale": "Vision positioning to set design direction \u2192 standards-battle; competing lidar approaches \u2192 emerging.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://cleantechnica.com/2021/06/09/chinese-lidar-maker-hesai-brings-in-over-300-million-in-series-d-round/": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "none",
+  "lens_rationale": "Series D funding is capital event, not strategy \u2192 none; multiple competing designs \u2192 emerging.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.marketwatch.com/articles/waymo-chief-steps-down-is-the-tesla-self-driving-writing-on-the-wall-51617637313": {
+  "maturity_stage": "n/a",
+  "adoption_stage": "n/a",
+  "strategic_move": "none",
+  "lens_rationale": "Market sentiment analysis without tech/strategy detail \u2192 none; pure financial commentary.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.msn.com/en-ca/autos/news/toyota-backed-self-driving-car-ponyai-partners-with-luminar/ar-BB1gz6F3": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "collaboration",
+  "lens_rationale": "AV-lidar partnership \u2192 collaboration; multiple lidar designs competing, no standard \u2192 emerging.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://asia.nikkei.com/Business/Automobiles/Cheaper-lidar-sensors-brighten-the-future-of-autonomous-cars": {
+  "maturity_stage": "growth",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "none",
+  "lens_rationale": "Price drops signal scaling production \u2192 growth; LiDAR still in AV pilots, not mass-market cars \u2192 early-adopters.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://apnews.com/press-release/business-wire/technology-business-69eefcd58db64443ad85447a5eaa92a3": {
+  "maturity_stage": "growth",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "collaboration",
+  "lens_rationale": "Partnership to develop AV platform \u2192 collaboration; LiDAR scaling but pilot-stage deployment \u2192 growth/early-adopters.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://europe.autonews.com/automakers/toyota-backed-self-driving-tech-firm-ponyai-partners-luminar": {
+  "maturity_stage": "growth",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "collaboration",
+  "lens_rationale": "Pony.ai-Luminar partnership \u2192 collaboration; autonomous driving scaling but still in pilots \u2192 growth/early-adopters.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://driving.ca/car-culture/auto-tech/what-is-lidar-and-how-is-it-used-in-cars": {
+  "maturity_stage": "n/a",
+  "adoption_stage": "n/a",
+  "strategic_move": "none",
+  "lens_rationale": "Educational explainer article, not a technology development or deployment story \u2192 n/a/none.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.autoconnectedcar.com/2021/05/autonomous-and-self-driving-vehicle-news-tesla-argo-ai-volkswagen-local-motors-innoviz-pony-ai-innovusion-ottopia-tech-arbe-aeva-nvidia/": {
+  "maturity_stage": "n/a",
+  "adoption_stage": "n/a",
+  "strategic_move": "none",
+  "lens_rationale": "News aggregation of multiple companies, not a single development or strategic action \u2192 n/a/none.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.investing.com/news/stock-market-news/toyotabacked-selfdriving-car-ponyai-partners-with-luminar-2500937": {
+  "maturity_stage": "growth",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "collaboration",
+  "lens_rationale": "Partnership between Pony.ai and Luminar \u2192 collaboration; AV tech scaling but pilot-phase \u2192 growth/early-adopters.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.dealstreetasia.com/stories/pony-ai-luminar-240781/": {
+  "maturity_stage": "growth",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "collaboration",
+  "lens_rationale": "Partnership announcement \u2192 collaboration; self-driving technology scaling in pilot programs \u2192 growth/early-adopters.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "http://autonews.gasgoo.com/70018183.html": {
+  "maturity_stage": "growth",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "collaboration",
+  "lens_rationale": "RoboSense-Webasto partnership \u2192 collaboration; LiDAR scaling but smart roof application in pilots \u2192 growth/early-adopters.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "http://autonews.gasgoo.com/new_energy/70018422.html": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "collaboration",
+  "lens_rationale": "Hesai-WeRide developing LiDAR platform \u2192 collaboration; competing designs exist \u2192 emerging; autonomous vehicle pilots \u2192 early-adopters.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.oann.com/lidar-supplier-aeye-inks-deals-with-continental-tusimple/": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "collaboration",
+  "lens_rationale": "AEye commercial deals with automotive partners \u2192 collaboration; multiple competing suppliers \u2192 emerging; pilot partnerships \u2192 early-adopters.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.carscoops.com/2021/08/waymo-no-longer-selling-its-lidar-tech-to-other-companies/": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "appropriability",
+  "lens_rationale": "Waymo stops selling LiDAR externally \u2192 appropriability; competing LiDAR approaches \u2192 emerging; early commercial stage \u2192 early-adopters.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.businesswire.com/news/home/20210714005366/en/TuSimple-and-AEye-Partner-to-Deploy-Long-Range-LiDAR-for-Autonomous-Trucking": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "collaboration",
+  "lens_rationale": "TuSimple-AEye partnership deploying long-range LiDAR \u2192 collaboration; multiple approaches \u2192 emerging; autonomous trucking pilots \u2192 early-adopters.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "http://autonews.gasgoo.com/china_news/70018402.html": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "collaboration",
+  "lens_rationale": "Li Auto-Hesai LiDAR cooperation \u2192 collaboration; competing solutions exist \u2192 emerging; automotive pilot adoption \u2192 early-adopters.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.forbes.com/sites/greatspeculations/2021/07/09/is-velodyne-stock-a-buy-after-big-sell-off/": {
+  "maturity_stage": "n/a",
+  "adoption_stage": "n/a",
+  "strategic_move": "none",
+  "lens_rationale": "Stock investment article with no technology development or strategic move \u2192 n/a; no strategy \u2192 none.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.oann.com/alphabets-waymo-to-stop-selling-lidar-self-driving-car-sensors-sources/": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "appropriability",
+  "lens_rationale": "Waymo halts external LiDAR sales \u2192 appropriability; competing designs in market \u2192 emerging; early commercial \u2192 early-adopters.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://optics.org/news/12/7/23": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "collaboration",
+  "lens_rationale": "Veoneer-Baraja partnership delivering Spectrum-Scan LiDAR \u2192 collaboration; multiple competing approaches \u2192 emerging; early deployment \u2192 early-adopters.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.autoconnectedcar.com/2021/07/autonomous-self-driving-vehicle-news-airbiquity-cyngn-magna-veoneer-argo-ai-lyft-beep-algolux/": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "none",
+  "lens_rationale": "News roundup, no action \u2192 none; AV multiple competing approaches \u2192 emerging; pilots \u2192 early-adopters.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://isp.netscape.com/pf/story/0002/20210827/KBN2FS05O_3": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "appropriability",
+  "lens_rationale": "Waymo stops selling to control asset \u2192 appropriability (Teece); lidar multiple designs \u2192 emerging; AV pilots \u2192 early-adopters.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.bnnbloomberg.ca/lidar-maker-cepton-in-merger-talks-with-growth-capital-spac-1.1636677": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "none",
+  "lens_rationale": "SPAC merger is financial, not strategy \u2192 none; lidar multiple vendors \u2192 emerging; pilots \u2192 early-adopters.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://investorplace.com/2021/07/vldr-stock-the-big-nvidia-news-that-has-velodyne-lidar-shares-surging-today/": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "none",
+  "lens_rationale": "Stock surge story, no strategic action \u2192 none; lidar competing designs \u2192 emerging; pilots \u2192 early-adopters.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.investors.com/news/luminar-soars-nvidia-deal-bring-self-driving-cars-market-2024/": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "collaboration",
+  "lens_rationale": "Luminar-Nvidia partnership \u2192 collaboration (Schilling); lidar pre-standard \u2192 emerging; AV development pilots \u2192 early-adopters.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://electronics360.globalspec.com/article/17449/first-lidar-built-for-level-4-self-driving-cars": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "innovators",
+  "strategic_move": "entry-timing",
+  "lens_rationale": "First Level 4 lidar, first-mover claim \u2192 entry-timing (Schilling); new product \u2192 emerging; demos \u2192 innovators.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.marketwatch.com/articles/luminar-wins-nvidia-business-in-self-driving-deal-its-a-big-win-for-the-lidar-maker-51636418195": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "collaboration",
+  "lens_rationale": "Luminar-Nvidia deal \u2192 collaboration; lidar no standard \u2192 emerging; development contracts \u2192 early-adopters.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.msn.com/en-us/money/companies/ouster-will-buy-sense-photonics-drive-for-more-automotive-deals/ar-AAP9RcI": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "appropriability",
+  "lens_rationale": "Ouster buys Sense Photonics for IP \u2192 appropriability (Teece); lidar no standard \u2192 emerging; pilots \u2192 early-adopters.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.marketwatch.com/articles/nvidia-stock-price-luminar-news-self-driving-deal-51636418195": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "collaboration",
+  "lens_rationale": "Luminar-Nvidia supplier deal; competing vendors no dominant design \u2192 emerging; lighthouse partnership pre-chasm \u2192 early-adopters; collaboration.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://electronics360.globalspec.com/article/17412/nvidia-selects-luminar-lidar-for-its-drive-sensor-suite": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "collaboration",
+  "lens_rationale": "Nvidia selects Luminar; multiple vendors no dominant design \u2192 emerging; development platform supplier pre-chasm \u2192 early-adopters; collaboration.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://cleantechnica.com/2021/11/11/nvidias-new-drive-hyperion-8-released-includes-radar-lidar-unlike-teslas-fsd-suite/": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "standards-battle",
+  "lens_rationale": "Hyperion platform vs Tesla approach; competing sensor designs \u2192 emerging; development platform for OEMs \u2192 early-adopters; standards-battle.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://europe.autonews.com/suppliers/suppliers-prepare-boom-lidar-market-self-driving-cars": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "none",
+  "lens_rationale": "Suppliers preparing for lidar boom; anticipating scaling but not yet rapid growth \u2192 emerging; market preparation report \u2192 none.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.eagletribune.com/region/indie-semiconductor-launches-highly-integrated-surya-lidar-soc/article_42478282-1492-596e-beaa-0640add7a8a0.html": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "entry-timing",
+  "lens_rationale": "indie launches lidar SoC; multiple vendors no dominant design \u2192 emerging; new product launch \u2192 early-adopters; entry-timing.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.businesswire.com/news/home/20211018005312/en/Cepton-Technologies-Adds-Brunno-Moretti-as-Vice-President-of-Product-Marketing": {
+  "maturity_stage": "n/a",
+  "adoption_stage": "n/a",
+  "strategic_move": "none",
+  "lens_rationale": "Executive hire; organizational announcement not technology development \u2192 n/a for maturity/adoption; personnel move \u2192 none.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.businesswire.com/news/home/20211220005252/en/Aeva-to-Showcase-Industry%E2%80%99s-Most-Advanced-4D-LiDAR-for-Autonomous-Vehicles-and-Beyond-at-CES-2022": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "none",
+  "lens_rationale": "Aeva CES showcase; competing vendors no dominant design \u2192 emerging; trade show demo to prospects \u2192 early-adopters; none.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.forbes.com/sites/greatspeculations/2021/11/10/whats-next-for-velodyne-lidar-stock-after-28-gain-over-the-last-month/": {
+  "maturity_stage": "n/a",
+  "adoption_stage": "n/a",
+  "strategic_move": "none",
+  "lens_rationale": "Stock price analysis; financial news not technology development \u2192 n/a for maturity/adoption; market report \u2192 none.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://autonews.gasgoo.com/icv/70021178.html": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "none",
+  "lens_rationale": "Market report on competing LiDAR vendors with no dominant design \u2192 emerging; AV applications in pilots \u2192 early-adopters.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.prnewswire.com:443/news-releases/hesai-wins-top-rankings-in-the-global-market-revealed-by-yole-groups-2022-lidar-industry-report-301614694.html": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "none",
+  "lens_rationale": "Industry report on LiDAR market leaders; multiple competing vendors, no dominant design \u2192 emerging; AV pilots \u2192 early-adopters.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.timesofisrael.com/israels-innoviz-secures-4b-deal-to-supply-volkswagen-with-lidar-sensors/": {
+  "maturity_stage": "growth",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "collaboration",
+  "lens_rationale": "$4B supply contract signals mass production and heavy capex \u2192 growth; VW partnership for future deployment \u2192 early-adopters.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.marketwatch.com/articles/luminar-stock-buy-lidar-autonomous-driving-51663695086": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "none",
+  "lens_rationale": "Analyst recommendation on LiDAR vendor in competitive autonomous vehicle market \u2192 emerging; pilot applications \u2192 early-adopters.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.eagletribune.com/region/soslab-launches-next-generation-3d-solid-state-lidar-ml-x/article_574fb548-1b5e-5af1-abc8-617c293a2c30.html": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "entry-timing",
+  "lens_rationale": "New solid-state LiDAR product launch into market with competing architectures \u2192 emerging; commercial availability \u2192 early-adopters.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.forbes.com/sites/forbestechcouncil/2022/08/18/to-enable-safe-autonomous-driving-act-on-reliable-measurement-data-instead-of-hunches/": {
+  "maturity_stage": "n/a",
+  "adoption_stage": "n/a",
+  "strategic_move": "none",
+  "lens_rationale": "Opinion piece on autonomous driving data philosophy, not about a specific technology or product \u2192 n/a.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.carscoops.com/2022/08/vw-to-buy-4-billion-worth-of-self-driving-tech-from-israels-innoviz/": {
+  "maturity_stage": "growth",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "collaboration",
+  "lens_rationale": "$4B VW-Innoviz deal signals scaling and heavy investment \u2192 growth; OEM partnership for AV deployment \u2192 early-adopters.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.finanznachrichten.de/nachrichten-2022-09/57045256-microvision-inc-microvision-s-lidar-solution-supported-on-nvidia-drive-autonomous-vehicle-platform-200.htm": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "platform",
+  "lens_rationale": "MicroVision LiDAR integrated with NVIDIA AV platform; multiple competing solutions \u2192 emerging; ecosystem integration \u2192 platform.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://menafn.com/1104481834/What-does-the-future-hold-for-the-ADAS-Sensor-Market": {
+  "maturity_stage": "n/a",
+  "adoption_stage": "n/a",
+  "strategic_move": "none",
+  "lens_rationale": "General market outlook with no specific technology or strategic action.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.streetinsider.com/Corporate+News/AEye+(LIDR)+Introduces+Industrys+First+Adaptive+Lidar+Simulation+Suite+on+NVIDIA+DRIVE+Sim/20615031.html": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "innovators",
+  "strategic_move": "collaboration",
+  "lens_rationale": "Industry-first simulation tool, no dominant design \u2192 emerging; just introduced to tech developers \u2192 innovators; NVIDIA platform partnership \u2192 collaboration.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "http://www.msn.com/en-us/autos/news/nvidia-wants-to-be-the-brains-of-your-self-driving-car/ar-AA123kHH": {
+  "maturity_stage": "growth",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "platform",
+  "lens_rationale": "NVIDIA scaling autonomous vehicle compute platform with converging designs \u2192 growth; AV pilots and early deployments \u2192 early-adopters; building ecosystem \u2192 platform.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.prweb.com/releases/2022/9/prweb18911115.htm": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "innovators",
+  "strategic_move": "none",
+  "lens_rationale": "Innovation awards signal novel technology pre-scale \u2192 emerging; awards recognize early-stage tech \u2192 innovators; award announcement only \u2192 none.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.prnewswire.com/news-releases/lidar-for-automotive-market-size-is-estimated-to-grow-by-usd-4-60-billion-from-2023-to-2029--propelling-growth-due-to-rising-research--development-for-autonomous-vehicles-301784705.html": {
+  "maturity_stage": "growth",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "none",
+  "lens_rationale": "Market scaling rapidly with ongoing R&D and competing designs \u2192 growth; primarily in AV pilots, not mainstream \u2192 early-adopters; market forecast \u2192 none.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.finanznachrichten.de/nachrichten-2023-03/58689199-exactitude-consultancy-lidar-for-automotive-market-size-is-estimated-to-grow-by-usd-4-60-billion-from-2023-to-2029-propelling-growth-due-to-rising-r-008.htm": {
+  "maturity_stage": "growth",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "none",
+  "lens_rationale": "Market scaling rapidly with ongoing R&D and competing designs \u2192 growth; primarily in AV pilots, not mainstream \u2192 early-adopters; market forecast \u2192 none.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://finance.yahoo.com/news/growth-opportunities-freight-forwarding-software-132300670.html": {
+  "maturity_stage": "n/a",
+  "adoption_stage": "n/a",
+  "strategic_move": "none",
+  "lens_rationale": "Multi-technology market opportunities report with no specific technology or strategic action.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://investorplace.com/2023/02/7-stocks-to-buy-for-the-future-of-autonomous-vehicles/": {
+  "maturity_stage": "n/a",
+  "adoption_stage": "n/a",
+  "strategic_move": "none",
+  "lens_rationale": "Investment recommendations with no specific technology development or strategic move.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://9to5mac.com/2023/03/27/apple-car-lidar-system-could-be-made-by-iphone-supplier/": {
+  "maturity_stage": "growth",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "none",
+  "lens_rationale": "LiDAR scaling, no dominant design \u2192 growth (lifecycle); early vehicle deployments \u2192 early-adopters (diffusion); supply rumor \u2192 none.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.investors.com/news/technology/autonomous-vehicles-consolidation-ahead-for-car-sensor-market/": {
+  "maturity_stage": "growth",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "none",
+  "lens_rationale": "Sensor market scaling toward consolidation \u2192 growth (lifecycle); deployed in early AVs \u2192 early-adopters (diffusion); market analysis \u2192 none.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "http://www.commondigital.commonperu.com/index.php/ces/44416-vueron-technology-to-launch-eco-friendly-autonomously-driven-cold-chain-delivery": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "none",
+  "lens_rationale": "Autonomous delivery launching, no standard \u2192 emerging (lifecycle); single deployment \u2192 early-adopters (diffusion); routine launch \u2192 none.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://finance.yahoo.com/news/automotive-lidar-market-worth-5-150000833.html": {
+  "maturity_stage": "growth",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "none",
+  "lens_rationale": "LiDAR growth forecast \u2192 growth (lifecycle); early vehicle stage \u2192 early-adopters (diffusion); market research report \u2192 none.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://jalopnik.com/volvo-ex90-subscription-based-self-driving-tech-1850197959": {
+  "maturity_stage": "growth",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "appropriability",
+  "lens_rationale": "ADAS mass-produced but evolving \u2192 growth (lifecycle); subscription-gated premium feature \u2192 early-adopters (diffusion); software subscription captures value \u2192 appropriability (Teece).",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://markets.businessinsider.com/news/stocks/hesai-debuts-fully-solid-state-lidar-ft120-at-ces-2023-1032004439": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "innovators",
+  "strategic_move": "standards-battle",
+  "lens_rationale": "Solid-state LiDAR debut, competing architecture \u2192 emerging (lifecycle); CES product demo \u2192 innovators (diffusion); architecture competition \u2192 standards-battle (van de Kaa).",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.autonews.com/ces/sensor-companies-look-stand-out-ces-2023": {
+  "maturity_stage": "n/a",
+  "adoption_stage": "n/a",
+  "strategic_move": "none",
+  "lens_rationale": "General trade show story, no specific technology \u2192 n/a (lifecycle & diffusion); routine event coverage \u2192 none (strategy).",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.popularmechanics.com/cars/car-technology/a43251752/autonomous-driving-systems-responsible-innovation/": {
+  "maturity_stage": "n/a",
+  "adoption_stage": "n/a",
+  "strategic_move": "none",
+  "lens_rationale": "AV safety opinion piece, no specific product \u2192 n/a (lifecycle & diffusion); expert commentary \u2192 none (strategy).",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.coventrytelegraph.net/news/coventry-news/self-driving-car-tours-streets-27058233": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "innovators",
+  "strategic_move": "none",
+  "lens_rationale": "Street tour demonstrates AV technology; multiple competing approaches \u2192 emerging; public demo \u2192 innovators; demonstration activity \u2192 none.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.prnewswire.com/news-releases/global-automotive-lidar-system-on-chip-soc-markets-2023-2024--2033-opportunities-in-the-deployment-of-lidar-system-on-chip-in-other-applications-such-as-robotics-and-industrial-automation-301852091.html": {
+  "maturity_stage": "growth",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "none",
+  "lens_rationale": "LiDAR SoC market report; mass production expanding to new sectors \u2192 growth; visionary cross-sector applications \u2192 early-adopters; report format \u2192 none.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://finance.yahoo.com/news/global-automotive-lidar-markets-2022-091800980.html": {
+  "maturity_stage": "growth",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "none",
+  "lens_rationale": "Report notes accelerating LiDAR adoption in automotive; rapid scaling \u2192 growth; accelerating but pre-mainstream \u2192 early-adopters; report format \u2192 none.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://finance.yahoo.com/news/global-automotive-lidar-market-analysis-100000936.html": {
+  "maturity_stage": "growth",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "none",
+  "lens_rationale": "Report on multiple LiDAR approaches across automation levels; scaling without dominant design \u2192 growth; broadening deployment \u2192 early-adopters; report \u2192 none.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "http://usa.chinadaily.com.cn/a/202305/24/WS646dc1a8a310b6054fad4e17.html": {
+  "maturity_stage": "growth",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "none",
+  "lens_rationale": "Chinese market flourishing indicates rapid regional scaling \u2192 growth; regional expansion but pre-mainstream globally \u2192 early-adopters; market observation \u2192 none.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.theverge.com/23776430/lidar-tesla-autonomous-cars-elon-musk-waymo": {
+  "maturity_stage": "growth",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "none",
+  "lens_rationale": "Article on LiDAR as essential AV component; technology scaling \u2192 growth; full-autonomy deployments still pilots \u2192 early-adopters; explanatory piece \u2192 none.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.controleng.com/articles/automotive-lidars-role-growing-because-of-increased-use-of-autonomous-vehicles/": {
+  "maturity_stage": "growth",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "none",
+  "lens_rationale": "Growing LiDAR deployment in autonomous vehicles \u2192 growth; expanding role in pilot-phase applications \u2192 early-adopters; trend observation \u2192 none.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.electropages.com/blog/2023/05/how-self-healing-lenses-could-prevent-self-driving-car-accidents": {
+  "maturity_stage": "research",
+  "adoption_stage": "innovators",
+  "strategic_move": "none",
+  "lens_rationale": "Self-healing lens concept; 'could prevent' signals pre-commercial research \u2192 research; early concept with potential trials \u2192 innovators; concept article \u2192 none.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://shanghaiist.com/didi-unveils-autonomous-driving-concept-vehicle-named-neuron-in-china/": {
+  "maturity_stage": "research",
+  "adoption_stage": "innovators",
+  "strategic_move": "none",
+  "lens_rationale": "Concept vehicle unveiled suggests prototype, not commercial product \u2192 research; demonstration phase \u2192 innovators.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.prnewswire.com/news-releases/automotive-sensor-chip-industry-report-2023-sensor-chips-are-entering-a-new-stage-of-rapid-iterative-evolution-301846001.html": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "none",
+  "lens_rationale": "Rapid iterative evolution signals competing designs, no dominant standard \u2192 emerging; new-stage variants \u2192 early-adopters.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://autonews.gasgoo.com/china_news/70022680.html": {
+  "maturity_stage": "growth",
+  "adoption_stage": "early-majority",
+  "strategic_move": "entry-timing",
+  "lens_rationale": "BEVs mass-produced and scaling rapidly in 2023 \u2192 growth; mainstream adoption underway, especially in China \u2192 early-majority.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://carbuzz.com/news/nissan-developing-tech-to-avoid-accidents-with-idiots-at-intersections": {
+  "maturity_stage": "research",
+  "adoption_stage": "innovators",
+  "strategic_move": "none",
+  "lens_rationale": "Nissan 'finds way' suggests newly developed solution, no commercial availability mentioned \u2192 research; demo phase \u2192 innovators.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.geospatialworld.net/news/robosense-rs-lidar-m1-smart-lidar-sensor-wins-autosens-awards-2019/": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "none",
+  "lens_rationale": "Award for LiDAR sensor with competing approaches \u2192 emerging; early commercial recognition \u2192 early-adopters.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.openpr.com/news/1814687/leddartech-successfully-defends-its-lidar-intellectual": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "appropriability",
+  "lens_rationale": "Patent defense \u2192 appropriability; LiDAR with competing designs in early commercial phase \u2192 emerging and early-adopters.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.marketscreener.com/news/RoboSense-RS-LiDAR-M1-Smart-LiDAR-Sensor-Wins-AutoSens-Awards-2019--29234576/": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "none",
+  "lens_rationale": "Award for LiDAR sensor with competing approaches \u2192 emerging; early commercial recognition \u2192 early-adopters.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.openpr.com/news/1836942/leddartech-launches-the-leddar-pixell-an-exceptionally": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "none",
+  "lens_rationale": "Product launch of LiDAR sensor; competing approaches \u2192 emerging; first commercial availability \u2192 early-adopters.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "http://www.digitaljournal.com/pr/4433336": {
+  "maturity_stage": "n/a",
+  "adoption_stage": "n/a",
+  "strategic_move": "none",
+  "lens_rationale": "Market forecast report, no specific technology action \u2192 n/a for stages and none for strategy.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://business.financialpost.com/pmn/press-releases-pmn/business-wire-news-releases-pmn/faw-teams-up-with-robosense-on-the-worlds-first-automotive-grade-solid-state-smart-lidar-sensor-for-serial-production": {
+  "maturity_stage": "growth",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "collaboration",
+  "lens_rationale": "Partnership for serial production \u2192 collaboration; mass manufacturing starting \u2192 growth; first automotive-grade deployment \u2192 early-adopters.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "http://www.digitaljournal.com/pr/4400692": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "platform",
+  "lens_rationale": "Platform for all LiDAR sensors \u2192 platform strategy; new software release \u2192 emerging; early commercial adoption \u2192 early-adopters.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.nasdaq.com/articles/focus-nimble-tech-firms-must-adapt-as-promised-self-driving-revolution-hits-speed-bumps": {
+  "maturity_stage": "n/a",
+  "adoption_stage": "n/a",
+  "strategic_move": "none",
+  "lens_rationale": "Industry commentary on autonomous vehicles, no specific technology or product \u2192 n/a and none.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.bakersfield.com/ap/news/idriverplus-building-smart-autonomous-vehicles-with-velodyne-lidar-technology/article_236da8e7-bc1b-5826-8c37-4ef010a400a9.html": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "collaboration",
+  "lens_rationale": "Building AVs with commercial lidar; no dominant design yet \u2192 emerging; development project \u2192 early-adopters; supplier partnership \u2192 collaboration.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.euronews.com/2019/09/23/nimble-tech-firms-must-adapt-as-promised-self-driving-revolution-hits-speed-bumps": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "none",
+  "lens_rationale": "Self-driving tech hitting development challenges \u2192 emerging; firms adapting, not mainstream \u2192 early-adopters; industry commentary \u2192 none.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.dealstreetasia.com/stories/self-driving-tech-155005/": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "none",
+  "lens_rationale": "Self-driving tech hitting development challenges \u2192 emerging; startups pivoting, pre-mainstream \u2192 early-adopters; industry commentary \u2192 none.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.cso.com.au/mediareleases/35755/automotive-lidar-market-are-expected-to-offer/": {
+  "maturity_stage": "n/a",
+  "adoption_stage": "n/a",
+  "strategic_move": "none",
+  "lens_rationale": "Market forecast only, no specific product or strategic action \u2192 n/a.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.businesswire.com/news/home/20210312005303/en/China%E2%80%99s-First-Automotive-grade-Solid-state-LiDAR-Production-Line-Was-Launched": {
+  "maturity_stage": "growth",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "entry-timing",
+  "lens_rationale": "First automotive-grade solid-state production line \u2192 growth (mass production capacity); early customers \u2192 early-adopters; first-mover \u2192 entry-timing.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://cleantechnica.com/2021/02/08/volvo-cars-luminar-launch-next-level-lidar-dataset/": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "innovators",
+  "strategic_move": "collaboration",
+  "lens_rationale": "Dataset from LiDAR-equipped vehicles for development \u2192 emerging; research community tool \u2192 innovators; OEM-supplier partnership \u2192 collaboration.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "http://www.eeherald.com/section/news/p20210110005eeh.html": {
+  "maturity_stage": "n/a",
+  "adoption_stage": "n/a",
+  "strategic_move": "none",
+  "lens_rationale": "Market forecast only, no specific product or strategic action \u2192 n/a.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://investorplace.com/2021/01/frsx-stock-is-a-bet-on-autonomous-cars-but-against-lidar/": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "standards-battle",
+  "lens_rationale": "Alternative sensor competing with LiDAR \u2192 emerging (no dominant design); early development \u2192 early-adopters; competing approaches \u2192 standards-battle.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://forums.appleinsider.com/discussion/220230": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "standards-battle",
+  "lens_rationale": "Multiple suppliers, no dominant design \u2192 emerging; Apple sourcing pre-deployment \u2192 early-adopters; competitive evaluation \u2192 standards-battle.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://appleinsider.com/articles/21/02/19/apple-talking-to-multiple-lidar-suppliers-for-self-driving-car-tech": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "standards-battle",
+  "lens_rationale": "Multiple suppliers, no dominant design \u2192 emerging; Apple sourcing pre-deployment \u2192 early-adopters; competitive evaluation \u2192 standards-battle.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.businessinsider.com/spac-elon-musk-lidar-luminar-velodyne-ouster-innoviz-aeva-2021-1": {
+  "maturity_stage": "growth",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "none",
+  "lens_rationale": "SPAC boom signals scaling \u2192 growth; financial hype, not mass adoption \u2192 early-adopters; investment story \u2192 none.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.investors.com/news/technology/lidar-stocks-vldr-stock-map-road-self-driving-cars/": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "none",
+  "lens_rationale": "Multiple competing firms \u2192 emerging; deployment in pilots \u2192 early-adopters; stock analysis \u2192 none.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://investorplace.com/hypergrowthinvesting/2021/03/luminar-stock-is-significantly-undervalued-ahead-of-its-earnings-report/": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "none",
+  "lens_rationale": "One of many competitors, no winner \u2192 emerging; pilot-phase deployments \u2192 early-adopters; stock valuation story \u2192 none.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.electropages.com/blog/2021/03/apple-looking-lidar-providers": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "standards-battle",
+  "lens_rationale": "Multiple suppliers, no dominant design \u2192 emerging; Apple sourcing pre-deployment \u2192 early-adopters; competitive evaluation \u2192 standards-battle.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "http://www.semiconductor-today.com/news_items/2021/jan/trendforce-070121.shtml": {
+  "maturity_stage": "growth",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "none",
+  "lens_rationale": "34% CAGR, rapid scaling \u2192 growth; small base, not mainstream \u2192 early-adopters; market report \u2192 none.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://cleantechnica.com/2021/01/10/comma-ai-could-buy-automaker-waymo-ditching-self-driving-xpeng-adds-lidar-autonomous-driving-updates/": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "none",
+  "lens_rationale": "Competing approaches remain \u2192 emerging; Xpeng early deployment \u2192 early-adopters; news roundup \u2192 none.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.finanznachrichten.de/nachrichten-2022-05/55977847-transparency-market-research-automotive-lidar-market-to-advance-at-cagr-of-19-50-during-forecast-period-observes-tmr-study-008.htm": {
+  "maturity_stage": "n/a",
+  "adoption_stage": "n/a",
+  "strategic_move": "none",
+  "lens_rationale": "Market forecast report; no specific technology or deployment \u2192 n/a; no strategic action \u2192 none.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.prnewswire.com/news-releases/automotive-lidar-market-to-advance-at-cagr-of-19-50-during-forecast-period-observes-tmr-study-301541000.html": {
+  "maturity_stage": "n/a",
+  "adoption_stage": "n/a",
+  "strategic_move": "none",
+  "lens_rationale": "Market forecast report; no specific technology or deployment \u2192 n/a; no strategic action \u2192 none.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.prnewswire.com:443/news-releases/automotive-lidar-market-to-expand-at-19-5-cagr-through-2032-as-sales-of-autonomous-vehicles-bolster-301548235.html": {
+  "maturity_stage": "n/a",
+  "adoption_stage": "n/a",
+  "strategic_move": "none",
+  "lens_rationale": "Market forecast; no specific technology deployment \u2192 n/a; no strategic action \u2192 none.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://techcrunch.com/2022/05/26/luminar-hires-execs-from-apple-nvidia-and-tesla/": {
+  "maturity_stage": "n/a",
+  "adoption_stage": "n/a",
+  "strategic_move": "none",
+  "lens_rationale": "Executive hiring; no technology deployment \u2192 n/a; organizational story, not strategic tech move \u2192 none.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.digitaljournal.com/pr/automotive-lidar-sensors-market-top-leading-companies-segmentation-and-forecast-by-2030": {
+  "maturity_stage": "n/a",
+  "adoption_stage": "n/a",
+  "strategic_move": "none",
+  "lens_rationale": "Market analysis; no specific technology deployment \u2192 n/a; no strategic action \u2192 none.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.finanznachrichten.de/nachrichten-2022-05/56069338-fact-mr-automotive-lidar-market-to-expand-at-19-5-cagr-through-2032-as-sales-of-autonomous-vehicles-bolster-008.htm": {
+  "maturity_stage": "n/a",
+  "adoption_stage": "n/a",
+  "strategic_move": "none",
+  "lens_rationale": "Market forecast; no specific technology deployment \u2192 n/a; no strategic action \u2192 none.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://electronics360.globalspec.com/article/18085/innoviz-secures-lidar-order-with-larger-automotive-oem": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "early-adopters",
+  "strategic_move": "collaboration",
+  "lens_rationale": "Commercial OEM order; no dominant design apparent \u2192 emerging; OEM as visionary customer \u2192 early-adopters; supplier partnership \u2192 collaboration.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://finance.yahoo.com/news/vueron-technology-approved-lidar-only-160000251.html": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "innovators",
+  "strategic_move": "none",
+  "lens_rationale": "California test permit for LiDAR-only AV indicates trials \u2192 emerging; testing phase \u2192 innovators; regulatory gate, not strategic move \u2192 none.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://menafn.com/1104201132/Will-This-Year-Be-A-Turning-Point-For-The-Autonomous-Driving-Industry&source=24": {
+  "maturity_stage": "n/a",
+  "adoption_stage": "n/a",
+  "strategic_move": "none",
+  "lens_rationale": "Speculative industry question, no specific technology or strategic action described.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.msn.com/en-us/autos/news/intel-s-mobileye-expands-self-driving-car-tests-so-you-can-buy-one-in-2025/ar-AAWExjF": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "innovators",
+  "strategic_move": "entry-timing",
+  "lens_rationale": "Expanding tests with 2025 commercial target, no dominant design \u2192 emerging; company-led trials \u2192 innovators; geographic pre-positioning \u2192 entry-timing.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://www.msn.com/en-us/autos/news/intels-mobileye-expands-to-miami-stuttgart-for-autonomous-vehicles-in-2025/ar-AAWExjF": {
+  "maturity_stage": "emerging",
+  "adoption_stage": "innovators",
+  "strategic_move": "entry-timing",
+  "lens_rationale": "New-city testing ahead of 2025 launch, competing approaches \u2192 emerging; Mobileye-led tests \u2192 innovators; market positioning \u2192 entry-timing.",
+  "lens_prompt_version": "mot-lens-v3"
+ },
+ "https://brazilbusiness.einnews.com/pr_news/572110666/will-this-year-be-a-turning-point-for-the-autonomous-driving-industry": {
+  "maturity_stage": "n/a",
+  "adoption_stage": "n/a",
+  "strategic_move": "none",
+  "lens_rationale": "Industry speculation piece, no specific technology or strategic action described.",
+  "lens_prompt_version": "mot-lens-v3"
+ }
+}

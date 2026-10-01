@@ -1,0 +1,141 @@
+{
+ "key": "nft-collectibles",
+ "label": "NFTs (digital collectibles)",
+ "window": [
+  "2020Q1",
+  "2023Q2"
+ ],
+ "query": "(NFT OR \"non-fungible token\")",
+ "n_items": 120,
+ "n_classified": 78,
+ "quarters": [
+  {
+   "quarter": "2020Q1",
+   "n": 9,
+   "stage": "emerging",
+   "modal_share": 1.0,
+   "counts": {
+    "emerging": 9
+   }
+  },
+  {
+   "quarter": "2020Q2",
+   "n": 11,
+   "stage": "emerging",
+   "modal_share": 1.0,
+   "counts": {
+    "emerging": 11
+   }
+  },
+  {
+   "quarter": "2020Q4",
+   "n": 5,
+   "stage": "emerging",
+   "modal_share": 1.0,
+   "counts": {
+    "emerging": 5
+   }
+  },
+  {
+   "quarter": "2021Q1",
+   "n": 12,
+   "stage": "emerging",
+   "modal_share": 1.0,
+   "counts": {
+    "emerging": 12
+   }
+  },
+  {
+   "quarter": "2021Q3",
+   "n": 9,
+   "stage": "emerging",
+   "modal_share": 0.89,
+   "counts": {
+    "emerging": 8,
+    "research": 1
+   }
+  },
+  {
+   "quarter": "2021Q4",
+   "n": 7,
+   "stage": "emerging",
+   "modal_share": 1.0,
+   "counts": {
+    "emerging": 7
+   }
+  },
+  {
+   "quarter": "2022Q1",
+   "n": 11,
+   "stage": "emerging",
+   "modal_share": 1.0,
+   "counts": {
+    "emerging": 11
+   }
+  },
+  {
+   "quarter": "2022Q2",
+   "n": 5,
+   "stage": "emerging",
+   "modal_share": 1.0,
+   "counts": {
+    "emerging": 5
+   }
+  },
+  {
+   "quarter": "2022Q3",
+   "n": 4,
+   "stage": null,
+   "modal_share": 1.0,
+   "counts": {
+    "emerging": 4
+   }
+  },
+  {
+   "quarter": "2022Q4",
+   "n": 5,
+   "stage": "emerging",
+   "modal_share": 1.0,
+   "counts": {
+    "emerging": 5
+   }
+  }
+ ],
+ "calls": [
+  {
+   "stage": "emerging",
+   "quarter": "2020Q2",
+   "evidence_n": 11,
+   "modal_share": 1.0
+  }
+ ],
+ "comparison": [
+  {
+   "stage": "growth",
+   "quarter": "2021Q1",
+   "event": "Beeple's 'Everydays' sells for $69.3M at Christie's as NFT volume explodes (11 Mar 2021)",
+   "source": "https://www.christies.com/about-us/press-archive/details?PressReleaseID=9970",
+   "called_quarter": null,
+   "lag_quarters": null,
+   "hit": false
+  },
+  {
+   "stage": "declining",
+   "quarter": "2022Q3",
+   "event": "NFT trading volume collapses ~97% from its January peak (Sep 2022)",
+   "source": "https://www.bloomberg.com/news/articles/2022-09-28/nft-volumes-tumble-97-from-2022-highs",
+   "called_quarter": null,
+   "lag_quarters": null,
+   "hit": false
+  }
+ ],
+ "false_calls": [
+  {
+   "stage": "emerging",
+   "quarter": "2020Q2",
+   "evidence_n": 11,
+   "modal_share": 1.0
+  }
+ ],
+ "notes": "Deliberately includes a DECLINE: the method must track collapse, not just ascent \u2014 'declining' is a forward move on the axis."
+}

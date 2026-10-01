@@ -1,0 +1,156 @@
+name: Demo (Docker)
+
+# The same checks as demo.yml, but with dependencies delivered as a prebuilt
+# container image instead of installed at run time. Run this AFTER
+# "Demo (no Docker)" — the pair is meant to be compared.
+#
+# Why there is no `push:` to a registry here: symefstat/LODESTAR is a PRIVATE
+# repo, and private repos get 500 MB of free GHCR package storage. An image
+# carrying pandas + streamlit + yfinance + vl-convert-python would likely
+# exceed that, and with GitHub's default $0 spending limit the push would be
+# blocked rather than billed. So this builds the image and uses it locally on
+# the runner, which costs no storage and still demonstrates both payoffs:
+#
+#   • layer caching  — the second run's build is dramatically faster than the
+#                      first, because no requirements file changed
+#   • no-install run — the checks run the FULL 816-test suite with zero pip
+#                      install, where demo.yml can only afford three
+#                      stdlib-only test modules
+#
+# The real-world version pushes to a registry so OTHER workflows (e.g. the
+# 6-hour pipeline) can pull it. That is the setup worth adopting if this repo
+# ever goes public, or once the CI image is slimmed down.
+
+on:
+  workflow_dispatch:
+
+jobs:
+  demo:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      # Buildx is Docker's modern builder — required for the GitHub Actions
+      # layer cache (`type=gha`) used below.
+      - name: Set up Buildx
+        uses: docker/setup-buildx-action@v4
+
+      - name: Mark build start
+        run: echo "BUILD_START=$(date +%s)" >> "$GITHUB_ENV"
+
+      - name: Build the CI image
+        uses: docker/build-push-action@v7
+        with:
+          context: .
+          file: Dockerfile.ci
+          push: false        # never leaves this runner — no GHCR storage used
+          load: true         # make it available to `docker run` below
+          tags: pharos-ci:local
+          # THE important two lines. Without them every build reinstalls
+          # everything from scratch and the whole exercise is pointless —
+          # this cache is what makes the SECOND run fast.
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+
+      - name: Mark build end
+        run: echo "BUILD_SECONDS=$(( $(date +%s) - BUILD_START ))" >> "$GITHUB_ENV"
+
+      # From here on, every command runs INSIDE the image. Note what is absent:
+      # no setup-python, no pip install. Python and every dependency are
+      # already baked in. The repo is mounted at /app because the image holds
+      # the ENVIRONMENT, not the source — checkout still supplies the code.
+      - name: Compile (inside the container)
+        run: |
+          docker run --rm -v "$GITHUB_WORKSPACE:/app" -w /app pharos-ci:local \
+            python -m compileall -q analytics home_news toqan vectordb eval finance backend
+
+      - name: Mark test start
+        run: echo "TEST_START=$(date +%s)" >> "$GITHUB_ENV"
+
+      # The payoff: the COMPLETE suite, not the hand-picked stdlib subset
+      # demo.yml is restricted to, because pandas / supabase / fastapi /
+      # vl-convert are all already present.
+      - name: Full test suite (inside the container)
+        run: |
+          docker run --rm -v "$GITHUB_WORKSPACE:/app" -w /app pharos-ci:local \
+            python -m pytest -q
+
+      - name: Mark test end
+        run: echo "TEST_SECONDS=$(( $(date +%s) - TEST_START ))" >> "$GITHUB_ENV"
+
+      # Look at the artifact itself. The image only exists on this ephemeral
+      # runner (push: false), so this is the only chance to inspect it — the
+      # numbers below decide whether it could ever fit GHCR's 500 MB free
+      # allowance for private repos, and which layer to attack if not.
+      - name: Inspect the image
+        run: |
+          echo "### Size on disk (uncompressed)"
+          docker images pharos-ci:local --format '{{.Repository}}:{{.Tag}}  {{.Size}}'
+
+          echo "### Layers, largest first"
+          docker history pharos-ci:local --human --format '{{.Size}}\t{{.CreatedBy}}' \
+            | head -12
+
+          echo "### Compressed size — this is roughly what a registry counts"
+          docker save pharos-ci:local | gzip -c | wc -c \
+            | awk '{printf "%.0f MB compressed\n", $1/1024/1024}'
+
+          echo "### Biggest installed packages"
+          docker run --rm pharos-ci:local sh -c \
+            "du -sm /usr/local/lib/python3.11/site-packages/* 2>/dev/null | sort -rn | head -12"
+
+      # Same information, rendered on the run's Summary page rather than buried
+      # in the log.
+      - name: Image report
+        run: |
+          {
+            echo "## The image"
+            echo ""
+            echo '```'
+            docker images pharos-ci:local --format 'uncompressed: {{.Size}}'
+            docker save pharos-ci:local | gzip -c | wc -c \
+              | awk '{printf "compressed:   %.0f MB  (what GHCR would count)\n", $1/1024/1024}'
+            echo '```'
+            echo ""
+            echo "### Biggest packages inside"
+            echo ""
+            echo '```'
+            docker run --rm pharos-ci:local sh -c \
+              "du -sm /usr/local/lib/python3.11/site-packages/* 2>/dev/null | sort -rn | head -10"
+            echo '```'
+            echo ""
+            echo "Anything here the 6-hour pipeline never uses — streamlit and"
+            echo "altair render no UI in CI — is pure weight on every build."
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      # Proof that the image solves a problem requirements.txt cannot: system
+      # binaries. pdftotext exists here because Dockerfile.ci apt-installs it;
+      # on the bare runner used by demo.yml it does not exist at all.
+      - name: What the image provides
+        run: |
+          {
+            echo "## Inside the container"
+            echo ""
+            echo '```'
+            docker run --rm pharos-ci:local python -c \
+              "import pandas, supabase, fastapi; print('pandas', pandas.__version__)"
+            docker run --rm pharos-ci:local pdftotext -v 2>&1 | head -1
+            echo '```'
+            echo ""
+            echo "\`pdftotext\` is a system binary, not a pip package —"
+            echo "\`requirements.txt\` can never provide it, a Dockerfile can."
+            echo ""
+            echo "## Timing"
+            echo ""
+            echo "| Phase | Seconds |"
+            echo "|---|---|"
+            echo "| Image build | ${BUILD_SECONDS} |"
+            echo "| Full 816-test suite | ${TEST_SECONDS} |"
+            echo ""
+            echo "Run this workflow a SECOND time to see the point: the build"
+            echo "collapses because the layer cache is reused, while the tests"
+            echo "do strictly more work than **Demo (no Docker)** ever could."
+          } >> "$GITHUB_STEP_SUMMARY"

@@ -1,0 +1,203 @@
+{
+ "key": "automotive-lidar",
+ "label": "Automotive LiDAR",
+ "window": [
+  "2019Q1",
+  "2023Q2"
+ ],
+ "query": "lidar (automotive OR \"self-driving\" OR autonomous)",
+ "n_items": 168,
+ "n_classified": 127,
+ "quarters": [
+  {
+   "quarter": "2019Q2",
+   "n": 10,
+   "stage": "emerging",
+   "modal_share": 0.5,
+   "counts": {
+    "growth": 4,
+    "emerging": 5,
+    "research": 1
+   }
+  },
+  {
+   "quarter": "2019Q3",
+   "n": 9,
+   "stage": "emerging",
+   "modal_share": 0.89,
+   "counts": {
+    "emerging": 8,
+    "growth": 1
+   }
+  },
+  {
+   "quarter": "2019Q4",
+   "n": 8,
+   "stage": "emerging",
+   "modal_share": 0.88,
+   "counts": {
+    "emerging": 7,
+    "research": 1
+   }
+  },
+  {
+   "quarter": "2020Q1",
+   "n": 11,
+   "stage": "emerging",
+   "modal_share": 1.0,
+   "counts": {
+    "emerging": 11
+   }
+  },
+  {
+   "quarter": "2020Q2",
+   "n": 1,
+   "stage": null,
+   "modal_share": 1.0,
+   "counts": {
+    "emerging": 1
+   }
+  },
+  {
+   "quarter": "2020Q3",
+   "n": 8,
+   "stage": "emerging",
+   "modal_share": 0.88,
+   "counts": {
+    "growth": 1,
+    "emerging": 7
+   }
+  },
+  {
+   "quarter": "2020Q4",
+   "n": 5,
+   "stage": "emerging",
+   "modal_share": 0.8,
+   "counts": {
+    "emerging": 4,
+    "research": 1
+   }
+  },
+  {
+   "quarter": "2021Q1",
+   "n": 11,
+   "stage": "emerging",
+   "modal_share": 0.73,
+   "counts": {
+    "growth": 3,
+    "emerging": 8
+   }
+  },
+  {
+   "quarter": "2021Q2",
+   "n": 9,
+   "stage": "growth",
+   "modal_share": 0.67,
+   "counts": {
+    "emerging": 3,
+    "growth": 6
+   }
+  },
+  {
+   "quarter": "2021Q3",
+   "n": 11,
+   "stage": "emerging",
+   "modal_share": 1.0,
+   "counts": {
+    "emerging": 11
+   }
+  },
+  {
+   "quarter": "2021Q4",
+   "n": 10,
+   "stage": "emerging",
+   "modal_share": 1.0,
+   "counts": {
+    "emerging": 10
+   }
+  },
+  {
+   "quarter": "2022Q2",
+   "n": 4,
+   "stage": null,
+   "modal_share": 1.0,
+   "counts": {
+    "emerging": 4
+   }
+  },
+  {
+   "quarter": "2022Q3",
+   "n": 10,
+   "stage": "emerging",
+   "modal_share": 0.7,
+   "counts": {
+    "emerging": 7,
+    "growth": 3
+   }
+  },
+  {
+   "quarter": "2023Q1",
+   "n": 8,
+   "stage": "growth",
+   "modal_share": 0.75,
+   "counts": {
+    "growth": 6,
+    "emerging": 2
+   }
+  },
+  {
+   "quarter": "2023Q2",
+   "n": 12,
+   "stage": "growth",
+   "modal_share": 0.58,
+   "counts": {
+    "emerging": 2,
+    "growth": 7,
+    "research": 3
+   }
+  }
+ ],
+ "calls": [
+  {
+   "stage": "emerging",
+   "quarter": "2019Q3",
+   "evidence_n": 9,
+   "modal_share": 0.89
+  },
+  {
+   "stage": "growth",
+   "quarter": "2023Q2",
+   "evidence_n": 12,
+   "modal_share": 0.58
+  }
+ ],
+ "comparison": [
+  {
+   "stage": "growth",
+   "quarter": "2020Q4",
+   "event": "LiDAR SPAC wave: Velodyne and Luminar list publicly; Luminar-Volvo series-production deal (Q4 2020)",
+   "source": "https://www.reuters.com/article/us-luminar-ipo-idUSKBN28D2WD",
+   "called_quarter": "2023Q2",
+   "lag_quarters": 10,
+   "hit": true
+  },
+  {
+   "stage": "dominant-design",
+   "quarter": "2023Q1",
+   "event": "Sector shakeout: Ouster-Velodyne merger completes after Ibeo insolvency and Quanergy delisting (Feb 2023)",
+   "source": "https://www.reuters.com/markets/deals/lidar-makers-ouster-velodyne-complete-merger-2023-02-13/",
+   "called_quarter": null,
+   "lag_quarters": null,
+   "hit": false
+  }
+ ],
+ "false_calls": [
+  {
+   "stage": "emerging",
+   "quarter": "2019Q3",
+   "evidence_n": 9,
+   "modal_share": 0.89
+  }
+ ],
+ "notes": "Judgment mapping flagged: consolidation/shakeout is read as the ferment closing (Utterback\u2013Abernathy), i.e. dominant-design."
+}
